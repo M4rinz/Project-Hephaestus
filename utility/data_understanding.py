@@ -2,6 +2,7 @@ from typing import Tuple, Dict, Any
 from sklearn.preprocessing import StandardScaler
 import pandas
 import numpy as np
+import re
 
 def __transform_single_features(dataset: pandas.DataFrame, transformation: str) -> Tuple[
     pandas.DataFrame, Dict[str, Any]]:
