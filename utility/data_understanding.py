@@ -105,7 +105,7 @@ def scrape_stages(indices:pandas.Index,
 
 
     prev_url = None
-    for i in tqdm.tqdm(indices):
+    for i in tqdm.tqdm(indices, desc='scraping...'):
         url = races_df.loc[i, '_url']
 
         # We process only the different URLs
