@@ -80,7 +80,7 @@ def correlations(dataset: pandas.DataFrame) -> pandas.DataFrame:
     for i, k in enumerate(correlations_dictionary.keys()):
         correlations_dictionary[k].loc[:, "correlation_type"] = k
     correlations_matrix = pandas.concat(correlations_dictionary.values())
-
+    
     return correlations_matrix
 
 
