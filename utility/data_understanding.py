@@ -37,7 +37,7 @@ def check_if_same(race1:str,
                   races_df:pandas.DataFrame,
                   pattern:str=r"([a-z0-9-]+)/\d{4}/(prologue|result|stage-\d)") -> tuple:
     """Checks if two names refer to the same race, comparing the name that appears in the 
-    `_url` colon. It uses the regular expression passed as `pattern` to extract the race ID
+    `_url` column. It uses the regular expression passed as `pattern` to extract the race ID
 
     Args:
         race1 (str): name of the first race to compare
@@ -82,6 +82,40 @@ def correlations(dataset: pandas.DataFrame) -> pandas.DataFrame:
     correlations_matrix = pandas.concat(correlations_dictionary.values())
     
     return correlations_matrix
+
+
+def convert_seconds_date(time: int) -> str:
+    if pandas.isna(time):
+        return np.nan
+    time = int(time)
+    hh = time//3600
+    mm = (time-hh*3600)//60
+    ss = (time - hh*3600 - mm*60)
+    return f"{hh:02}:{mm:02}:{ss:02}"
+
+def convert_date_seconds(data:str) -> int:
+    hh, mm, ss = data.split(':')
+    return 3600*int(hh)+60*int(mm)+int(ss)
+
+
+def delta_computer(cyclist_url:str, lista: list[dict]) -> str:
+    """Given the url of the cyclist and the list of the stage's participants data,
+    computes the delta of the cyclist by taking the difference between the cyclist's 
+    time to complete the race and the time of the first.
+
+    Args:
+        cyclist_url (str): url of the cyclist (in the format of the dataframe)
+        lista (list[dict]): the list returned by pcs.Stage.results(). Must include the parameters `rider_url` and `time`
+
+    Returns:
+        str: the delta, in format hh:mm:ss
+    """
+    try:
+        tempo = convert_date_seconds(next(filter(lambda diz: diz['rider_url'] == f'rider/{cyclist_url}',lista))['time'])
+    except AttributeError:
+        tempo = np.nan
+    delta_sec = tempo - convert_date_seconds(lista[0]['time'])
+    return convert_seconds_date(delta_sec)
 
 
 def scrape_stages(indices:pandas.Index,
