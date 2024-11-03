@@ -3,6 +3,8 @@ from sklearn.preprocessing import StandardScaler
 import pandas
 import numpy as np
 import re
+import tqdm
+import procyclingstats as pcs
 
 def __transform_single_features(dataset: pandas.DataFrame, transformation: str) -> Tuple[
     pandas.DataFrame, Dict[str, Any]]:
@@ -78,5 +80,106 @@ def correlations(dataset: pandas.DataFrame) -> pandas.DataFrame:
     for i, k in enumerate(correlations_dictionary.keys()):
         correlations_dictionary[k].loc[:, "correlation_type"] = k
     correlations_matrix = pandas.concat(correlations_dictionary.values())
-
+    
     return correlations_matrix
+
+
+def scrape_stages(indices:pandas.Index,
+                  races_df:pandas.DataFrame,
+                  same_races_dict:dict[str|list[str]]) -> list[dict]:
+    new_races = []
+
+    # Helper function to handle exceptions
+    def safe_getattr(obj, attr, fun:callable=lambda x: x):
+        try:
+            return fun(getattr(obj, attr)())
+        except (IndexError, AttributeError, ValueError):
+            return np.nan
+        
+    def name_returner(dictionary:dict[str,list[str]], val_to_find:str) -> str|float:
+        for key, val in dictionary.items():
+            if val_to_find in val:
+                return key
+        # Well... Turns out that in the dictionary there isn't really everything...
+        return val_to_find #np.nan
+
+
+    prev_url = None
+    for i in tqdm.tqdm(indices, desc='scraping...'):
+        url = races_df.loc[i, '_url']
+
+        # We process only the different URLs
+        if url == prev_url:
+            continue
+
+        try:
+            tappa = pcs.Stage(f"race/{url}")
+            same_url_races = races_df[races_df['_url'] == url]
+
+            ## Non-cyclist oriented
+            # New feature: ITT (Individual Time Trial), TT (Team TT), RR (Road Race)
+            tipo_tappa = safe_getattr(tappa, 'stage_type')
+            elevazione = races_df.loc[i, 'climb_total'] if not pandas.isna(races_df.loc[i, 'climb_total']) else safe_getattr(tappa, 'vertical_meters')
+            # In our dataset missing profile is treated as NaN, while the scraper treats them as 0
+            profilo = races_df.loc[i, 'profile'] if not pandas.isna(races_df.loc[i, 'profile']) else safe_getattr(tappa, 'profile_icon', lambda profile: np.float64(profile[1]) if np.float64(profile[1]) != 0 else np.nan)
+            # If the temperature isn't there then tappa.avg_temperature() is None. None becomes NaN in the dataframe
+            avgtemp = races_df.loc[i, 'average_temperature'] if not pandas.isna(races_df.loc[i, 'average_temperature']) else safe_getattr(tappa, 'avg_temperature')
+
+            for _, row in same_url_races.iterrows():
+                posizione, url_ciclista = row[['position', 'cyclist']]
+
+                ## Cyclist-oriented
+                lista = tappa.results('rider_url', 'age', 'pcs_points', 'uci_points', 'team_url')   
+                try:
+                    # There can be cyclists that appear in our df but not in the website, so we have to do like this
+                    # (hopefully duplicated cyclists have been already dealt with)
+                    diz_valori_ciclista = next(filter(lambda diz: diz['rider_url'] == f'rider/{url_ciclista}', lista))
+                except StopIteration:
+                    # This happens when the name is in the dataframe but not in procyclingstats.
+                    # Most probably the dataframe is wrong and pcs is right, but let's keep it anyways...
+                    diz_valori_ciclista = {}
+
+                # In our dataset missing points are treated as NaN, while the scraper treats them as 0
+                punti = diz_valori_ciclista.get('pcs_points', np.nan) if diz_valori_ciclista.get('pcs_points', np.nan) != 0 else np.nan
+                # In our dataset missing UCI points are treated as NaN, while the scraper treats them as 0
+                punti_uci = diz_valori_ciclista.get('uci_points', np.nan) if diz_valori_ciclista.get('uci_points', np.nan) != 0 else np.nan
+                # For the age we can look at our dataframe first (hopefully everything is ok)
+                eta = row['cyclist_age'] if not pandas.isna(row['cyclist_age']) else diz_valori_ciclista.get('age', np.nan)
+        
+                # The teams in the dataset are completely different from those of pcs...
+                team = diz_valori_ciclista.get('team_url', np.nan)
+                #team = races_df.loc[idx, 'cyclist_team'] if not races_df.loc[idx, 'cyclist_team'] else diz_valori_ciclista.get('team_url', np.nan)     
+
+                # And now let's create the new entry
+                race_new_data = {
+                    '_url': url,
+                    'name': ' '.join(name_returner(same_races_dict, races_df.loc[i, 'name']).split()),
+                    'stage_type': tipo_tappa,
+                    'points': punti,
+                    'uci_points': punti_uci,
+                    'length': races_df.loc[i, 'length'],
+                    'climb_total': elevazione,
+                    'profile': profilo,
+                    'startlist_quality': races_df.loc[i, 'startlist_quality'],
+                    'average_temperature': avgtemp,
+                    'date': row['date'],
+                    'position': posizione,
+                    'cyclist': url_ciclista,
+                    'cyclist_age': eta,
+                    # Until we know how to get these...
+                    'is_tarmac': races_df.loc[i, 'is_tarmac'],
+                    'is_cobbled': races_df.loc[i, 'is_cobbled'], # ... as if they weren't all False...
+                    'is_gravel': races_df.loc[i, 'is_gravel'],
+                    'cyclist_team': team,
+                    'delta': row['delta']
+                }
+                new_races.append(race_new_data)       
+
+            # Update url
+            prev_url = url
+        except ValueError:
+            print(f"Encountered error at url {url}, iteration {i}")
+            print("Exiting (I'm sorry you might have lost a lot of time)")
+            return
+        
+    return new_races
