@@ -98,7 +98,7 @@ def convert_date_seconds(data:str) -> int:
     return 3600*int(hh)+60*int(mm)+int(ss)
 
 
-def delta_computer(cyclist_url:str, lista: list[dict]) -> str:
+def delta_computer(cyclist_url:str, lista: list[dict], in_date_format:bool=True) -> str:
     """Given the url of the cyclist and the list of the stage's participants data,
     computes the delta of the cyclist by taking the difference between the cyclist's 
     time to complete the race and the time of the first.
@@ -106,16 +106,19 @@ def delta_computer(cyclist_url:str, lista: list[dict]) -> str:
     Args:
         cyclist_url (str): url of the cyclist (in the format of the dataframe)
         lista (list[dict]): the list returned by pcs.Stage.results(). Must include the parameters `rider_url` and `time`
+        in_date_format (bool): whether return the delta in the format hh:mm:ss. If False it will return the delta in n° of seconds. Defaults to True
 
     Returns:
-        str: the delta, in format hh:mm:ss
+        str: the delta, in format hh:mm:ss if in_date_dormat
     """
     try:
         tempo = convert_date_seconds(next(filter(lambda diz: diz['rider_url'] == f'rider/{cyclist_url}',lista))['time'])
     except AttributeError:
         tempo = np.nan
     delta_sec = tempo - convert_date_seconds(lista[0]['time'])
-    return convert_seconds_date(delta_sec)
+    
+    return convert_seconds_date(delta_sec) if in_date_format else delta_sec
+
 
 
 def scrape_stages(indices:pandas.Index,
@@ -166,7 +169,8 @@ def scrape_stages(indices:pandas.Index,
                 lista = tappa.results('rider_url', 'age', 'pcs_points', 'uci_points', 'team_url')   
                 try:
                     # There can be cyclists that appear in our df but not in the website, so we have to do like this
-                    # (hopefully duplicated cyclists have been already dealt with)
+                    # Duplicated cyclists haven't been already dealt with. We just get the first one we find...
+                    # ... Hopefully it works out... I mean, is more or less consistent with the original dataset...
                     diz_valori_ciclista = next(filter(lambda diz: diz['rider_url'] == f'rider/{url_ciclista}', lista))
                 except StopIteration:
                     # This happens when the name is in the dataframe but not in procyclingstats.
