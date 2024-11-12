@@ -76,3 +76,10 @@
 
 
 12. Studiare `delta` per tipo di percorso?
+
+13. Nazione dove si tiene la gara
+
+    - Feature: `competition_country`
+    - Description: The country in which the race is held
+    - Formula: Domain knowledge
+    - Notes: 
