@@ -98,7 +98,10 @@ def convert_date_seconds(data:str) -> int:
     return 3600*int(hh)+60*int(mm)+int(ss)
 
 
-def delta_computer(cyclist_url:str, lista: list[dict], in_date_format:bool=True) -> str:
+def delta_computer(cyclist_url:str, 
+                   lista: list[dict], 
+                   in_date_format:bool=True,
+                   which:str|int='all') -> list[str]:
     """Given the url of the cyclist and the list of the stage's participants data,
     computes the delta of the cyclist by taking the difference between the cyclist's 
     time to complete the race and the time of the first.
@@ -107,17 +110,25 @@ def delta_computer(cyclist_url:str, lista: list[dict], in_date_format:bool=True)
         cyclist_url (str): url of the cyclist (in the format of the dataframe)
         lista (list[dict]): the list returned by pcs.Stage.results(). Must include the parameters `rider_url` and `time`
         in_date_format (bool): whether return the delta in the format hh:mm:ss. If False it will return the delta in n° of seconds. Defaults to True
+        which (str|int): which cyclist to consider. If 'all' it will return a list of all the deltas of that cyclist. Defaults to 'all'
 
     Returns:
-        str: the delta, in format hh:mm:ss if in_date_dormat
+        list(str): the list of deltas of that cyclist, in format hh:mm:ss if in_date_dormat
     """
     try:
-        tempo = convert_date_seconds(next(filter(lambda diz: diz['rider_url'] == f'rider/{cyclist_url}',lista))['time'])
+        rider_dicts = list(filter(lambda diz: diz['rider_url'] == f'rider/{cyclist_url}',lista))
+        if which == 'all':
+            tempo = [convert_date_seconds(diz['time']) for diz in rider_dicts]
+        else:
+            try:
+                tempo = [convert_date_seconds(rider_dicts[which]['time'])]
+            except IndexError:
+                return [np.nan] #tempo = np.nan
     except AttributeError:
-        tempo = np.nan
-    delta_sec = tempo - convert_date_seconds(lista[0]['time'])
+        return [np.nan] #tempo = np.nan
+    delta_sec = [t - convert_date_seconds(lista[0]['time']) for t in tempo] #if which == 'all' else tempo - convert_date_seconds(lista[0]['time'])
     
-    return convert_seconds_date(delta_sec) if in_date_format else delta_sec
+    return [convert_seconds_date(d_s) for d_s in delta_sec] if in_date_format else delta_sec
 
 
 
