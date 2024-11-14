@@ -37,7 +37,7 @@ def check_if_same(race1:str,
                   races_df:pandas.DataFrame,
                   pattern:str=r"([a-z0-9-]+)/\d{4}/(prologue|result|stage-\d)") -> tuple:
     """Checks if two names refer to the same race, comparing the name that appears in the 
-    `_url` colon. It uses the regular expression passed as `pattern` to extract the race ID
+    `_url` column. It uses the regular expression passed as `pattern` to extract the race ID
 
     Args:
         race1 (str): name of the first race to compare
@@ -82,6 +82,54 @@ def correlations(dataset: pandas.DataFrame) -> pandas.DataFrame:
     correlations_matrix = pandas.concat(correlations_dictionary.values())
     
     return correlations_matrix
+
+
+def convert_seconds_date(time: int) -> str:
+    if pandas.isna(time):
+        return np.nan
+    time = int(time)
+    hh = time//3600
+    mm = (time-hh*3600)//60
+    ss = (time - hh*3600 - mm*60)
+    return f"{hh:02}:{mm:02}:{ss:02}"
+
+def convert_date_seconds(data:str) -> int:
+    hh, mm, ss = data.split(':')
+    return 3600*int(hh)+60*int(mm)+int(ss)
+
+
+def delta_computer(cyclist_url:str, 
+                   lista: list[dict], 
+                   in_date_format:bool=True,
+                   which:str|int='all') -> list[str]:
+    """Given the url of the cyclist and the list of the stage's participants data,
+    computes the delta of the cyclist by taking the difference between the cyclist's 
+    time to complete the race and the time of the first.
+
+    Args:
+        cyclist_url (str): url of the cyclist (in the format of the dataframe)
+        lista (list[dict]): the list returned by pcs.Stage.results(). Must include the parameters `rider_url` and `time`
+        in_date_format (bool): whether return the delta in the format hh:mm:ss. If False it will return the delta in n° of seconds. Defaults to True
+        which (str|int): which cyclist to consider. If 'all' it will return a list of all the deltas of that cyclist. Defaults to 'all'
+
+    Returns:
+        list(str): the list of deltas of that cyclist, in format hh:mm:ss if in_date_dormat
+    """
+    try:
+        rider_dicts = list(filter(lambda diz: diz['rider_url'] == f'rider/{cyclist_url}',lista))
+        if which == 'all':
+            tempo = [convert_date_seconds(diz['time']) for diz in rider_dicts]
+        else:
+            try:
+                tempo = [convert_date_seconds(rider_dicts[which]['time'])]
+            except IndexError:
+                return [np.nan] #tempo = np.nan
+    except AttributeError:
+        return [np.nan] #tempo = np.nan
+    delta_sec = [t - convert_date_seconds(lista[0]['time']) for t in tempo] #if which == 'all' else tempo - convert_date_seconds(lista[0]['time'])
+    
+    return [convert_seconds_date(d_s) for d_s in delta_sec] if in_date_format else delta_sec
+
 
 
 def scrape_stages(indices:pandas.Index,
@@ -132,7 +180,8 @@ def scrape_stages(indices:pandas.Index,
                 lista = tappa.results('rider_url', 'age', 'pcs_points', 'uci_points', 'team_url')   
                 try:
                     # There can be cyclists that appear in our df but not in the website, so we have to do like this
-                    # (hopefully duplicated cyclists have been already dealt with)
+                    # Duplicated cyclists haven't been already dealt with. We just get the first one we find...
+                    # ... Hopefully it works out... I mean, is more or less consistent with the original dataset...
                     diz_valori_ciclista = next(filter(lambda diz: diz['rider_url'] == f'rider/{url_ciclista}', lista))
                 except StopIteration:
                     # This happens when the name is in the dataframe but not in procyclingstats.

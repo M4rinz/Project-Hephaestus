@@ -53,9 +53,9 @@
     - Formula: binning based on the date of the competition.
     - Notes:
 
-9. Duration of the stage
+9. Duration of the stage (aka time)
 
-    - Feature: `duration`
+    - Feature: `time`
     - Description: How much time it took for the given cyclist to complete the stage in question
     - Formula: Just separate the time that appears in the "date" column.
     - Notes: This feature is related to the delta, but we discovered that is not as random as one would have thought...
@@ -73,3 +73,13 @@
     - Description: Some races are Grand Tours and take place in stages, some others don't (es. Tour de France vs Ronde van Vlaanderen)
     - Formula: Domain knowledge, or seeing if the `_url` ends with "results"
     - Notes: Unsure whether is a true feature or not
+
+
+12. Studiare `delta` per tipo di percorso?
+
+13. Nazione dove si tiene la gara
+
+    - Feature: `competition_country`
+    - Description: The country in which the race is held
+    - Formula: Domain knowledge
+    - Notes: 
