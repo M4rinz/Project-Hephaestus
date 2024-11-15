@@ -1,7 +1,7 @@
 # NetRiunione 12 Novembre 2024
 ## TO DO
 Ecco le cose da fare:
-- [ ] Nel notebook `data_exploration`, studio delle singole features originali del dataset
+- [ ] Nel notebook `data_exploration`, studio delle singole features originali del dataset (cyclists: name (non lo farei), races: startlist_quality)
     - [ ] Include l'outlier detection (basta individuare i valori fuori dai quantili...)
     - [ ] Possiamo direttamente confrontare lo studio sul dataset originale con quello sul dataset pulito alla fine
 - [ ] Nel notebook `data_understanding_transformation`
