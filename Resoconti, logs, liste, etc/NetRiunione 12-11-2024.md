@@ -8,14 +8,16 @@ Ecco le cose da fare:
     - [ ] Risiedono le features aggiuntive da noi individuate (la decisione sul se calcolare le features nuove dopo l'imputazione di quelle vecchie è in sospeso. Dipende dalle features)
     - [ ] Si studiano le nuove features aggiunte (alcune tramite scraping, alcune no) 
         - cyclists: 
-            - bmi 
+            - bmi ok
+            - experience_level
             - full history
             - points total
             - tot_season_attended
         - races:
+            - stage type ok
             - time
             - date
-            - steepness
+            - steepness ok
             - season
             - is_staged
             - race_country
