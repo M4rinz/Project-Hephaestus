@@ -9,14 +9,12 @@ Ecco le cose da fare:
     - [ ] Si studiano le nuove features aggiunte (alcune tramite scraping, alcune no) 
         - cyclists: 
             - bmi ok
-            - experience_level
-            - full history
-            - points total
-            - tot_season_attended
+            - experience_level ok
         - races:
             - stage type ok
-            - time
+            - time ok
             - date
+            - average speed ok
             - steepness ok
             - season
             - is_staged
