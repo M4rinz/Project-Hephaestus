@@ -1,0 +1,5868 @@
+{
+    "tour-de-france_1978_stages": [
+        "stage-6",
+        "stage-1",
+        "stage-3",
+        "prologue",
+        "stage-2",
+        "stage-9",
+        "stage-8",
+        "stage-7",
+        "stage-5"
+    ],
+    "tour-de-france_1979_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-6",
+        "stage-3",
+        "stage-9",
+        "prologue",
+        "stage-5",
+        "stage-7"
+    ],
+    "tour-de-france_1980_stages": [
+        "stage-1",
+        "stage-9",
+        "stage-8",
+        "stage-5",
+        "stage-7",
+        "stage-2",
+        "prologue",
+        "stage-6",
+        "stage-4",
+        "stage-3"
+    ],
+    "tour-de-france_1981_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-9",
+        "stage-5",
+        "stage-3",
+        "prologue",
+        "stage-8",
+        "stage-7",
+        "stage-6"
+    ],
+    "tour-de-france_1982_stages": [
+        "stage-1",
+        "stage-7",
+        "stage-3",
+        "stage-2",
+        "stage-6",
+        "prologue",
+        "stage-8",
+        "stage-4",
+        "stage-9"
+    ],
+    "tour-de-france_1983_stages": [
+        "stage-1",
+        "stage-9",
+        "stage-8",
+        "stage-7",
+        "stage-5",
+        "stage-6",
+        "stage-3",
+        "stage-2",
+        "prologue",
+        "stage-4"
+    ],
+    "tour-de-france_1984_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-5",
+        "stage-8",
+        "prologue",
+        "stage-7",
+        "stage-4",
+        "stage-6",
+        "stage-9"
+    ],
+    "tour-de-france_1985_stages": [
+        "stage-1",
+        "stage-9",
+        "stage-7",
+        "stage-2",
+        "stage-4",
+        "stage-5",
+        "prologue",
+        "stage-6",
+        "stage-8"
+    ],
+    "tour-de-france_1986_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-5",
+        "stage-3",
+        "stage-7",
+        "prologue",
+        "stage-9",
+        "stage-6",
+        "stage-4",
+        "stage-8"
+    ],
+    "tour-de-france_1987_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-7",
+        "stage-6",
+        "stage-4",
+        "stage-9",
+        "prologue",
+        "stage-8",
+        "stage-5",
+        "stage-3"
+    ],
+    "tour-de-france_1988_stages": [
+        "stage-4",
+        "stage-8",
+        "stage-2",
+        "stage-1",
+        "stage-3",
+        "stage-9",
+        "stage-6",
+        "prologue",
+        "stage-7",
+        "stage-5"
+    ],
+    "tour-de-france_1989_stages": [
+        "stage-1",
+        "stage-2",
+        "prologue",
+        "stage-5",
+        "stage-6",
+        "stage-8",
+        "stage-4",
+        "stage-7",
+        "stage-9",
+        "stage-3"
+    ],
+    "tour-de-france_1990_stages": [
+        "stage-1",
+        "stage-9",
+        "stage-7",
+        "stage-8",
+        "stage-2",
+        "prologue",
+        "stage-3",
+        "stage-6",
+        "stage-4",
+        "stage-5"
+    ],
+    "tour-de-france_1991_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-6",
+        "stage-3",
+        "stage-4",
+        "stage-9",
+        "prologue",
+        "stage-7",
+        "stage-5",
+        "stage-8"
+    ],
+    "tour-de-france_1992_stages": [
+        "stage-7",
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "stage-9",
+        "stage-6",
+        "stage-3",
+        "stage-8",
+        "prologue"
+    ],
+    "tour-de-france_1993_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-7",
+        "stage-8",
+        "stage-3",
+        "stage-6",
+        "stage-9",
+        "stage-5",
+        "prologue"
+    ],
+    "tour-de-france_1994_stages": [
+        "stage-1",
+        "stage-5",
+        "prologue",
+        "stage-2",
+        "stage-6",
+        "stage-9",
+        "stage-4",
+        "stage-8",
+        "stage-7"
+    ],
+    "tour-de-france_1995_stages": [
+        "stage-2",
+        "stage-7",
+        "stage-5",
+        "stage-1",
+        "stage-4",
+        "stage-6",
+        "prologue",
+        "stage-9",
+        "stage-8"
+    ],
+    "tour-de-france_1996_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-8",
+        "stage-9",
+        "stage-7",
+        "stage-5",
+        "prologue",
+        "stage-6",
+        "stage-4",
+        "stage-3"
+    ],
+    "tour-de-france_1997_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-5",
+        "stage-8",
+        "stage-9",
+        "stage-3",
+        "stage-4",
+        "stage-6",
+        "prologue",
+        "stage-7"
+    ],
+    "tour-de-france_1999_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-3",
+        "prologue",
+        "stage-8",
+        "stage-9",
+        "stage-6",
+        "stage-7",
+        "stage-2",
+        "stage-4"
+    ],
+    "tour-de-france_2000_stages": [
+        "stage-8",
+        "stage-1",
+        "stage-2",
+        "stage-7",
+        "stage-6",
+        "stage-5",
+        "stage-3",
+        "stage-9"
+    ],
+    "tour-de-france_2001_stages": [
+        "stage-1",
+        "stage-7",
+        "prologue",
+        "stage-2",
+        "stage-9",
+        "stage-3",
+        "stage-8",
+        "stage-4",
+        "stage-6"
+    ],
+    "tour-de-france_2002_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-5",
+        "stage-8",
+        "stage-9",
+        "prologue",
+        "stage-7",
+        "stage-3",
+        "stage-6"
+    ],
+    "tour-de-france_2003_stages": [
+        "stage-1",
+        "stage-3",
+        "stage-9",
+        "stage-6",
+        "stage-8",
+        "stage-7",
+        "stage-2",
+        "prologue",
+        "stage-5"
+    ],
+    "tour-de-france_2004_stages": [
+        "prologue",
+        "stage-9",
+        "stage-3",
+        "stage-1",
+        "stage-2",
+        "stage-6",
+        "stage-8",
+        "stage-5",
+        "stage-7"
+    ],
+    "tour-de-france_2005_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-5",
+        "stage-8",
+        "stage-9",
+        "stage-3",
+        "stage-6",
+        "stage-7"
+    ],
+    "tour-de-france_2007_stages": [
+        "stage-3",
+        "stage-6",
+        "stage-1",
+        "stage-2",
+        "stage-4",
+        "stage-5",
+        "stage-7",
+        "stage-9",
+        "stage-8",
+        "prologue"
+    ],
+    "tour-de-france_2008_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-7",
+        "stage-4",
+        "stage-3",
+        "stage-5",
+        "stage-6",
+        "stage-9",
+        "stage-8"
+    ],
+    "tour-de-france_2009_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-7",
+        "stage-9",
+        "stage-5",
+        "stage-8",
+        "stage-3",
+        "stage-6"
+    ],
+    "tour-de-france_2010_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-6",
+        "prologue",
+        "stage-3",
+        "stage-4",
+        "stage-7",
+        "stage-9",
+        "stage-5",
+        "stage-8"
+    ],
+    "tour-de-france_2011_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "stage-4",
+        "stage-8",
+        "stage-6",
+        "stage-9",
+        "stage-7",
+        "stage-3"
+    ],
+    "tour-de-france_2012_stages": [
+        "stage-1",
+        "stage-9",
+        "stage-4",
+        "stage-2",
+        "stage-7",
+        "stage-5",
+        "stage-3",
+        "stage-6",
+        "prologue",
+        "stage-8"
+    ],
+    "tour-de-france_2013_stages": [
+        "stage-1",
+        "stage-8",
+        "stage-3",
+        "stage-9",
+        "stage-5",
+        "stage-7",
+        "stage-2",
+        "stage-6"
+    ],
+    "tour-de-france_2014_stages": [
+        "stage-6",
+        "stage-1",
+        "stage-2",
+        "stage-7",
+        "stage-3",
+        "stage-9",
+        "stage-4",
+        "stage-5",
+        "stage-8"
+    ],
+    "tour-de-france_2015_stages": [
+        "stage-1",
+        "stage-6",
+        "stage-2",
+        "stage-7",
+        "stage-5",
+        "stage-8",
+        "stage-4",
+        "stage-3"
+    ],
+    "tour-de-france_2016_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-4",
+        "stage-8",
+        "stage-6",
+        "stage-3",
+        "stage-7",
+        "stage-9",
+        "stage-5"
+    ],
+    "tour-de-france_2017_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-7",
+        "stage-9",
+        "stage-5",
+        "stage-6",
+        "stage-3",
+        "stage-4",
+        "stage-8"
+    ],
+    "tour-de-france_2018_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-7",
+        "stage-9",
+        "stage-4",
+        "stage-6",
+        "stage-5",
+        "stage-8"
+    ],
+    "tour-de-france_2019_stages": [
+        "stage-2",
+        "stage-5",
+        "stage-1",
+        "stage-7",
+        "stage-8",
+        "stage-3",
+        "stage-9",
+        "stage-6",
+        "stage-4"
+    ],
+    "tour-de-france_2021_stages": [
+        "stage-1",
+        "stage-3",
+        "stage-5",
+        "stage-4",
+        "stage-7",
+        "stage-2",
+        "stage-6",
+        "stage-9",
+        "stage-8"
+    ],
+    "tour-de-france_2022_stages": [
+        "stage-9",
+        "stage-2",
+        "stage-3",
+        "stage-1",
+        "stage-7",
+        "stage-8",
+        "stage-4",
+        "stage-5",
+        "stage-6"
+    ],
+    "tour-de-france_2023_stages": [
+        "stage-4",
+        "stage-1",
+        "stage-2",
+        "stage-8",
+        "stage-3",
+        "stage-7",
+        "stage-9",
+        "stage-5",
+        "stage-6"
+    ],
+    "vuelta-a-espana_1980_stages": [
+        "stage-1",
+        "stage-8",
+        "prologue",
+        "stage-2",
+        "stage-4",
+        "stage-7",
+        "stage-5",
+        "stage-3",
+        "stage-6",
+        "stage-9"
+    ],
+    "vuelta-a-espana_1981_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-3",
+        "prologue",
+        "stage-6",
+        "stage-5",
+        "stage-4",
+        "stage-8",
+        "stage-9",
+        "stage-7"
+    ],
+    "vuelta-a-espana_1982_stages": [
+        "stage-1",
+        "stage-6",
+        "stage-5",
+        "stage-2",
+        "stage-9",
+        "prologue",
+        "stage-3",
+        "stage-7",
+        "stage-8",
+        "stage-4"
+    ],
+    "vuelta-a-espana_1983_stages": [
+        "stage-1",
+        "stage-6",
+        "stage-5",
+        "stage-2",
+        "stage-7",
+        "stage-4",
+        "stage-3",
+        "prologue",
+        "stage-8",
+        "stage-9"
+    ],
+    "vuelta-a-espana_1984_stages": [
+        "stage-1",
+        "stage-8",
+        "stage-7",
+        "stage-3",
+        "stage-9",
+        "stage-4",
+        "prologue",
+        "stage-6",
+        "stage-2",
+        "stage-5"
+    ],
+    "vuelta-a-espana_1985_stages": [
+        "stage-9",
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "prologue",
+        "stage-8",
+        "stage-3",
+        "stage-7",
+        "stage-4",
+        "stage-6"
+    ],
+    "vuelta-a-espana_1986_stages": [
+        "stage-1",
+        "prologue",
+        "stage-2",
+        "stage-7",
+        "stage-4",
+        "stage-5",
+        "stage-8",
+        "stage-9",
+        "stage-6",
+        "stage-3"
+    ],
+    "vuelta-a-espana_1987_stages": [
+        "stage-1",
+        "stage-8",
+        "stage-5",
+        "stage-4",
+        "stage-2",
+        "stage-3",
+        "stage-7",
+        "stage-9",
+        "stage-6",
+        "prologue"
+    ],
+    "vuelta-a-espana_1988_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-7",
+        "stage-4",
+        "stage-9",
+        "stage-5",
+        "stage-6",
+        "stage-8"
+    ],
+    "vuelta-a-espana_1989_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-7",
+        "stage-8",
+        "stage-6",
+        "stage-4",
+        "stage-3",
+        "stage-5",
+        "stage-9"
+    ],
+    "vuelta-a-espana_1990_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "stage-4",
+        "stage-8",
+        "stage-9",
+        "stage-7",
+        "stage-6",
+        "stage-3"
+    ],
+    "vuelta-a-espana_1991_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "stage-7",
+        "stage-9",
+        "stage-3",
+        "stage-6",
+        "stage-4",
+        "stage-8"
+    ],
+    "vuelta-a-espana_1992_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-5",
+        "stage-8",
+        "stage-4",
+        "stage-6",
+        "stage-7",
+        "stage-3",
+        "stage-9"
+    ],
+    "vuelta-a-espana_1993_stages": [
+        "stage-2",
+        "stage-4",
+        "stage-6",
+        "stage-1",
+        "stage-7",
+        "stage-3",
+        "stage-8",
+        "stage-5",
+        "stage-9"
+    ],
+    "vuelta-a-espana_1994_stages": [
+        "stage-3",
+        "stage-8",
+        "stage-1",
+        "stage-7",
+        "stage-2",
+        "stage-5",
+        "stage-4",
+        "stage-9",
+        "stage-6"
+    ],
+    "vuelta-a-espana_1995_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-6",
+        "stage-9",
+        "stage-3",
+        "stage-7",
+        "stage-5",
+        "stage-8",
+        "prologue",
+        "stage-4"
+    ],
+    "vuelta-a-espana_1996_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-9",
+        "stage-8",
+        "stage-3",
+        "stage-5",
+        "stage-6",
+        "stage-7",
+        "stage-4"
+    ],
+    "vuelta-a-espana_1997_stages": [
+        "stage-2",
+        "stage-6",
+        "stage-8",
+        "stage-5",
+        "stage-1",
+        "stage-3",
+        "stage-4",
+        "stage-7",
+        "stage-9"
+    ],
+    "vuelta-a-espana_1998_stages": [
+        "stage-7",
+        "stage-6",
+        "stage-1",
+        "stage-3",
+        "stage-2",
+        "stage-4",
+        "stage-5",
+        "stage-9",
+        "stage-8"
+    ],
+    "vuelta-a-espana_1999_stages": [
+        "prologue",
+        "stage-4",
+        "stage-8",
+        "stage-1",
+        "stage-2",
+        "stage-7",
+        "stage-6",
+        "stage-5",
+        "stage-9",
+        "stage-3"
+    ],
+    "vuelta-a-espana_2000_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-8",
+        "stage-3",
+        "stage-7",
+        "stage-4",
+        "stage-5",
+        "stage-6",
+        "stage-9"
+    ],
+    "vuelta-a-espana_2001_stages": [
+        "stage-1",
+        "stage-8",
+        "stage-3",
+        "stage-2",
+        "stage-7",
+        "stage-4",
+        "stage-5",
+        "stage-6",
+        "stage-9"
+    ],
+    "vuelta-a-espana_2002_stages": [
+        "stage-1",
+        "stage-3",
+        "stage-2",
+        "stage-8",
+        "stage-4",
+        "stage-9",
+        "stage-5",
+        "stage-7",
+        "stage-6"
+    ],
+    "vuelta-a-espana_2003_stages": [
+        "stage-5",
+        "stage-3",
+        "stage-1",
+        "stage-9",
+        "stage-7",
+        "stage-2",
+        "stage-6",
+        "stage-8",
+        "stage-4"
+    ],
+    "vuelta-a-espana_2004_stages": [
+        "stage-6",
+        "stage-1",
+        "stage-2",
+        "stage-9",
+        "stage-4",
+        "stage-7",
+        "stage-5",
+        "stage-8",
+        "stage-3"
+    ],
+    "vuelta-a-espana_2005_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-8",
+        "stage-2",
+        "stage-7",
+        "stage-9",
+        "stage-4",
+        "stage-6",
+        "stage-3"
+    ],
+    "vuelta-a-espana_2006_stages": [
+        "stage-4",
+        "stage-2",
+        "stage-6",
+        "stage-1",
+        "stage-3",
+        "stage-8",
+        "stage-7",
+        "stage-9",
+        "stage-5"
+    ],
+    "vuelta-a-espana_2007_stages": [
+        "stage-8",
+        "stage-3",
+        "stage-1",
+        "stage-7",
+        "stage-2",
+        "stage-6",
+        "stage-4",
+        "stage-9",
+        "stage-5"
+    ],
+    "vuelta-a-espana_2008_stages": [
+        "stage-4",
+        "stage-2",
+        "stage-1",
+        "stage-9",
+        "stage-8",
+        "stage-7",
+        "stage-6",
+        "stage-3",
+        "stage-5"
+    ],
+    "vuelta-a-espana_2009_stages": [
+        "stage-1",
+        "stage-7",
+        "stage-5",
+        "stage-9",
+        "stage-6",
+        "stage-3",
+        "stage-4",
+        "stage-2",
+        "stage-8"
+    ],
+    "vuelta-a-espana_2010_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-6",
+        "stage-8",
+        "stage-5",
+        "stage-4",
+        "stage-9",
+        "stage-7",
+        "stage-3"
+    ],
+    "vuelta-a-espana_2011_stages": [
+        "stage-5",
+        "stage-8",
+        "stage-1",
+        "stage-7",
+        "stage-2",
+        "stage-3",
+        "stage-4",
+        "stage-6",
+        "stage-9"
+    ],
+    "vuelta-a-espana_2012_stages": [
+        "stage-1",
+        "stage-9",
+        "stage-2",
+        "stage-8",
+        "stage-7",
+        "stage-3",
+        "stage-5",
+        "stage-4",
+        "stage-6"
+    ],
+    "vuelta-a-espana_2013_stages": [
+        "stage-1",
+        "stage-9",
+        "stage-2",
+        "stage-3",
+        "stage-6",
+        "stage-7",
+        "stage-5",
+        "stage-8",
+        "stage-4"
+    ],
+    "vuelta-a-espana_2014_stages": [
+        "stage-9",
+        "stage-1",
+        "stage-4",
+        "stage-7",
+        "stage-2",
+        "stage-5",
+        "stage-8",
+        "stage-6",
+        "stage-3"
+    ],
+    "vuelta-a-espana_2015_stages": [
+        "stage-4",
+        "stage-6",
+        "stage-1",
+        "stage-2",
+        "stage-9",
+        "stage-8",
+        "stage-3",
+        "stage-5",
+        "stage-7"
+    ],
+    "vuelta-a-espana_2016_stages": [
+        "stage-1",
+        "stage-6",
+        "stage-2",
+        "stage-3",
+        "stage-5",
+        "stage-9",
+        "stage-7",
+        "stage-4",
+        "stage-8"
+    ],
+    "vuelta-a-espana_2017_stages": [
+        "stage-2",
+        "stage-6",
+        "stage-1",
+        "stage-9",
+        "stage-8",
+        "stage-7",
+        "stage-3",
+        "stage-5",
+        "stage-4"
+    ],
+    "vuelta-a-espana_2018_stages": [
+        "stage-9",
+        "stage-1",
+        "stage-2",
+        "stage-7",
+        "stage-5",
+        "stage-8",
+        "stage-3",
+        "stage-6",
+        "stage-4"
+    ],
+    "vuelta-a-espana_2019_stages": [
+        "stage-9",
+        "stage-7",
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "stage-3",
+        "stage-6",
+        "stage-4",
+        "stage-8"
+    ],
+    "vuelta-a-espana_2020_stages": [
+        "stage-7",
+        "stage-1",
+        "stage-4",
+        "stage-5",
+        "stage-9",
+        "stage-2",
+        "stage-3",
+        "stage-6",
+        "stage-8"
+    ],
+    "vuelta-a-espana_2021_stages": [
+        "stage-1",
+        "stage-6",
+        "stage-7",
+        "stage-5",
+        "stage-4",
+        "stage-8",
+        "stage-9",
+        "stage-3",
+        "stage-2"
+    ],
+    "vuelta-a-espana_2022_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-6",
+        "stage-5",
+        "stage-4",
+        "stage-8",
+        "stage-3",
+        "stage-7",
+        "stage-9"
+    ],
+    "volta-a-catalunya_1970_stages": [
+        "stage-9",
+        "stage-1",
+        "stage-3",
+        "stage-5",
+        "stage-7",
+        "stage-2",
+        "stage-8",
+        "stage-6",
+        "stage-4"
+    ],
+    "volta-a-catalunya_1977_stages": [
+        "stage-1",
+        "prologue",
+        "stage-4",
+        "stage-6",
+        "stage-5",
+        "stage-3",
+        "stage-2",
+        "stage-7"
+    ],
+    "volta-a-catalunya_1981_stages": [
+        "stage-2",
+        "stage-7",
+        "stage-3",
+        "stage-5",
+        "stage-4",
+        "stage-6",
+        "stage-1",
+        "prologue"
+    ],
+    "volta-a-catalunya_1983_stages": [
+        "stage-7"
+    ],
+    "volta-a-catalunya_1984_stages": [
+        "stage-4",
+        "stage-3",
+        "stage-6",
+        "stage-5",
+        "stage-7",
+        "stage-2",
+        "stage-1",
+        "prologue"
+    ],
+    "volta-a-catalunya_1986_stages": [
+        "stage-4"
+    ],
+    "volta-a-catalunya_1988_stages": [
+        "stage-1"
+    ],
+    "volta-a-catalunya_1989_stages": [
+        "stage-6"
+    ],
+    "volta-a-catalunya_1992_stages": [
+        "stage-7",
+        "stage-2",
+        "stage-5",
+        "stage-6",
+        "stage-4",
+        "stage-3"
+    ],
+    "volta-a-catalunya_1993_stages": [
+        "prologue",
+        "stage-5",
+        "stage-4",
+        "stage-2",
+        "stage-3",
+        "stage-6",
+        "stage-1"
+    ],
+    "volta-a-catalunya_1994_stages": [
+        "stage-3",
+        "stage-4",
+        "stage-1",
+        "stage-2"
+    ],
+    "volta-a-catalunya_1995_stages": [
+        "stage-1",
+        "stage-5",
+        "prologue",
+        "stage-3",
+        "stage-4",
+        "stage-6",
+        "stage-2",
+        "stage-7"
+    ],
+    "volta-a-catalunya_1996_stages": [
+        "stage-7",
+        "stage-1",
+        "stage-2",
+        "prologue",
+        "stage-3",
+        "stage-5",
+        "stage-6",
+        "stage-4"
+    ],
+    "volta-a-catalunya_1997_stages": [
+        "stage-7",
+        "stage-1",
+        "stage-5",
+        "stage-8",
+        "stage-4",
+        "stage-6"
+    ],
+    "volta-a-catalunya_1998_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-3",
+        "stage-6",
+        "stage-8",
+        "stage-2",
+        "stage-7",
+        "stage-4"
+    ],
+    "volta-a-catalunya_1999_stages": [
+        "prologue",
+        "stage-2",
+        "stage-7",
+        "stage-6",
+        "stage-4",
+        "stage-1",
+        "stage-3"
+    ],
+    "volta-a-catalunya_2000_stages": [
+        "stage-2",
+        "stage-4",
+        "stage-5",
+        "stage-6",
+        "stage-3",
+        "stage-8",
+        "stage-7"
+    ],
+    "volta-a-catalunya_2001_stages": [
+        "stage-7",
+        "stage-4",
+        "stage-8",
+        "stage-2",
+        "stage-5",
+        "stage-3",
+        "stage-6"
+    ],
+    "volta-a-catalunya_2002_stages": [
+        "stage-2",
+        "stage-5",
+        "stage-6",
+        "stage-3",
+        "stage-7",
+        "stage-4"
+    ],
+    "volta-a-catalunya_2003_stages": [
+        "stage-3",
+        "stage-4",
+        "stage-7",
+        "stage-5",
+        "stage-6",
+        "stage-2"
+    ],
+    "volta-a-catalunya_2004_stages": [
+        "stage-6",
+        "stage-7",
+        "stage-3",
+        "stage-5",
+        "stage-2",
+        "stage-4"
+    ],
+    "volta-a-catalunya_2005_stages": [
+        "stage-7",
+        "stage-4",
+        "stage-5",
+        "stage-3",
+        "stage-6",
+        "stage-2"
+    ],
+    "volta-a-catalunya_2006_stages": [
+        "stage-6",
+        "stage-7",
+        "stage-5",
+        "stage-2",
+        "stage-4",
+        "stage-1",
+        "stage-3"
+    ],
+    "volta-a-catalunya_2007_stages": [
+        "stage-2",
+        "stage-5",
+        "stage-6",
+        "stage-4",
+        "stage-3",
+        "stage-7"
+    ],
+    "volta-a-catalunya_2008_stages": [
+        "prologue",
+        "stage-6",
+        "stage-2",
+        "stage-3",
+        "stage-4",
+        "stage-5",
+        "stage-1"
+    ],
+    "volta-a-catalunya_2009_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-6",
+        "stage-3",
+        "stage-7",
+        "stage-4",
+        "stage-5"
+    ],
+    "volta-a-catalunya_2010_stages": [
+        "stage-6",
+        "stage-1",
+        "stage-3",
+        "stage-7",
+        "stage-2",
+        "stage-5",
+        "stage-4"
+    ],
+    "volta-a-catalunya_2011_stages": [
+        "stage-7",
+        "stage-1",
+        "stage-3",
+        "stage-5",
+        "stage-6",
+        "stage-4",
+        "stage-2"
+    ],
+    "volta-a-catalunya_2012_stages": [
+        "stage-2",
+        "stage-4",
+        "stage-5",
+        "stage-6",
+        "stage-1",
+        "stage-7"
+    ],
+    "volta-a-catalunya_2013_stages": [
+        "stage-4",
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "stage-5",
+        "stage-7",
+        "stage-6"
+    ],
+    "volta-a-catalunya_2014_stages": [
+        "stage-3",
+        "stage-6",
+        "stage-5",
+        "stage-7",
+        "stage-2",
+        "stage-4",
+        "stage-1"
+    ],
+    "volta-a-catalunya_2015_stages": [
+        "stage-4",
+        "stage-1",
+        "stage-5",
+        "stage-3",
+        "stage-7",
+        "stage-6",
+        "stage-2"
+    ],
+    "volta-a-catalunya_2016_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-5",
+        "stage-4",
+        "stage-3",
+        "stage-6",
+        "stage-7"
+    ],
+    "volta-a-catalunya_2017_stages": [
+        "stage-6",
+        "stage-3",
+        "stage-7",
+        "stage-1",
+        "stage-5",
+        "stage-4"
+    ],
+    "volta-a-catalunya_2018_stages": [
+        "stage-7",
+        "stage-1",
+        "stage-5",
+        "stage-4",
+        "stage-6",
+        "stage-2",
+        "stage-3"
+    ],
+    "volta-a-catalunya_2019_stages": [
+        "stage-5",
+        "stage-7",
+        "stage-4",
+        "stage-6",
+        "stage-2",
+        "stage-3",
+        "stage-1"
+    ],
+    "volta-a-catalunya_2021_stages": [
+        "stage-1",
+        "stage-3",
+        "stage-5",
+        "stage-2",
+        "stage-6",
+        "stage-4",
+        "stage-7"
+    ],
+    "volta-a-catalunya_2022_stages": [
+        "stage-3",
+        "stage-1",
+        "stage-4",
+        "stage-6",
+        "stage-7",
+        "stage-2",
+        "stage-5"
+    ],
+    "volta-a-catalunya_2023_stages": [
+        "stage-6",
+        "stage-2",
+        "stage-3",
+        "stage-7",
+        "stage-1",
+        "stage-4",
+        "stage-5"
+    ],
+    "paris-nice_1970_stages": [
+        "stage-2",
+        "stage-7",
+        "stage-3",
+        "stage-6",
+        "stage-8",
+        "stage-5",
+        "stage-1",
+        "stage-4"
+    ],
+    "paris-nice_1972_stages": [
+        "stage-5",
+        "stage-1",
+        "prologue",
+        "stage-4",
+        "stage-3",
+        "stage-7",
+        "stage-2",
+        "stage-6"
+    ],
+    "paris-nice_1975_stages": [
+        "stage-7",
+        "stage-3",
+        "stage-6",
+        "stage-1",
+        "stage-2",
+        "stage-5",
+        "prologue",
+        "stage-4"
+    ],
+    "paris-nice_1976_stages": [
+        "stage-1",
+        "stage-3",
+        "stage-7",
+        "stage-6",
+        "stage-5",
+        "prologue",
+        "stage-4",
+        "stage-2"
+    ],
+    "paris-nice_1980_stages": [
+        "stage-6",
+        "stage-5",
+        "prologue",
+        "stage-7",
+        "stage-1",
+        "stage-4",
+        "stage-3",
+        "stage-2"
+    ],
+    "paris-nice_1981_stages": [
+        "stage-7",
+        "stage-2",
+        "stage-3",
+        "stage-5",
+        "stage-6",
+        "stage-1",
+        "stage-4",
+        "prologue"
+    ],
+    "paris-nice_1982_stages": [
+        "prologue",
+        "stage-7",
+        "stage-6",
+        "stage-2",
+        "stage-1",
+        "stage-5",
+        "stage-3",
+        "stage-4"
+    ],
+    "paris-nice_1983_stages": [
+        "stage-5",
+        "stage-6",
+        "stage-4",
+        "stage-7",
+        "prologue",
+        "stage-2",
+        "stage-3",
+        "stage-1"
+    ],
+    "paris-nice_1984_stages": [
+        "stage-7",
+        "stage-1",
+        "prologue",
+        "stage-4",
+        "stage-5",
+        "stage-6",
+        "stage-3",
+        "stage-2"
+    ],
+    "paris-nice_1985_stages": [
+        "stage-6",
+        "stage-5",
+        "stage-4",
+        "stage-2",
+        "prologue",
+        "stage-1",
+        "stage-3",
+        "stage-7"
+    ],
+    "paris-nice_1986_stages": [
+        "stage-1",
+        "stage-7",
+        "stage-3",
+        "prologue",
+        "stage-4",
+        "stage-6",
+        "stage-2",
+        "stage-5"
+    ],
+    "paris-nice_1987_stages": [
+        "stage-5",
+        "stage-7",
+        "stage-2",
+        "prologue",
+        "stage-4",
+        "stage-3",
+        "stage-6"
+    ],
+    "paris-nice_1988_stages": [
+        "stage-5",
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "stage-4",
+        "stage-6"
+    ],
+    "paris-nice_1989_stages": [
+        "stage-5",
+        "prologue",
+        "stage-1",
+        "stage-7",
+        "stage-2",
+        "stage-6",
+        "stage-4"
+    ],
+    "paris-nice_1990_stages": [
+        "stage-2",
+        "stage-7",
+        "stage-4",
+        "stage-6",
+        "prologue",
+        "stage-1",
+        "stage-5"
+    ],
+    "paris-nice_1991_stages": [
+        "stage-6",
+        "stage-5",
+        "stage-3",
+        "prologue",
+        "stage-2",
+        "stage-4",
+        "stage-7"
+    ],
+    "paris-nice_1992_stages": [
+        "stage-6",
+        "stage-2",
+        "stage-7",
+        "stage-1",
+        "stage-5",
+        "prologue",
+        "stage-4"
+    ],
+    "paris-nice_1993_stages": [
+        "prologue",
+        "stage-3",
+        "stage-7",
+        "stage-5",
+        "stage-6",
+        "stage-4",
+        "stage-1"
+    ],
+    "paris-nice_1994_stages": [
+        "stage-8",
+        "stage-1",
+        "stage-6",
+        "stage-7",
+        "stage-3",
+        "stage-5",
+        "stage-2",
+        "stage-4"
+    ],
+    "paris-nice_1995_stages": [
+        "stage-2",
+        "stage-8",
+        "stage-6",
+        "stage-7",
+        "stage-3",
+        "stage-5",
+        "stage-1"
+    ],
+    "paris-nice_1996_stages": [
+        "stage-8",
+        "stage-5",
+        "stage-7",
+        "stage-4",
+        "stage-6",
+        "stage-3",
+        "stage-2",
+        "stage-1"
+    ],
+    "paris-nice_1997_stages": [
+        "stage-4",
+        "stage-6",
+        "stage-3",
+        "prologue",
+        "stage-2",
+        "stage-5",
+        "stage-1",
+        "stage-7"
+    ],
+    "paris-nice_1998_stages": [
+        "stage-4",
+        "stage-6",
+        "stage-3",
+        "stage-5",
+        "stage-7",
+        "stage-2",
+        "stage-1",
+        "prologue"
+    ],
+    "paris-nice_1999_stages": [
+        "stage-2",
+        "stage-5",
+        "prologue",
+        "stage-1",
+        "stage-3",
+        "stage-6",
+        "stage-7",
+        "stage-4"
+    ],
+    "paris-nice_2000_stages": [
+        "prologue",
+        "stage-4",
+        "stage-2",
+        "stage-6",
+        "stage-5",
+        "stage-1",
+        "stage-7",
+        "stage-3"
+    ],
+    "paris-nice_2001_stages": [
+        "stage-2",
+        "stage-3",
+        "stage-7",
+        "stage-4",
+        "prologue",
+        "stage-6",
+        "stage-5",
+        "stage-1"
+    ],
+    "paris-nice_2002_stages": [
+        "stage-5",
+        "stage-7",
+        "stage-6",
+        "prologue",
+        "stage-3",
+        "stage-4",
+        "stage-2",
+        "stage-1"
+    ],
+    "paris-nice_2003_stages": [
+        "stage-6",
+        "stage-1",
+        "stage-4",
+        "stage-2",
+        "stage-7",
+        "stage-5",
+        "prologue"
+    ],
+    "paris-nice_2004_stages": [
+        "stage-5",
+        "stage-8",
+        "stage-1",
+        "stage-3",
+        "stage-2",
+        "stage-7",
+        "stage-6"
+    ],
+    "paris-nice_2005_stages": [
+        "stage-1",
+        "prologue",
+        "stage-7",
+        "stage-4",
+        "stage-6",
+        "stage-3",
+        "stage-2",
+        "stage-5"
+    ],
+    "paris-nice_2006_stages": [
+        "stage-5",
+        "stage-1",
+        "stage-3",
+        "stage-4",
+        "stage-2",
+        "stage-6",
+        "stage-7",
+        "prologue"
+    ],
+    "paris-nice_2007_stages": [
+        "stage-6",
+        "stage-4",
+        "stage-5",
+        "stage-7",
+        "stage-1",
+        "prologue",
+        "stage-3",
+        "stage-2"
+    ],
+    "paris-nice_2008_stages": [
+        "stage-4",
+        "prologue",
+        "stage-3",
+        "stage-1",
+        "stage-5",
+        "stage-6",
+        "stage-7",
+        "stage-2"
+    ],
+    "paris-nice_2009_stages": [
+        "stage-3",
+        "stage-1",
+        "stage-5",
+        "stage-7",
+        "stage-2",
+        "stage-6",
+        "stage-8",
+        "stage-4"
+    ],
+    "paris-nice_2010_stages": [
+        "stage-4",
+        "stage-3",
+        "stage-1",
+        "stage-5",
+        "stage-6",
+        "stage-2",
+        "prologue",
+        "stage-7"
+    ],
+    "paris-nice_2011_stages": [
+        "stage-6",
+        "stage-2",
+        "stage-5",
+        "stage-1",
+        "stage-8",
+        "stage-4",
+        "stage-3",
+        "stage-7"
+    ],
+    "paris-nice_2012_stages": [
+        "stage-2",
+        "stage-6",
+        "stage-7",
+        "stage-8",
+        "stage-3",
+        "stage-5",
+        "prologue",
+        "stage-4"
+    ],
+    "paris-nice_2013_stages": [
+        "stage-5",
+        "stage-2",
+        "stage-6",
+        "stage-1",
+        "stage-4",
+        "prologue",
+        "stage-3",
+        "stage-7"
+    ],
+    "paris-nice_2014_stages": [
+        "stage-6",
+        "stage-7",
+        "stage-4",
+        "stage-2",
+        "stage-5",
+        "stage-3",
+        "stage-1",
+        "stage-8"
+    ],
+    "paris-nice_2015_stages": [
+        "stage-4",
+        "stage-1",
+        "stage-5",
+        "prologue",
+        "stage-2",
+        "stage-3",
+        "stage-6",
+        "stage-7"
+    ],
+    "paris-nice_2016_stages": [
+        "stage-5",
+        "stage-1",
+        "stage-2",
+        "prologue",
+        "stage-4",
+        "stage-7",
+        "stage-6"
+    ],
+    "paris-nice_2017_stages": [
+        "stage-8",
+        "stage-4",
+        "stage-6",
+        "stage-5",
+        "stage-7",
+        "stage-1",
+        "stage-3",
+        "stage-2"
+    ],
+    "paris-nice_2018_stages": [
+        "stage-3",
+        "stage-1",
+        "stage-5",
+        "stage-4",
+        "stage-6",
+        "stage-7",
+        "stage-2",
+        "stage-8"
+    ],
+    "paris-nice_2019_stages": [
+        "stage-3",
+        "stage-1",
+        "stage-5",
+        "stage-6",
+        "stage-7",
+        "stage-8",
+        "stage-4",
+        "stage-2"
+    ],
+    "paris-nice_2020_stages": [
+        "stage-2",
+        "stage-4",
+        "stage-3",
+        "stage-7",
+        "stage-6",
+        "stage-5",
+        "stage-1"
+    ],
+    "paris-nice_2021_stages": [
+        "stage-7",
+        "stage-4",
+        "stage-3",
+        "stage-6",
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "stage-8"
+    ],
+    "paris-nice_2022_stages": [
+        "stage-7",
+        "stage-2",
+        "stage-1",
+        "stage-5",
+        "stage-6",
+        "stage-3",
+        "stage-8",
+        "stage-4"
+    ],
+    "paris-nice_2023_stages": [
+        "stage-1",
+        "stage-8",
+        "stage-7",
+        "stage-2",
+        "stage-4",
+        "stage-5"
+    ],
+    "tirreno-adriatico_1970_stages": [
+        "stage-5"
+    ],
+    "tirreno-adriatico_1973_stages": [
+        "stage-5",
+        "stage-1",
+        "stage-4",
+        "stage-3"
+    ],
+    "tirreno-adriatico_1978_stages": [
+        "prologue"
+    ],
+    "tirreno-adriatico_1979_stages": [
+        "prologue"
+    ],
+    "tirreno-adriatico_1981_stages": [
+        "prologue"
+    ],
+    "tirreno-adriatico_1983_stages": [
+        "prologue",
+        "stage-1",
+        "stage-5",
+        "stage-3",
+        "stage-4",
+        "stage-2"
+    ],
+    "tirreno-adriatico_1984_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "stage-6",
+        "prologue",
+        "stage-4",
+        "stage-3"
+    ],
+    "tirreno-adriatico_1987_stages": [
+        "stage-4"
+    ],
+    "tirreno-adriatico_1988_stages": [
+        "stage-3",
+        "stage-5",
+        "stage-2",
+        "stage-4",
+        "stage-6"
+    ],
+    "tirreno-adriatico_1990_stages": [
+        "stage-7",
+        "stage-6",
+        "stage-4",
+        "stage-3",
+        "stage-5",
+        "stage-1",
+        "stage-8",
+        "stage-2"
+    ],
+    "tirreno-adriatico_1991_stages": [
+        "stage-1",
+        "stage-4",
+        "stage-6",
+        "stage-2",
+        "stage-8",
+        "stage-5",
+        "stage-3",
+        "stage-7"
+    ],
+    "tirreno-adriatico_1992_stages": [
+        "stage-5",
+        "stage-3",
+        "stage-7",
+        "stage-2",
+        "prologue",
+        "stage-4",
+        "stage-6",
+        "stage-1"
+    ],
+    "tirreno-adriatico_1993_stages": [
+        "stage-8",
+        "stage-5",
+        "stage-6",
+        "stage-1",
+        "stage-2",
+        "stage-7",
+        "stage-4",
+        "stage-3"
+    ],
+    "tirreno-adriatico_1994_stages": [
+        "stage-6",
+        "stage-2",
+        "stage-8",
+        "stage-3",
+        "stage-5",
+        "stage-7",
+        "stage-4",
+        "stage-1"
+    ],
+    "tirreno-adriatico_1995_stages": [
+        "stage-5",
+        "stage-4",
+        "stage-1",
+        "stage-3",
+        "stage-7",
+        "stage-2",
+        "stage-6",
+        "stage-8"
+    ],
+    "tirreno-adriatico_1996_stages": [
+        "stage-4",
+        "stage-1",
+        "stage-5",
+        "stage-7",
+        "stage-8",
+        "stage-6",
+        "stage-2",
+        "stage-3"
+    ],
+    "tirreno-adriatico_1997_stages": [
+        "stage-2",
+        "stage-3",
+        "stage-7",
+        "stage-4",
+        "stage-1",
+        "stage-6",
+        "stage-5",
+        "prologue"
+    ],
+    "tirreno-adriatico_1998_stages": [
+        "stage-6",
+        "stage-2",
+        "stage-3",
+        "stage-5",
+        "stage-7",
+        "stage-8",
+        "stage-1",
+        "stage-4"
+    ],
+    "tirreno-adriatico_1999_stages": [
+        "stage-4",
+        "stage-8",
+        "stage-5",
+        "stage-7",
+        "stage-2",
+        "stage-1",
+        "stage-6",
+        "stage-3"
+    ],
+    "tirreno-adriatico_2000_stages": [
+        "stage-2",
+        "stage-5",
+        "stage-3",
+        "stage-6",
+        "stage-1",
+        "stage-4",
+        "stage-7",
+        "stage-8"
+    ],
+    "tirreno-adriatico_2001_stages": [
+        "stage-8",
+        "stage-1",
+        "stage-4",
+        "stage-3",
+        "stage-5",
+        "stage-2",
+        "stage-7",
+        "stage-6"
+    ],
+    "tirreno-adriatico_2002_stages": [
+        "stage-3",
+        "stage-1",
+        "stage-2",
+        "stage-5",
+        "stage-6",
+        "stage-7"
+    ],
+    "tirreno-adriatico_2003_stages": [
+        "stage-7",
+        "stage-5",
+        "stage-2",
+        "stage-3",
+        "stage-6",
+        "stage-1"
+    ],
+    "tirreno-adriatico_2004_stages": [
+        "stage-5",
+        "stage-3",
+        "stage-1",
+        "stage-6",
+        "stage-2",
+        "stage-7",
+        "stage-4"
+    ],
+    "tirreno-adriatico_2005_stages": [
+        "stage-2",
+        "stage-6",
+        "stage-7",
+        "stage-5",
+        "stage-1",
+        "stage-4",
+        "stage-3"
+    ],
+    "tirreno-adriatico_2006_stages": [
+        "stage-4",
+        "stage-5",
+        "stage-7",
+        "stage-6",
+        "stage-3",
+        "stage-2",
+        "stage-1"
+    ],
+    "tirreno-adriatico_2007_stages": [
+        "stage-2",
+        "stage-4",
+        "stage-5",
+        "stage-1",
+        "stage-3",
+        "stage-6",
+        "stage-7"
+    ],
+    "tirreno-adriatico_2008_stages": [
+        "stage-2",
+        "stage-3",
+        "stage-6",
+        "stage-1",
+        "stage-7",
+        "stage-5",
+        "stage-4"
+    ],
+    "tirreno-adriatico_2009_stages": [
+        "stage-4",
+        "stage-6",
+        "stage-3",
+        "stage-7",
+        "stage-2",
+        "stage-5",
+        "stage-1"
+    ],
+    "tirreno-adriatico_2010_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "stage-4",
+        "stage-7",
+        "stage-3",
+        "stage-6"
+    ],
+    "tirreno-adriatico_2011_stages": [
+        "stage-2",
+        "stage-6",
+        "stage-7",
+        "stage-3",
+        "stage-5",
+        "stage-4"
+    ],
+    "tirreno-adriatico_2012_stages": [
+        "stage-4",
+        "stage-7",
+        "stage-5",
+        "stage-6",
+        "stage-3",
+        "stage-2"
+    ],
+    "tirreno-adriatico_2013_stages": [
+        "stage-7",
+        "stage-5",
+        "stage-4",
+        "stage-6",
+        "stage-3",
+        "stage-2"
+    ],
+    "tirreno-adriatico_2014_stages": [
+        "stage-2",
+        "stage-6",
+        "stage-5",
+        "stage-7",
+        "stage-4",
+        "stage-3"
+    ],
+    "tirreno-adriatico_2015_stages": [
+        "stage-5",
+        "stage-6",
+        "stage-7",
+        "stage-4",
+        "stage-2",
+        "stage-1",
+        "stage-3"
+    ],
+    "tirreno-adriatico_2016_stages": [
+        "stage-4",
+        "stage-2",
+        "stage-3",
+        "stage-7",
+        "stage-6"
+    ],
+    "tirreno-adriatico_2017_stages": [
+        "stage-7",
+        "stage-2",
+        "stage-6",
+        "stage-4",
+        "stage-5",
+        "stage-3"
+    ],
+    "tirreno-adriatico_2018_stages": [
+        "stage-2",
+        "stage-5",
+        "stage-6",
+        "stage-7",
+        "stage-4",
+        "stage-3"
+    ],
+    "tirreno-adriatico_2019_stages": [
+        "stage-7",
+        "stage-5",
+        "stage-4",
+        "stage-3",
+        "stage-6",
+        "stage-2"
+    ],
+    "tirreno-adriatico_2020_stages": [
+        "stage-2",
+        "stage-5",
+        "stage-1",
+        "stage-8",
+        "stage-7",
+        "stage-3",
+        "stage-4",
+        "stage-6"
+    ],
+    "tirreno-adriatico_2021_stages": [
+        "stage-7",
+        "stage-3",
+        "stage-2",
+        "stage-5",
+        "stage-1",
+        "stage-4",
+        "stage-6"
+    ],
+    "tirreno-adriatico_2022_stages": [
+        "stage-5",
+        "stage-3",
+        "stage-6",
+        "stage-1",
+        "stage-2",
+        "stage-4",
+        "stage-7"
+    ],
+    "tirreno-adriatico_2023_stages": [
+        "stage-2",
+        "stage-4",
+        "stage-1",
+        "stage-7",
+        "stage-5",
+        "stage-3",
+        "stage-6"
+    ],
+    "dauphine_1970_stages": [
+        "stage-5"
+    ],
+    "dauphine_1975_stages": [
+        "stage-1",
+        "stage-7",
+        "stage-2",
+        "stage-5",
+        "stage-4",
+        "stage-3",
+        "stage-6"
+    ],
+    "dauphine_1977_stages": [
+        "stage-2",
+        "stage-6",
+        "stage-4",
+        "prologue",
+        "stage-5",
+        "stage-7",
+        "stage-1",
+        "stage-3"
+    ],
+    "dauphine_1979_stages": [
+        "prologue"
+    ],
+    "dauphine_1983_stages": [
+        "stage-6",
+        "stage-2",
+        "stage-5",
+        "stage-7",
+        "stage-1",
+        "stage-3",
+        "prologue",
+        "stage-4"
+    ],
+    "dauphine_1984_stages": [
+        "stage-7",
+        "stage-5",
+        "stage-1",
+        "stage-6",
+        "stage-4",
+        "stage-3",
+        "prologue",
+        "stage-2"
+    ],
+    "dauphine_1987_stages": [
+        "stage-3",
+        "stage-1",
+        "prologue"
+    ],
+    "dauphine_1989_stages": [
+        "stage-1",
+        "stage-6",
+        "stage-5",
+        "stage-2",
+        "stage-3",
+        "prologue",
+        "stage-7",
+        "stage-4"
+    ],
+    "dauphine_1990_stages": [
+        "stage-8",
+        "stage-6",
+        "stage-4",
+        "stage-3",
+        "stage-5",
+        "stage-2",
+        "stage-7",
+        "stage-1"
+    ],
+    "dauphine_1991_stages": [
+        "stage-2",
+        "stage-5",
+        "stage-7",
+        "stage-3",
+        "prologue",
+        "stage-4",
+        "stage-1",
+        "stage-6"
+    ],
+    "dauphine_1992_stages": [
+        "stage-1",
+        "stage-6",
+        "stage-2",
+        "stage-5",
+        "stage-7",
+        "stage-4",
+        "stage-8",
+        "stage-3"
+    ],
+    "dauphine_1993_stages": [
+        "stage-3",
+        "stage-1",
+        "stage-7",
+        "stage-5",
+        "stage-2",
+        "stage-6",
+        "prologue"
+    ],
+    "dauphine_1994_stages": [
+        "stage-3",
+        "prologue",
+        "stage-1",
+        "stage-6",
+        "stage-5",
+        "stage-2",
+        "stage-4",
+        "stage-7"
+    ],
+    "dauphine_1995_stages": [
+        "prologue"
+    ],
+    "dauphine_1998_stages": [
+        "stage-1"
+    ],
+    "dauphine_2000_stages": [
+        "stage-4",
+        "stage-1",
+        "stage-6",
+        "prologue",
+        "stage-3",
+        "stage-7",
+        "stage-5",
+        "stage-2"
+    ],
+    "dauphine_2001_stages": [
+        "stage-6",
+        "prologue",
+        "stage-1",
+        "stage-5",
+        "stage-3",
+        "stage-2",
+        "stage-4",
+        "stage-7"
+    ],
+    "dauphine_2002_stages": [
+        "stage-3",
+        "stage-1",
+        "stage-5",
+        "prologue",
+        "stage-7",
+        "stage-4",
+        "stage-6",
+        "stage-2"
+    ],
+    "dauphine_2003_stages": [
+        "prologue",
+        "stage-4",
+        "stage-5",
+        "stage-7",
+        "stage-3",
+        "stage-6",
+        "stage-2",
+        "stage-1"
+    ],
+    "dauphine_2004_stages": [
+        "stage-7",
+        "stage-3",
+        "stage-1",
+        "stage-5",
+        "stage-4",
+        "stage-6",
+        "stage-2",
+        "prologue"
+    ],
+    "dauphine_2005_stages": [
+        "stage-5",
+        "stage-4",
+        "prologue",
+        "stage-7",
+        "stage-3",
+        "stage-6",
+        "stage-1",
+        "stage-2"
+    ],
+    "dauphine_2006_stages": [
+        "stage-7",
+        "stage-6",
+        "stage-3",
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "stage-4",
+        "prologue"
+    ],
+    "dauphine_2007_stages": [
+        "stage-2",
+        "stage-1",
+        "prologue",
+        "stage-6",
+        "stage-3",
+        "stage-4",
+        "stage-7",
+        "stage-5"
+    ],
+    "dauphine_2008_stages": [
+        "stage-4",
+        "stage-6",
+        "stage-3",
+        "stage-2",
+        "stage-7",
+        "prologue",
+        "stage-8",
+        "stage-5"
+    ],
+    "dauphine_2009_stages": [
+        "stage-5",
+        "stage-2",
+        "stage-3",
+        "stage-1",
+        "stage-7",
+        "stage-6",
+        "stage-4",
+        "stage-8"
+    ],
+    "dauphine_2010_stages": [
+        "stage-3",
+        "stage-5",
+        "stage-7",
+        "prologue",
+        "stage-6",
+        "stage-8",
+        "stage-4",
+        "stage-2"
+    ],
+    "dauphine_2011_stages": [
+        "prologue",
+        "stage-4",
+        "stage-7",
+        "stage-3",
+        "stage-6",
+        "stage-1",
+        "stage-5",
+        "stage-2"
+    ],
+    "dauphine_2012_stages": [
+        "stage-3",
+        "stage-5",
+        "stage-6",
+        "prologue",
+        "stage-2",
+        "stage-1",
+        "stage-7",
+        "stage-4"
+    ],
+    "dauphine_2013_stages": [
+        "stage-5",
+        "stage-4",
+        "stage-7",
+        "stage-1",
+        "stage-6",
+        "stage-3",
+        "stage-8",
+        "stage-2"
+    ],
+    "dauphine_2014_stages": [
+        "stage-7",
+        "stage-6",
+        "stage-4",
+        "stage-1",
+        "stage-8",
+        "stage-3",
+        "stage-5",
+        "stage-2"
+    ],
+    "dauphine_2015_stages": [
+        "stage-8",
+        "stage-1",
+        "stage-5",
+        "stage-7",
+        "stage-4",
+        "stage-2",
+        "stage-6"
+    ],
+    "dauphine_2016_stages": [
+        "stage-4",
+        "stage-1",
+        "stage-6",
+        "stage-7",
+        "stage-2",
+        "stage-5",
+        "prologue",
+        "stage-3"
+    ],
+    "dauphine_2017_stages": [
+        "stage-7",
+        "stage-8",
+        "stage-6",
+        "stage-3",
+        "stage-2",
+        "stage-4",
+        "stage-1",
+        "stage-5"
+    ],
+    "dauphine_2018_stages": [
+        "prologue",
+        "stage-4",
+        "stage-7",
+        "stage-1",
+        "stage-5",
+        "stage-6",
+        "stage-2"
+    ],
+    "dauphine_2019_stages": [
+        "stage-4",
+        "stage-8",
+        "stage-2",
+        "stage-6",
+        "stage-1",
+        "stage-3",
+        "stage-7",
+        "stage-5"
+    ],
+    "dauphine_2020_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-4",
+        "stage-3",
+        "stage-2"
+    ],
+    "dauphine_2021_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-7",
+        "stage-6",
+        "stage-4",
+        "stage-3",
+        "stage-8",
+        "stage-5"
+    ],
+    "dauphine_2022_stages": [
+        "stage-7",
+        "stage-3",
+        "stage-1",
+        "stage-5",
+        "stage-8",
+        "stage-4",
+        "stage-2",
+        "stage-6"
+    ],
+    "dauphine_2023_stages": [
+        "stage-7",
+        "stage-6",
+        "stage-2",
+        "stage-4",
+        "stage-5",
+        "stage-1",
+        "stage-8",
+        "stage-3"
+    ],
+    "ronde-van-vlaanderen_1970_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1971_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1972_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1973_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1974_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1975_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1976_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1977_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1978_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1979_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1980_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1981_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1982_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1983_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1984_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1985_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1986_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1987_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1988_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1989_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1990_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1991_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1992_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1993_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1994_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1995_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1996_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1997_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_1999_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2000_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2001_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2002_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2003_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2004_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2005_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2006_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2007_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2008_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2009_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2010_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2011_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2012_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2013_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2014_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2015_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2016_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2017_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2018_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2019_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2020_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2021_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2022_stages": [
+        "result"
+    ],
+    "ronde-van-vlaanderen_2023_stages": [
+        "result"
+    ],
+    "milano-sanremo_1981_stages": [
+        "result"
+    ],
+    "milano-sanremo_1982_stages": [
+        "result"
+    ],
+    "milano-sanremo_1983_stages": [
+        "result"
+    ],
+    "milano-sanremo_1984_stages": [
+        "result"
+    ],
+    "milano-sanremo_1985_stages": [
+        "result"
+    ],
+    "milano-sanremo_1986_stages": [
+        "result"
+    ],
+    "milano-sanremo_1987_stages": [
+        "result"
+    ],
+    "milano-sanremo_1988_stages": [
+        "result"
+    ],
+    "milano-sanremo_1989_stages": [
+        "result"
+    ],
+    "milano-sanremo_1990_stages": [
+        "result"
+    ],
+    "milano-sanremo_1991_stages": [
+        "result"
+    ],
+    "milano-sanremo_1992_stages": [
+        "result"
+    ],
+    "milano-sanremo_1993_stages": [
+        "result"
+    ],
+    "milano-sanremo_1994_stages": [
+        "result"
+    ],
+    "milano-sanremo_1995_stages": [
+        "result"
+    ],
+    "milano-sanremo_1996_stages": [
+        "result"
+    ],
+    "milano-sanremo_1997_stages": [
+        "result"
+    ],
+    "milano-sanremo_1998_stages": [
+        "result"
+    ],
+    "milano-sanremo_1999_stages": [
+        "result"
+    ],
+    "milano-sanremo_2000_stages": [
+        "result"
+    ],
+    "milano-sanremo_2001_stages": [
+        "result"
+    ],
+    "milano-sanremo_2002_stages": [
+        "result"
+    ],
+    "milano-sanremo_2003_stages": [
+        "result"
+    ],
+    "milano-sanremo_2004_stages": [
+        "result"
+    ],
+    "milano-sanremo_2005_stages": [
+        "result"
+    ],
+    "milano-sanremo_2006_stages": [
+        "result"
+    ],
+    "milano-sanremo_2007_stages": [
+        "result"
+    ],
+    "milano-sanremo_2008_stages": [
+        "result"
+    ],
+    "milano-sanremo_2009_stages": [
+        "result"
+    ],
+    "milano-sanremo_2010_stages": [
+        "result"
+    ],
+    "milano-sanremo_2011_stages": [
+        "result"
+    ],
+    "milano-sanremo_2012_stages": [
+        "result"
+    ],
+    "milano-sanremo_2013_stages": [
+        "result"
+    ],
+    "milano-sanremo_2014_stages": [
+        "result"
+    ],
+    "milano-sanremo_2015_stages": [
+        "result"
+    ],
+    "milano-sanremo_2016_stages": [
+        "result"
+    ],
+    "milano-sanremo_2017_stages": [
+        "result"
+    ],
+    "milano-sanremo_2018_stages": [
+        "result"
+    ],
+    "milano-sanremo_2019_stages": [
+        "result"
+    ],
+    "milano-sanremo_2020_stages": [
+        "result"
+    ],
+    "milano-sanremo_2021_stages": [
+        "result"
+    ],
+    "milano-sanremo_2022_stages": [
+        "result"
+    ],
+    "milano-sanremo_2023_stages": [
+        "result"
+    ],
+    "tour-de-suisse_1970_stages": [
+        "stage-3",
+        "stage-8",
+        "prologue",
+        "stage-1",
+        "stage-2",
+        "stage-9",
+        "stage-6",
+        "stage-5",
+        "stage-4",
+        "stage-7"
+    ],
+    "tour-de-suisse_1971_stages": [
+        "stage-3",
+        "stage-1",
+        "stage-8",
+        "stage-2",
+        "stage-7",
+        "stage-4",
+        "stage-6",
+        "stage-5"
+    ],
+    "tour-de-suisse_1972_stages": [
+        "stage-8",
+        "stage-6",
+        "stage-2",
+        "stage-7"
+    ],
+    "tour-de-suisse_1974_stages": [
+        "stage-3",
+        "stage-8",
+        "stage-2",
+        "prologue",
+        "stage-7",
+        "stage-1",
+        "stage-5",
+        "stage-4",
+        "stage-9",
+        "stage-6"
+    ],
+    "tour-de-suisse_1975_stages": [
+        "stage-6",
+        "stage-9",
+        "stage-3",
+        "stage-7",
+        "stage-2",
+        "prologue",
+        "stage-5",
+        "stage-4",
+        "stage-8",
+        "stage-1"
+    ],
+    "tour-de-suisse_1976_stages": [
+        "stage-8",
+        "stage-3",
+        "stage-2",
+        "stage-6",
+        "stage-4",
+        "stage-1",
+        "stage-5",
+        "stage-9",
+        "stage-7",
+        "prologue"
+    ],
+    "tour-de-suisse_1977_stages": [
+        "stage-7",
+        "stage-6",
+        "stage-9",
+        "stage-2",
+        "stage-1",
+        "stage-4",
+        "stage-5",
+        "prologue",
+        "stage-8",
+        "stage-3"
+    ],
+    "tour-de-suisse_1978_stages": [
+        "stage-6",
+        "stage-9",
+        "stage-7",
+        "prologue",
+        "stage-1",
+        "stage-8",
+        "stage-5",
+        "stage-4",
+        "stage-3",
+        "stage-2"
+    ],
+    "tour-de-suisse_1979_stages": [
+        "stage-7",
+        "stage-1",
+        "stage-4",
+        "stage-9",
+        "stage-5",
+        "stage-6",
+        "stage-3",
+        "prologue",
+        "stage-8",
+        "stage-2"
+    ],
+    "tour-de-suisse_1980_stages": [
+        "stage-9",
+        "stage-7",
+        "stage-4",
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "prologue",
+        "stage-6",
+        "stage-3",
+        "stage-8"
+    ],
+    "tour-de-suisse_1981_stages": [
+        "stage-7",
+        "stage-9",
+        "stage-3",
+        "stage-5",
+        "stage-1",
+        "stage-2",
+        "stage-8",
+        "prologue",
+        "stage-4",
+        "stage-6"
+    ],
+    "tour-de-suisse_1982_stages": [
+        "prologue",
+        "stage-7",
+        "stage-3",
+        "stage-5",
+        "stage-9",
+        "stage-4",
+        "stage-2",
+        "stage-1",
+        "stage-8",
+        "stage-6"
+    ],
+    "tour-de-suisse_1983_stages": [
+        "stage-5",
+        "stage-3",
+        "stage-6",
+        "stage-4",
+        "stage-9",
+        "prologue",
+        "stage-2",
+        "stage-8",
+        "stage-1",
+        "stage-7"
+    ],
+    "tour-de-suisse_1984_stages": [
+        "stage-7",
+        "stage-8",
+        "stage-3",
+        "stage-9",
+        "stage-5",
+        "stage-4",
+        "stage-1",
+        "prologue",
+        "stage-6",
+        "stage-2"
+    ],
+    "tour-de-suisse_1985_stages": [
+        "stage-6",
+        "stage-1",
+        "stage-9",
+        "stage-4",
+        "stage-3",
+        "stage-2",
+        "stage-7",
+        "stage-8",
+        "stage-5"
+    ],
+    "tour-de-suisse_1986_stages": [
+        "stage-2",
+        "stage-3",
+        "stage-1",
+        "stage-9",
+        "stage-8",
+        "stage-4",
+        "stage-5",
+        "stage-7",
+        "prologue",
+        "stage-6"
+    ],
+    "tour-de-suisse_1987_stages": [
+        "stage-4",
+        "stage-2",
+        "stage-1",
+        "stage-8",
+        "stage-7",
+        "stage-5",
+        "stage-3",
+        "stage-9",
+        "prologue",
+        "stage-6"
+    ],
+    "tour-de-suisse_1988_stages": [
+        "stage-5",
+        "stage-3",
+        "stage-2",
+        "stage-1",
+        "stage-4",
+        "stage-7",
+        "stage-8",
+        "stage-9",
+        "stage-6"
+    ],
+    "tour-de-suisse_1989_stages": [
+        "stage-6",
+        "stage-2",
+        "stage-1",
+        "stage-5",
+        "stage-8",
+        "stage-9",
+        "stage-4",
+        "stage-7",
+        "stage-3"
+    ],
+    "tour-de-suisse_1990_stages": [
+        "stage-4",
+        "stage-1",
+        "stage-6",
+        "stage-8",
+        "stage-3",
+        "stage-9",
+        "stage-2",
+        "stage-7",
+        "stage-5"
+    ],
+    "tour-de-suisse_1991_stages": [
+        "stage-5",
+        "prologue",
+        "stage-2",
+        "stage-1",
+        "stage-6",
+        "stage-4",
+        "stage-7",
+        "stage-8",
+        "stage-9",
+        "stage-3"
+    ],
+    "tour-de-suisse_1992_stages": [
+        "stage-1",
+        "stage-4",
+        "stage-7",
+        "stage-2",
+        "stage-8",
+        "stage-6",
+        "stage-5",
+        "stage-9",
+        "stage-3"
+    ],
+    "tour-de-suisse_1993_stages": [
+        "stage-1",
+        "stage-3",
+        "stage-7",
+        "stage-9",
+        "stage-2",
+        "stage-5",
+        "stage-8",
+        "stage-6",
+        "stage-4"
+    ],
+    "tour-de-suisse_1994_stages": [
+        "stage-9",
+        "stage-7",
+        "stage-4",
+        "stage-3",
+        "stage-8",
+        "stage-5",
+        "stage-2",
+        "prologue",
+        "stage-1",
+        "stage-6"
+    ],
+    "tour-de-suisse_1995_stages": [
+        "stage-3",
+        "stage-1",
+        "stage-4",
+        "prologue",
+        "stage-6",
+        "stage-7",
+        "stage-5",
+        "stage-8",
+        "stage-9",
+        "stage-2"
+    ],
+    "tour-de-suisse_1996_stages": [
+        "stage-1",
+        "stage-3",
+        "stage-9",
+        "prologue",
+        "stage-4",
+        "stage-5",
+        "stage-7",
+        "stage-8",
+        "stage-2",
+        "stage-6"
+    ],
+    "tour-de-suisse_1997_stages": [
+        "stage-6",
+        "stage-2",
+        "stage-3",
+        "prologue",
+        "stage-7",
+        "stage-5",
+        "stage-9",
+        "stage-8",
+        "stage-4",
+        "stage-1"
+    ],
+    "tour-de-suisse_1998_stages": [
+        "stage-1",
+        "stage-9",
+        "stage-6",
+        "stage-8",
+        "stage-7",
+        "stage-4",
+        "stage-5",
+        "stage-2",
+        "prologue",
+        "stage-3"
+    ],
+    "tour-de-suisse_1999_stages": [
+        "stage-8",
+        "prologue",
+        "stage-5",
+        "stage-6",
+        "stage-1",
+        "stage-3",
+        "stage-9",
+        "stage-7",
+        "stage-4",
+        "stage-2"
+    ],
+    "tour-de-suisse_2000_stages": [
+        "stage-4",
+        "stage-5",
+        "stage-1",
+        "stage-3",
+        "stage-2",
+        "stage-8",
+        "stage-6",
+        "stage-9",
+        "stage-7"
+    ],
+    "tour-de-suisse_2001_stages": [
+        "stage-1",
+        "prologue",
+        "stage-9",
+        "stage-5",
+        "stage-8",
+        "stage-3",
+        "stage-2",
+        "stage-4",
+        "stage-7",
+        "stage-6"
+    ],
+    "tour-de-suisse_2002_stages": [
+        "stage-5",
+        "stage-3",
+        "stage-6",
+        "stage-9",
+        "stage-7",
+        "prologue",
+        "stage-8",
+        "stage-4",
+        "stage-1",
+        "stage-2"
+    ],
+    "tour-de-suisse_2003_stages": [
+        "stage-6",
+        "stage-4",
+        "stage-8",
+        "stage-2",
+        "stage-1",
+        "prologue",
+        "stage-9",
+        "stage-3",
+        "stage-5",
+        "stage-7"
+    ],
+    "tour-de-suisse_2004_stages": [
+        "stage-9",
+        "stage-6",
+        "stage-2",
+        "stage-5",
+        "stage-4",
+        "stage-1",
+        "stage-3",
+        "stage-7",
+        "stage-8"
+    ],
+    "tour-de-suisse_2005_stages": [
+        "stage-1",
+        "stage-7",
+        "stage-3",
+        "stage-8",
+        "stage-2",
+        "stage-5",
+        "stage-9",
+        "stage-6",
+        "stage-4"
+    ],
+    "tour-de-suisse_2006_stages": [
+        "stage-9",
+        "stage-8",
+        "stage-4",
+        "stage-3",
+        "stage-5",
+        "stage-7",
+        "stage-6",
+        "stage-1",
+        "stage-2"
+    ],
+    "tour-de-suisse_2007_stages": [
+        "prologue",
+        "stage-5",
+        "stage-7",
+        "stage-8",
+        "stage-4",
+        "stage-2",
+        "stage-1",
+        "stage-3",
+        "stage-6"
+    ],
+    "tour-de-suisse_2008_stages": [
+        "stage-6",
+        "stage-7",
+        "stage-8",
+        "stage-9",
+        "stage-5",
+        "stage-1",
+        "stage-2",
+        "stage-4",
+        "stage-3"
+    ],
+    "tour-de-suisse_2010_stages": [
+        "stage-7",
+        "prologue",
+        "stage-5",
+        "stage-2",
+        "stage-8",
+        "stage-1",
+        "stage-6",
+        "stage-3"
+    ],
+    "tour-de-suisse_2011_stages": [
+        "stage-9",
+        "stage-7",
+        "stage-8",
+        "stage-5",
+        "stage-4",
+        "prologue",
+        "stage-6",
+        "stage-3"
+    ],
+    "tour-de-suisse_2012_stages": [
+        "stage-4",
+        "stage-3",
+        "stage-6",
+        "stage-2",
+        "stage-5",
+        "stage-7",
+        "stage-8",
+        "prologue",
+        "stage-1"
+    ],
+    "tour-de-suisse_2013_stages": [
+        "stage-5",
+        "stage-9",
+        "stage-8",
+        "stage-3",
+        "stage-6",
+        "stage-4",
+        "stage-7",
+        "stage-1",
+        "stage-2"
+    ],
+    "tour-de-suisse_2014_stages": [
+        "stage-9",
+        "stage-3",
+        "stage-1",
+        "stage-6",
+        "stage-2",
+        "stage-8",
+        "stage-7",
+        "stage-4",
+        "stage-5"
+    ],
+    "tour-de-suisse_2015_stages": [
+        "stage-4",
+        "stage-2",
+        "stage-8",
+        "stage-7",
+        "prologue",
+        "stage-9",
+        "stage-3",
+        "stage-6",
+        "stage-5"
+    ],
+    "tour-de-suisse_2016_stages": [
+        "stage-9",
+        "stage-8",
+        "stage-5",
+        "stage-1",
+        "stage-4",
+        "stage-7",
+        "stage-6",
+        "stage-3",
+        "stage-2"
+    ],
+    "tour-de-suisse_2017_stages": [
+        "stage-9",
+        "stage-8",
+        "stage-3",
+        "stage-5",
+        "stage-7",
+        "stage-6",
+        "stage-2",
+        "stage-1",
+        "stage-4"
+    ],
+    "tour-de-suisse_2018_stages": [
+        "stage-6",
+        "stage-8",
+        "stage-5",
+        "stage-3",
+        "stage-2",
+        "stage-9",
+        "stage-7",
+        "stage-4"
+    ],
+    "tour-de-suisse_2019_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "stage-6",
+        "stage-8",
+        "stage-9",
+        "stage-4",
+        "stage-3",
+        "stage-7"
+    ],
+    "tour-de-suisse_2021_stages": [
+        "stage-4",
+        "stage-2",
+        "stage-7",
+        "stage-6",
+        "stage-5",
+        "stage-3",
+        "stage-1",
+        "stage-8"
+    ],
+    "tour-de-suisse_2022_stages": [
+        "stage-8",
+        "stage-1",
+        "stage-4",
+        "stage-3",
+        "stage-5",
+        "stage-6",
+        "stage-2",
+        "stage-7"
+    ],
+    "tour-de-suisse_2023_stages": [
+        "stage-2",
+        "stage-8",
+        "stage-5",
+        "stage-1",
+        "stage-7",
+        "stage-4",
+        "stage-3"
+    ],
+    "giro-d-italia_1990_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-8",
+        "stage-4",
+        "stage-6",
+        "stage-5",
+        "stage-7",
+        "stage-9",
+        "stage-3"
+    ],
+    "giro-d-italia_1991_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-7",
+        "stage-2",
+        "stage-4",
+        "stage-6",
+        "stage-3",
+        "stage-9",
+        "stage-8"
+    ],
+    "giro-d-italia_1992_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-4",
+        "prologue",
+        "stage-8",
+        "stage-9",
+        "stage-7",
+        "stage-5",
+        "stage-6",
+        "stage-3"
+    ],
+    "giro-d-italia_1993_stages": [
+        "stage-5",
+        "stage-3",
+        "stage-8",
+        "stage-1",
+        "stage-7",
+        "stage-4",
+        "stage-6",
+        "stage-2",
+        "stage-9"
+    ],
+    "giro-d-italia_1994_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-3",
+        "stage-7",
+        "stage-6",
+        "stage-4",
+        "stage-5",
+        "stage-8",
+        "stage-9"
+    ],
+    "giro-d-italia_1995_stages": [
+        "stage-3",
+        "stage-5",
+        "stage-1",
+        "stage-6",
+        "stage-8",
+        "stage-2",
+        "stage-7",
+        "stage-4",
+        "stage-9"
+    ],
+    "giro-d-italia_1996_stages": [
+        "stage-1",
+        "stage-7",
+        "stage-2",
+        "stage-6",
+        "stage-5",
+        "stage-3",
+        "stage-9",
+        "stage-4",
+        "stage-8"
+    ],
+    "giro-d-italia_1997_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-7",
+        "stage-9",
+        "stage-8",
+        "stage-6",
+        "stage-4",
+        "stage-3",
+        "stage-5"
+    ],
+    "giro-d-italia_1998_stages": [
+        "stage-3",
+        "stage-1",
+        "stage-2",
+        "stage-9",
+        "stage-7",
+        "prologue",
+        "stage-6",
+        "stage-4",
+        "stage-5",
+        "stage-8"
+    ],
+    "giro-d-italia_1999_stages": [
+        "stage-8",
+        "stage-1",
+        "stage-2",
+        "stage-5",
+        "stage-6",
+        "stage-9",
+        "stage-3",
+        "stage-7",
+        "stage-4"
+    ],
+    "giro-d-italia_2000_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-9",
+        "stage-3",
+        "stage-4",
+        "stage-5",
+        "prologue",
+        "stage-6",
+        "stage-7",
+        "stage-8"
+    ],
+    "giro-d-italia_2001_stages": [
+        "stage-5",
+        "stage-1",
+        "stage-9",
+        "stage-8",
+        "stage-4",
+        "stage-2",
+        "prologue",
+        "stage-3",
+        "stage-7",
+        "stage-6"
+    ],
+    "giro-d-italia_2002_stages": [
+        "prologue",
+        "stage-1",
+        "stage-8",
+        "stage-3",
+        "stage-5",
+        "stage-4",
+        "stage-6",
+        "stage-9",
+        "stage-2",
+        "stage-7"
+    ],
+    "giro-d-italia_2003_stages": [
+        "stage-1",
+        "stage-3",
+        "stage-2",
+        "stage-4",
+        "stage-5",
+        "stage-6",
+        "stage-8",
+        "stage-7",
+        "stage-9"
+    ],
+    "giro-d-italia_2004_stages": [
+        "stage-1",
+        "stage-8",
+        "stage-4",
+        "stage-3",
+        "stage-9",
+        "prologue",
+        "stage-7",
+        "stage-6",
+        "stage-2",
+        "stage-5"
+    ],
+    "giro-d-italia_2005_stages": [
+        "stage-1",
+        "stage-6",
+        "stage-8",
+        "stage-9",
+        "stage-7",
+        "stage-3",
+        "stage-2",
+        "stage-4",
+        "prologue",
+        "stage-5"
+    ],
+    "giro-d-italia_2006_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-6",
+        "prologue",
+        "stage-9",
+        "stage-7",
+        "stage-5",
+        "stage-8",
+        "stage-3"
+    ],
+    "giro-d-italia_2007_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-8",
+        "stage-5",
+        "stage-6",
+        "stage-7",
+        "stage-9",
+        "stage-3",
+        "stage-4"
+    ],
+    "giro-d-italia_2008_stages": [
+        "stage-7",
+        "stage-1",
+        "stage-6",
+        "stage-9",
+        "stage-2",
+        "stage-8",
+        "stage-5",
+        "stage-3",
+        "stage-4"
+    ],
+    "giro-d-italia_2009_stages": [
+        "stage-1",
+        "stage-4",
+        "stage-8",
+        "stage-5",
+        "stage-9",
+        "stage-2",
+        "stage-3",
+        "stage-6",
+        "stage-7"
+    ],
+    "giro-d-italia_2010_stages": [
+        "stage-9",
+        "stage-2",
+        "stage-1",
+        "stage-5",
+        "stage-8",
+        "stage-3",
+        "stage-6",
+        "stage-7"
+    ],
+    "giro-d-italia_2011_stages": [
+        "stage-1",
+        "stage-7",
+        "stage-2",
+        "stage-6",
+        "stage-3",
+        "stage-5",
+        "stage-8",
+        "stage-9"
+    ],
+    "giro-d-italia_2012_stages": [
+        "stage-5",
+        "stage-3",
+        "stage-1",
+        "stage-2",
+        "stage-9",
+        "stage-8",
+        "stage-6",
+        "stage-7"
+    ],
+    "giro-d-italia_2013_stages": [
+        "stage-1",
+        "stage-6",
+        "stage-4",
+        "stage-3",
+        "stage-8",
+        "stage-2",
+        "stage-9",
+        "stage-7",
+        "stage-5"
+    ],
+    "giro-d-italia_2014_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "stage-6",
+        "stage-9",
+        "stage-4",
+        "stage-8",
+        "stage-7",
+        "stage-5"
+    ],
+    "giro-d-italia_2015_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-8",
+        "stage-5",
+        "stage-7",
+        "stage-9",
+        "stage-4",
+        "stage-6",
+        "stage-3"
+    ],
+    "giro-d-italia_2016_stages": [
+        "stage-6",
+        "stage-9",
+        "stage-1",
+        "stage-3",
+        "stage-2",
+        "stage-7",
+        "stage-8",
+        "stage-4",
+        "stage-5"
+    ],
+    "giro-d-italia_2017_stages": [
+        "stage-1",
+        "stage-9",
+        "stage-2",
+        "stage-4",
+        "stage-8",
+        "stage-5",
+        "stage-6",
+        "stage-7",
+        "stage-3"
+    ],
+    "giro-d-italia_2018_stages": [
+        "stage-1",
+        "stage-8",
+        "stage-4",
+        "stage-5",
+        "stage-9",
+        "stage-7",
+        "stage-2",
+        "stage-6",
+        "stage-3"
+    ],
+    "giro-d-italia_2019_stages": [
+        "stage-1",
+        "stage-9",
+        "stage-5",
+        "stage-3",
+        "stage-6",
+        "stage-8",
+        "stage-2",
+        "stage-4",
+        "stage-7"
+    ],
+    "giro-d-italia_2020_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-9",
+        "stage-3",
+        "stage-5",
+        "stage-8",
+        "stage-4",
+        "stage-7",
+        "stage-6"
+    ],
+    "giro-d-italia_2021_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-8",
+        "stage-3",
+        "stage-7",
+        "stage-5",
+        "stage-4",
+        "stage-9",
+        "stage-6"
+    ],
+    "giro-d-italia_2022_stages": [
+        "stage-1",
+        "stage-9",
+        "stage-6",
+        "stage-2",
+        "stage-8",
+        "stage-5",
+        "stage-4",
+        "stage-7",
+        "stage-3"
+    ],
+    "giro-d-italia_2023_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-7",
+        "stage-3",
+        "stage-8",
+        "stage-5",
+        "stage-4",
+        "stage-9",
+        "stage-6"
+    ],
+    "gran-camino_2022_stages": [
+        "stage-2",
+        "stage-3",
+        "stage-1",
+        "stage-4"
+    ],
+    "gran-camino_2023_stages": [
+        "stage-4",
+        "stage-2",
+        "stage-3"
+    ],
+    "tour-de-romandie_1973_stages": [
+        "stage-5",
+        "stage-3",
+        "stage-1",
+        "stage-4",
+        "stage-2"
+    ],
+    "tour-de-romandie_1975_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-2"
+    ],
+    "tour-de-romandie_1977_stages": [
+        "stage-1",
+        "stage-2",
+        "prologue"
+    ],
+    "tour-de-romandie_1981_stages": [
+        "stage-5",
+        "stage-2",
+        "prologue",
+        "stage-4",
+        "stage-1",
+        "stage-3"
+    ],
+    "tour-de-romandie_1983_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-3",
+        "stage-4",
+        "prologue",
+        "stage-2"
+    ],
+    "tour-de-romandie_1984_stages": [
+        "stage-2",
+        "stage-5",
+        "prologue",
+        "stage-1",
+        "stage-3",
+        "stage-4"
+    ],
+    "tour-de-romandie_1987_stages": [
+        "stage-4",
+        "stage-1",
+        "stage-2",
+        "stage-5",
+        "stage-3",
+        "prologue"
+    ],
+    "tour-de-romandie_1988_stages": [
+        "stage-1",
+        "stage-4",
+        "stage-3",
+        "stage-6",
+        "prologue",
+        "stage-5",
+        "stage-2"
+    ],
+    "tour-de-romandie_1989_stages": [
+        "stage-6",
+        "stage-3",
+        "stage-2",
+        "stage-4",
+        "stage-5",
+        "stage-1",
+        "prologue"
+    ],
+    "tour-de-romandie_1990_stages": [
+        "stage-4",
+        "stage-6",
+        "stage-5",
+        "prologue",
+        "stage-1"
+    ],
+    "tour-de-romandie_1991_stages": [
+        "stage-6",
+        "stage-1",
+        "stage-5",
+        "stage-3",
+        "stage-4",
+        "stage-2"
+    ],
+    "tour-de-romandie_1992_stages": [
+        "stage-6",
+        "stage-5",
+        "stage-4"
+    ],
+    "tour-de-romandie_1993_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-4",
+        "prologue",
+        "stage-3",
+        "stage-6"
+    ],
+    "tour-de-romandie_1994_stages": [
+        "stage-4",
+        "stage-3",
+        "prologue",
+        "stage-1",
+        "stage-5"
+    ],
+    "tour-de-romandie_1995_stages": [
+        "prologue",
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "stage-6",
+        "stage-3"
+    ],
+    "tour-de-romandie_1996_stages": [
+        "stage-2",
+        "stage-4",
+        "stage-6",
+        "prologue",
+        "stage-3",
+        "stage-7",
+        "stage-5",
+        "stage-1"
+    ],
+    "tour-de-romandie_1997_stages": [
+        "stage-5",
+        "stage-3",
+        "stage-6",
+        "prologue",
+        "stage-4",
+        "stage-2",
+        "stage-1"
+    ],
+    "tour-de-romandie_1998_stages": [
+        "stage-4",
+        "stage-3",
+        "stage-2",
+        "prologue",
+        "stage-5",
+        "stage-1"
+    ],
+    "tour-de-romandie_1999_stages": [
+        "stage-3",
+        "stage-5",
+        "prologue",
+        "stage-4",
+        "stage-1",
+        "stage-2"
+    ],
+    "tour-de-romandie_2000_stages": [
+        "prologue",
+        "stage-4",
+        "stage-3",
+        "stage-1",
+        "stage-5",
+        "stage-2"
+    ],
+    "tour-de-romandie_2001_stages": [
+        "stage-5",
+        "stage-2",
+        "stage-3",
+        "prologue",
+        "stage-1",
+        "stage-4"
+    ],
+    "tour-de-romandie_2002_stages": [
+        "stage-3",
+        "stage-4",
+        "stage-5",
+        "prologue",
+        "stage-1",
+        "stage-2"
+    ],
+    "tour-de-romandie_2004_stages": [
+        "prologue",
+        "stage-5",
+        "stage-2",
+        "stage-1",
+        "stage-4",
+        "stage-3"
+    ],
+    "tour-de-romandie_2005_stages": [
+        "stage-5",
+        "stage-2",
+        "stage-4",
+        "stage-1",
+        "stage-3",
+        "prologue"
+    ],
+    "tour-de-romandie_2006_stages": [
+        "stage-1",
+        "stage-3",
+        "stage-2",
+        "prologue",
+        "stage-4",
+        "stage-5"
+    ],
+    "tour-de-romandie_2007_stages": [
+        "stage-5",
+        "stage-2",
+        "stage-4",
+        "stage-3",
+        "prologue",
+        "stage-1"
+    ],
+    "tour-de-romandie_2008_stages": [
+        "stage-1",
+        "prologue",
+        "stage-5",
+        "stage-3",
+        "stage-2",
+        "stage-4"
+    ],
+    "tour-de-romandie_2009_stages": [
+        "stage-1",
+        "stage-4",
+        "stage-5",
+        "prologue",
+        "stage-2"
+    ],
+    "tour-de-romandie_2010_stages": [
+        "prologue",
+        "stage-2",
+        "stage-1",
+        "stage-5",
+        "stage-4",
+        "stage-3"
+    ],
+    "tour-de-romandie_2011_stages": [
+        "prologue",
+        "stage-3",
+        "stage-5",
+        "stage-1",
+        "stage-4",
+        "stage-2"
+    ],
+    "tour-de-romandie_2012_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-5",
+        "stage-3",
+        "stage-4",
+        "prologue"
+    ],
+    "tour-de-romandie_2013_stages": [
+        "stage-2",
+        "stage-1",
+        "stage-5",
+        "prologue",
+        "stage-3",
+        "stage-4"
+    ],
+    "tour-de-romandie_2014_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "stage-3",
+        "stage-4",
+        "prologue"
+    ],
+    "tour-de-romandie_2015_stages": [
+        "stage-6",
+        "stage-3",
+        "stage-4",
+        "stage-5",
+        "stage-2"
+    ],
+    "tour-de-romandie_2016_stages": [
+        "stage-3",
+        "stage-2",
+        "stage-1",
+        "stage-5",
+        "stage-4",
+        "prologue"
+    ],
+    "tour-de-romandie_2017_stages": [
+        "stage-3",
+        "stage-4",
+        "prologue",
+        "stage-2",
+        "stage-5",
+        "stage-1"
+    ],
+    "tour-de-romandie_2018_stages": [
+        "stage-2",
+        "prologue",
+        "stage-4",
+        "stage-5",
+        "stage-3",
+        "stage-1"
+    ],
+    "tour-de-romandie_2019_stages": [
+        "stage-5",
+        "prologue",
+        "stage-3",
+        "stage-4",
+        "stage-1",
+        "stage-2"
+    ],
+    "tour-de-romandie_2021_stages": [
+        "stage-5",
+        "prologue",
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "stage-4"
+    ],
+    "tour-de-romandie_2022_stages": [
+        "stage-1",
+        "stage-3",
+        "stage-5",
+        "prologue",
+        "stage-4",
+        "stage-2"
+    ],
+    "tour-de-romandie_2023_stages": [
+        "stage-2",
+        "stage-5",
+        "stage-0",
+        "stage-4",
+        "stage-1",
+        "stage-3"
+    ],
+    "la-fleche-wallone_1970_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1971_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1972_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1973_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1974_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1975_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1976_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1977_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1978_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1979_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1980_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1981_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1982_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1983_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1984_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1985_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1986_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1987_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1988_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1989_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1990_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1991_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1992_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1993_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1994_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1995_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1996_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1997_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1998_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_1999_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2000_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2001_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2002_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2003_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2004_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2005_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2006_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2007_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2008_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2009_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2010_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2011_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2012_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2013_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2014_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2015_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2016_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2017_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2018_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2019_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2020_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2021_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2022_stages": [
+        "result"
+    ],
+    "la-fleche-wallone_2023_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1970_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1971_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1972_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1973_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1974_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1975_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1976_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1977_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1978_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1979_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1980_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1981_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1982_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1983_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1984_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1985_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1986_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1987_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1988_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1989_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1990_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1991_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1992_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1993_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1994_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1995_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1996_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1997_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1998_stages": [
+        "result"
+    ],
+    "e3-harelbeke_1999_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2000_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2001_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2002_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2003_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2004_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2005_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2006_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2007_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2008_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2009_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2010_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2011_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2012_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2013_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2014_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2015_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2016_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2017_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2018_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2019_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2021_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2022_stages": [
+        "result"
+    ],
+    "e3-harelbeke_2023_stages": [
+        "result"
+    ],
+    "itzulia-basque-country_1984_stages": [
+        "stage-3"
+    ],
+    "itzulia-basque-country_1990_stages": [
+        "stage-5",
+        "stage-3"
+    ],
+    "itzulia-basque-country_1991_stages": [
+        "stage-5"
+    ],
+    "itzulia-basque-country_1998_stages": [
+        "stage-2",
+        "stage-1"
+    ],
+    "itzulia-basque-country_2000_stages": [
+        "stage-5",
+        "stage-2",
+        "stage-4",
+        "stage-3",
+        "stage-1"
+    ],
+    "itzulia-basque-country_2001_stages": [
+        "stage-4",
+        "stage-2",
+        "stage-1",
+        "stage-5",
+        "stage-3"
+    ],
+    "itzulia-basque-country_2002_stages": [
+        "stage-4",
+        "stage-3",
+        "stage-5",
+        "stage-1",
+        "stage-2"
+    ],
+    "itzulia-basque-country_2003_stages": [
+        "stage-5",
+        "stage-1",
+        "stage-3",
+        "stage-4",
+        "stage-2"
+    ],
+    "itzulia-basque-country_2004_stages": [
+        "stage-5",
+        "stage-3",
+        "stage-2",
+        "stage-4",
+        "stage-1"
+    ],
+    "itzulia-basque-country_2005_stages": [
+        "stage-5",
+        "stage-4",
+        "stage-2",
+        "stage-3",
+        "stage-1"
+    ],
+    "itzulia-basque-country_2006_stages": [
+        "stage-1",
+        "stage-5",
+        "stage-2",
+        "stage-3",
+        "stage-6",
+        "stage-4"
+    ],
+    "itzulia-basque-country_2007_stages": [
+        "stage-3",
+        "stage-4",
+        "stage-6",
+        "stage-1",
+        "stage-2",
+        "stage-5"
+    ],
+    "itzulia-basque-country_2008_stages": [
+        "stage-5",
+        "stage-3",
+        "stage-6",
+        "stage-1",
+        "stage-4",
+        "stage-2"
+    ],
+    "itzulia-basque-country_2009_stages": [
+        "stage-6",
+        "stage-3",
+        "stage-2",
+        "stage-5",
+        "stage-1",
+        "stage-4"
+    ],
+    "itzulia-basque-country_2011_stages": [
+        "stage-5",
+        "stage-1",
+        "stage-2",
+        "stage-4",
+        "stage-6",
+        "stage-3"
+    ],
+    "itzulia-basque-country_2012_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-4",
+        "stage-5",
+        "stage-3",
+        "stage-6"
+    ],
+    "itzulia-basque-country_2013_stages": [
+        "stage-5",
+        "stage-6",
+        "stage-4",
+        "stage-1",
+        "stage-2",
+        "stage-3"
+    ],
+    "itzulia-basque-country_2014_stages": [
+        "stage-2",
+        "stage-4",
+        "stage-1",
+        "stage-6",
+        "stage-5",
+        "stage-3"
+    ],
+    "itzulia-basque-country_2015_stages": [
+        "stage-4",
+        "stage-1",
+        "stage-5",
+        "stage-3",
+        "stage-2",
+        "stage-6"
+    ],
+    "itzulia-basque-country_2016_stages": [
+        "stage-2",
+        "stage-5",
+        "stage-1",
+        "stage-4",
+        "stage-6",
+        "stage-3"
+    ],
+    "itzulia-basque-country_2017_stages": [
+        "stage-6",
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "stage-5",
+        "stage-4"
+    ],
+    "itzulia-basque-country_2018_stages": [
+        "stage-6",
+        "stage-3",
+        "stage-5",
+        "stage-4",
+        "stage-1",
+        "stage-2"
+    ],
+    "itzulia-basque-country_2019_stages": [
+        "stage-3",
+        "stage-5",
+        "stage-6",
+        "stage-4",
+        "stage-1",
+        "stage-2"
+    ],
+    "itzulia-basque-country_2021_stages": [
+        "stage-2",
+        "stage-5",
+        "stage-4",
+        "stage-3",
+        "stage-1",
+        "stage-6"
+    ],
+    "itzulia-basque-country_2022_stages": [
+        "stage-2",
+        "stage-6",
+        "stage-4",
+        "stage-3",
+        "stage-1",
+        "stage-5"
+    ],
+    "itzulia-basque-country_2023_stages": [
+        "stage-2",
+        "stage-3",
+        "stage-6",
+        "stage-5",
+        "stage-1",
+        "stage-4"
+    ],
+    "liege-bastogne-liege_1970_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1971_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1972_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1973_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1974_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1975_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1976_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1977_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1978_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1979_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1980_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1981_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1982_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1983_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1984_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1985_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1986_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1987_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1988_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1989_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1990_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1991_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1992_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1993_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1994_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1995_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1996_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1997_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1998_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_1999_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2000_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2001_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2002_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2003_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2004_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2005_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2006_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2007_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2008_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2009_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2010_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2011_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2012_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2013_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2014_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2015_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2016_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2017_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2018_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2019_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2020_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2021_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2022_stages": [
+        "result"
+    ],
+    "liege-bastogne-liege_2023_stages": [
+        "result"
+    ],
+    "paris-roubaix_1970_stages": [
+        "result"
+    ],
+    "paris-roubaix_1971_stages": [
+        "result"
+    ],
+    "paris-roubaix_1972_stages": [
+        "result"
+    ],
+    "paris-roubaix_1973_stages": [
+        "result"
+    ],
+    "paris-roubaix_1974_stages": [
+        "result"
+    ],
+    "paris-roubaix_1975_stages": [
+        "result"
+    ],
+    "paris-roubaix_1976_stages": [
+        "result"
+    ],
+    "paris-roubaix_1977_stages": [
+        "result"
+    ],
+    "paris-roubaix_1978_stages": [
+        "result"
+    ],
+    "paris-roubaix_1979_stages": [
+        "result"
+    ],
+    "paris-roubaix_1980_stages": [
+        "result"
+    ],
+    "paris-roubaix_1981_stages": [
+        "result"
+    ],
+    "paris-roubaix_1982_stages": [
+        "result"
+    ],
+    "paris-roubaix_1983_stages": [
+        "result"
+    ],
+    "paris-roubaix_1984_stages": [
+        "result"
+    ],
+    "paris-roubaix_1985_stages": [
+        "result"
+    ],
+    "paris-roubaix_1986_stages": [
+        "result"
+    ],
+    "paris-roubaix_1987_stages": [
+        "result"
+    ],
+    "paris-roubaix_1988_stages": [
+        "result"
+    ],
+    "paris-roubaix_1989_stages": [
+        "result"
+    ],
+    "paris-roubaix_1990_stages": [
+        "result"
+    ],
+    "paris-roubaix_1991_stages": [
+        "result"
+    ],
+    "paris-roubaix_1992_stages": [
+        "result"
+    ],
+    "paris-roubaix_1993_stages": [
+        "result"
+    ],
+    "paris-roubaix_1994_stages": [
+        "result"
+    ],
+    "paris-roubaix_1995_stages": [
+        "result"
+    ],
+    "paris-roubaix_1996_stages": [
+        "result"
+    ],
+    "paris-roubaix_1997_stages": [
+        "result"
+    ],
+    "paris-roubaix_1998_stages": [
+        "result"
+    ],
+    "paris-roubaix_1999_stages": [
+        "result"
+    ],
+    "paris-roubaix_2000_stages": [
+        "result"
+    ],
+    "paris-roubaix_2001_stages": [
+        "result"
+    ],
+    "paris-roubaix_2002_stages": [
+        "result"
+    ],
+    "paris-roubaix_2003_stages": [
+        "result"
+    ],
+    "paris-roubaix_2004_stages": [
+        "result"
+    ],
+    "paris-roubaix_2005_stages": [
+        "result"
+    ],
+    "paris-roubaix_2006_stages": [
+        "result"
+    ],
+    "paris-roubaix_2007_stages": [
+        "result"
+    ],
+    "paris-roubaix_2008_stages": [
+        "result"
+    ],
+    "paris-roubaix_2009_stages": [
+        "result"
+    ],
+    "paris-roubaix_2010_stages": [
+        "result"
+    ],
+    "paris-roubaix_2011_stages": [
+        "result"
+    ],
+    "paris-roubaix_2012_stages": [
+        "result"
+    ],
+    "paris-roubaix_2013_stages": [
+        "result"
+    ],
+    "paris-roubaix_2014_stages": [
+        "result"
+    ],
+    "paris-roubaix_2015_stages": [
+        "result"
+    ],
+    "paris-roubaix_2016_stages": [
+        "result"
+    ],
+    "paris-roubaix_2017_stages": [
+        "result"
+    ],
+    "paris-roubaix_2018_stages": [
+        "result"
+    ],
+    "paris-roubaix_2019_stages": [
+        "result"
+    ],
+    "paris-roubaix_2021_stages": [
+        "result"
+    ],
+    "paris-roubaix_2022_stages": [
+        "result"
+    ],
+    "paris-roubaix_2023_stages": [
+        "result"
+    ],
+    "uae-tour_2019_stages": [
+        "stage-2",
+        "stage-3",
+        "stage-5",
+        "stage-6",
+        "stage-7",
+        "stage-4"
+    ],
+    "uae-tour_2020_stages": [
+        "stage-3",
+        "stage-4",
+        "stage-1",
+        "stage-5",
+        "stage-2"
+    ],
+    "uae-tour_2021_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-4",
+        "stage-5",
+        "stage-7",
+        "stage-3",
+        "stage-6"
+    ],
+    "uae-tour_2022_stages": [
+        "stage-1",
+        "stage-3",
+        "stage-5",
+        "stage-7",
+        "stage-2",
+        "stage-6",
+        "stage-4"
+    ],
+    "uae-tour_2023_stages": [
+        "stage-5",
+        "stage-7",
+        "stage-1",
+        "stage-3",
+        "stage-4",
+        "stage-6"
+    ],
+    "world-championship_1970_stages": [
+        "result"
+    ],
+    "world-championship_1971_stages": [
+        "result"
+    ],
+    "world-championship_1972_stages": [
+        "result"
+    ],
+    "world-championship_1973_stages": [
+        "result"
+    ],
+    "world-championship_1974_stages": [
+        "result"
+    ],
+    "world-championship_1975_stages": [
+        "result"
+    ],
+    "world-championship_1976_stages": [
+        "result"
+    ],
+    "world-championship_1977_stages": [
+        "result"
+    ],
+    "world-championship_1978_stages": [
+        "result"
+    ],
+    "world-championship_1979_stages": [
+        "result"
+    ],
+    "world-championship_1980_stages": [
+        "result"
+    ],
+    "world-championship_1981_stages": [
+        "result"
+    ],
+    "world-championship_1982_stages": [
+        "result"
+    ],
+    "world-championship_1983_stages": [
+        "result"
+    ],
+    "world-championship_1984_stages": [
+        "result"
+    ],
+    "world-championship_1985_stages": [
+        "result"
+    ],
+    "world-championship_1986_stages": [
+        "result"
+    ],
+    "world-championship_1987_stages": [
+        "result"
+    ],
+    "world-championship_1988_stages": [
+        "result"
+    ],
+    "world-championship_1989_stages": [
+        "result"
+    ],
+    "world-championship_1990_stages": [
+        "result"
+    ],
+    "world-championship_1991_stages": [
+        "result"
+    ],
+    "world-championship_1992_stages": [
+        "result"
+    ],
+    "world-championship_1993_stages": [
+        "result"
+    ],
+    "world-championship_1994_stages": [
+        "result"
+    ],
+    "world-championship_1995_stages": [
+        "result"
+    ],
+    "world-championship_1996_stages": [
+        "result"
+    ],
+    "world-championship_1997_stages": [
+        "result"
+    ],
+    "world-championship_1998_stages": [
+        "result"
+    ],
+    "world-championship_1999_stages": [
+        "result"
+    ],
+    "world-championship_2000_stages": [
+        "result"
+    ],
+    "world-championship_2001_stages": [
+        "result"
+    ],
+    "world-championship_2002_stages": [
+        "result"
+    ],
+    "world-championship_2003_stages": [
+        "result"
+    ],
+    "world-championship_2004_stages": [
+        "result"
+    ],
+    "world-championship_2005_stages": [
+        "result"
+    ],
+    "world-championship_2006_stages": [
+        "result"
+    ],
+    "world-championship_2007_stages": [
+        "result"
+    ],
+    "world-championship_2008_stages": [
+        "result"
+    ],
+    "world-championship_2009_stages": [
+        "result"
+    ],
+    "world-championship_2010_stages": [
+        "result"
+    ],
+    "world-championship_2011_stages": [
+        "result"
+    ],
+    "world-championship_2012_stages": [
+        "result"
+    ],
+    "world-championship_2013_stages": [
+        "result"
+    ],
+    "world-championship_2014_stages": [
+        "result"
+    ],
+    "world-championship_2015_stages": [
+        "result"
+    ],
+    "world-championship_2016_stages": [
+        "result"
+    ],
+    "world-championship_2017_stages": [
+        "result"
+    ],
+    "world-championship_2018_stages": [
+        "result"
+    ],
+    "world-championship_2019_stages": [
+        "result"
+    ],
+    "world-championship_2020_stages": [
+        "result"
+    ],
+    "world-championship_2021_stages": [
+        "result"
+    ],
+    "world-championship_2022_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1970_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1971_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1972_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1973_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1974_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1975_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1976_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1977_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1978_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1979_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1980_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1981_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1982_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1983_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1984_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1985_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1986_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1987_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1988_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1989_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1990_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1991_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1992_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1993_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1994_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1995_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1996_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1997_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1998_stages": [
+        "result"
+    ],
+    "amstel-gold-race_1999_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2000_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2001_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2002_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2003_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2004_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2005_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2006_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2007_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2008_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2009_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2010_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2011_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2012_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2013_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2014_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2015_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2016_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2017_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2018_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2019_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2021_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2022_stages": [
+        "result"
+    ],
+    "amstel-gold-race_2023_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_1970_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_1976_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_1978_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_1979_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_1983_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_1986_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_1993_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_1995_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_1996_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_1997_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_1998_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_1999_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2000_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2001_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2002_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2003_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2004_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2005_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2006_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2008_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2009_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2010_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2011_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2012_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2013_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2014_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2015_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2016_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2017_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2018_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2019_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2021_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2022_stages": [
+        "result"
+    ],
+    "dwars-door-vlaanderen_2023_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1970_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1971_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1972_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1973_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1974_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1975_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1976_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1977_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1978_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1979_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1980_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1981_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1982_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1983_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1984_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1985_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1987_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1988_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1989_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1990_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1991_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1992_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1993_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1994_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1995_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1996_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1997_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1998_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_1999_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2000_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2001_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2002_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2003_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2005_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2006_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2007_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2008_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2009_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2010_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2011_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2012_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2013_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2014_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2015_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2016_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2017_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2018_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2019_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2020_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2021_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2022_stages": [
+        "result"
+    ],
+    "omloop-het-nieuwsblad_2023_stages": [
+        "result"
+    ],
+    "san-sebastian_1981_stages": [
+        "result"
+    ],
+    "san-sebastian_1982_stages": [
+        "result"
+    ],
+    "san-sebastian_1983_stages": [
+        "result"
+    ],
+    "san-sebastian_1984_stages": [
+        "result"
+    ],
+    "san-sebastian_1985_stages": [
+        "result"
+    ],
+    "san-sebastian_1986_stages": [
+        "result"
+    ],
+    "san-sebastian_1987_stages": [
+        "result"
+    ],
+    "san-sebastian_1988_stages": [
+        "result"
+    ],
+    "san-sebastian_1989_stages": [
+        "result"
+    ],
+    "san-sebastian_1990_stages": [
+        "result"
+    ],
+    "san-sebastian_1991_stages": [
+        "result"
+    ],
+    "san-sebastian_1992_stages": [
+        "result"
+    ],
+    "san-sebastian_1993_stages": [
+        "result"
+    ],
+    "san-sebastian_1994_stages": [
+        "result"
+    ],
+    "san-sebastian_1995_stages": [
+        "result"
+    ],
+    "san-sebastian_1996_stages": [
+        "result"
+    ],
+    "san-sebastian_1997_stages": [
+        "result"
+    ],
+    "san-sebastian_1998_stages": [
+        "result"
+    ],
+    "san-sebastian_1999_stages": [
+        "result"
+    ],
+    "san-sebastian_2000_stages": [
+        "result"
+    ],
+    "san-sebastian_2001_stages": [
+        "result"
+    ],
+    "san-sebastian_2002_stages": [
+        "result"
+    ],
+    "san-sebastian_2003_stages": [
+        "result"
+    ],
+    "san-sebastian_2004_stages": [
+        "result"
+    ],
+    "san-sebastian_2005_stages": [
+        "result"
+    ],
+    "san-sebastian_2006_stages": [
+        "result"
+    ],
+    "san-sebastian_2007_stages": [
+        "result"
+    ],
+    "san-sebastian_2008_stages": [
+        "result"
+    ],
+    "san-sebastian_2009_stages": [
+        "result"
+    ],
+    "san-sebastian_2010_stages": [
+        "result"
+    ],
+    "san-sebastian_2011_stages": [
+        "result"
+    ],
+    "san-sebastian_2012_stages": [
+        "result"
+    ],
+    "san-sebastian_2013_stages": [
+        "result"
+    ],
+    "san-sebastian_2014_stages": [
+        "result"
+    ],
+    "san-sebastian_2015_stages": [
+        "result"
+    ],
+    "san-sebastian_2016_stages": [
+        "result"
+    ],
+    "san-sebastian_2017_stages": [
+        "result"
+    ],
+    "san-sebastian_2018_stages": [
+        "result"
+    ],
+    "san-sebastian_2019_stages": [
+        "result"
+    ],
+    "san-sebastian_2021_stages": [
+        "result"
+    ],
+    "san-sebastian_2022_stages": [
+        "result"
+    ],
+    "san-sebastian_2023_stages": [
+        "result"
+    ],
+    "strade-bianche_2007_stages": [
+        "result"
+    ],
+    "strade-bianche_2008_stages": [
+        "result"
+    ],
+    "strade-bianche_2009_stages": [
+        "result"
+    ],
+    "strade-bianche_2010_stages": [
+        "result"
+    ],
+    "strade-bianche_2011_stages": [
+        "result"
+    ],
+    "strade-bianche_2012_stages": [
+        "result"
+    ],
+    "strade-bianche_2013_stages": [
+        "result"
+    ],
+    "strade-bianche_2014_stages": [
+        "result"
+    ],
+    "strade-bianche_2015_stages": [
+        "result"
+    ],
+    "strade-bianche_2016_stages": [
+        "result"
+    ],
+    "strade-bianche_2017_stages": [
+        "result"
+    ],
+    "strade-bianche_2018_stages": [
+        "result"
+    ],
+    "strade-bianche_2019_stages": [
+        "result"
+    ],
+    "strade-bianche_2020_stages": [
+        "result"
+    ],
+    "strade-bianche_2021_stages": [
+        "result"
+    ],
+    "strade-bianche_2022_stages": [
+        "result"
+    ],
+    "strade-bianche_2023_stages": [
+        "result"
+    ],
+    "il-lombardia_1970_stages": [
+        "result"
+    ],
+    "il-lombardia_1971_stages": [
+        "result"
+    ],
+    "il-lombardia_1972_stages": [
+        "result"
+    ],
+    "il-lombardia_1973_stages": [
+        "result"
+    ],
+    "il-lombardia_1974_stages": [
+        "result"
+    ],
+    "il-lombardia_1975_stages": [
+        "result"
+    ],
+    "il-lombardia_1976_stages": [
+        "result"
+    ],
+    "il-lombardia_1977_stages": [
+        "result"
+    ],
+    "il-lombardia_1978_stages": [
+        "result"
+    ],
+    "il-lombardia_1979_stages": [
+        "result"
+    ],
+    "il-lombardia_1980_stages": [
+        "result"
+    ],
+    "il-lombardia_1981_stages": [
+        "result"
+    ],
+    "il-lombardia_1982_stages": [
+        "result"
+    ],
+    "il-lombardia_1983_stages": [
+        "result"
+    ],
+    "il-lombardia_1984_stages": [
+        "result"
+    ],
+    "il-lombardia_1985_stages": [
+        "result"
+    ],
+    "il-lombardia_1986_stages": [
+        "result"
+    ],
+    "il-lombardia_1987_stages": [
+        "result"
+    ],
+    "il-lombardia_1988_stages": [
+        "result"
+    ],
+    "il-lombardia_1989_stages": [
+        "result"
+    ],
+    "il-lombardia_1990_stages": [
+        "result"
+    ],
+    "il-lombardia_1991_stages": [
+        "result"
+    ],
+    "il-lombardia_1992_stages": [
+        "result"
+    ],
+    "il-lombardia_1993_stages": [
+        "result"
+    ],
+    "il-lombardia_1994_stages": [
+        "result"
+    ],
+    "il-lombardia_1995_stages": [
+        "result"
+    ],
+    "il-lombardia_1996_stages": [
+        "result"
+    ],
+    "il-lombardia_1997_stages": [
+        "result"
+    ],
+    "il-lombardia_1998_stages": [
+        "result"
+    ],
+    "il-lombardia_1999_stages": [
+        "result"
+    ],
+    "il-lombardia_2000_stages": [
+        "result"
+    ],
+    "il-lombardia_2001_stages": [
+        "result"
+    ],
+    "il-lombardia_2002_stages": [
+        "result"
+    ],
+    "il-lombardia_2003_stages": [
+        "result"
+    ],
+    "il-lombardia_2004_stages": [
+        "result"
+    ],
+    "il-lombardia_2005_stages": [
+        "result"
+    ],
+    "il-lombardia_2006_stages": [
+        "result"
+    ],
+    "il-lombardia_2007_stages": [
+        "result"
+    ],
+    "il-lombardia_2008_stages": [
+        "result"
+    ],
+    "il-lombardia_2009_stages": [
+        "result"
+    ],
+    "il-lombardia_2010_stages": [
+        "result"
+    ],
+    "il-lombardia_2011_stages": [
+        "result"
+    ],
+    "il-lombardia_2012_stages": [
+        "result"
+    ],
+    "il-lombardia_2013_stages": [
+        "result"
+    ],
+    "il-lombardia_2014_stages": [
+        "result"
+    ],
+    "il-lombardia_2015_stages": [
+        "result"
+    ],
+    "il-lombardia_2016_stages": [
+        "result"
+    ],
+    "il-lombardia_2017_stages": [
+        "result"
+    ],
+    "il-lombardia_2018_stages": [
+        "result"
+    ],
+    "il-lombardia_2019_stages": [
+        "result"
+    ],
+    "il-lombardia_2020_stages": [
+        "result"
+    ],
+    "il-lombardia_2021_stages": [
+        "result"
+    ],
+    "il-lombardia_2022_stages": [
+        "result"
+    ],
+    "gp-quebec_2010_stages": [
+        "result"
+    ],
+    "gp-quebec_2011_stages": [
+        "result"
+    ],
+    "gp-quebec_2012_stages": [
+        "result"
+    ],
+    "gp-quebec_2013_stages": [
+        "result"
+    ],
+    "gp-quebec_2014_stages": [
+        "result"
+    ],
+    "gp-quebec_2015_stages": [
+        "result"
+    ],
+    "gp-quebec_2016_stages": [
+        "result"
+    ],
+    "gp-quebec_2017_stages": [
+        "result"
+    ],
+    "gp-quebec_2018_stages": [
+        "result"
+    ],
+    "gp-quebec_2019_stages": [
+        "result"
+    ],
+    "gp-quebec_2022_stages": [
+        "result"
+    ],
+    "gp-montreal_2010_stages": [
+        "result"
+    ],
+    "gp-montreal_2011_stages": [
+        "result"
+    ],
+    "gp-montreal_2012_stages": [
+        "result"
+    ],
+    "gp-montreal_2013_stages": [
+        "result"
+    ],
+    "gp-montreal_2014_stages": [
+        "result"
+    ],
+    "gp-montreal_2015_stages": [
+        "result"
+    ],
+    "gp-montreal_2016_stages": [
+        "result"
+    ],
+    "gp-montreal_2017_stages": [
+        "result"
+    ],
+    "gp-montreal_2018_stages": [
+        "result"
+    ],
+    "gp-montreal_2019_stages": [
+        "result"
+    ],
+    "gp-montreal_2022_stages": [
+        "result"
+    ]
+}
