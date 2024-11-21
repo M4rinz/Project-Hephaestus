@@ -5,7 +5,7 @@ import numpy as np
 import re
 import tqdm
 import procyclingstats as pcs
-import json
+
 
 def __transform_single_features(dataset: pandas.DataFrame, transformation: str) -> Tuple[
     pandas.DataFrame, Dict[str, Any]]:
@@ -322,11 +322,3 @@ def delta_based_dataset_cleaning(dataset:pandas.DataFrame) -> pandas.DataFrame:
     races_df_copy = races_df_copy[races_df_copy['delta'] < 17000]
 
     return races_df_copy
-
-def save_dict_to_json(dictionary:dict, path:str) -> None:
-    with open(path, 'w') as file:
-        json.dump(dictionary, file, indent=4)
-
-def load_dict_from_json(path:str) -> dict:
-    with open(path, 'r') as file:
-        return json.load(file)
