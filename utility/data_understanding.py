@@ -6,6 +6,7 @@ import re
 import tqdm
 import procyclingstats as pcs
 
+
 def __transform_single_features(dataset: pandas.DataFrame, transformation: str) -> Tuple[
     pandas.DataFrame, Dict[str, Any]]:
     match transformation:
