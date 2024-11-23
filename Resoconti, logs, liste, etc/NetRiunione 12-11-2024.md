@@ -16,12 +16,12 @@ Ecco le cose da fare:
             - date
             - average speed ok
             - steepness ok
-            - season
+            - season ok-ish
             - is_staged
-            - race_country
+            - race_country ok
             - age_performance_index
             - quality_adjusted_points
-            - stamina_index
+            - stamina_index ok
 
     - [ ] Tutto questo studio si conclude con una pulizia generale del dataset. Così che possiamo esportare il `.csv` e usarlo per tasks successivi
 
