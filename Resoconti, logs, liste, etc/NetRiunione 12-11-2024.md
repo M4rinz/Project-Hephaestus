@@ -6,7 +6,23 @@ Ecco le cose da fare:
     - [ ] Possiamo direttamente confrontare lo studio sul dataset originale con quello sul dataset pulito alla fine
 - [ ] Nel notebook `data_understanding_transformation`
     - [ ] Risiedono le features aggiuntive da noi individuate (la decisione sul se calcolare le features nuove dopo l'imputazione di quelle vecchie è in sospeso. Dipende dalle features)
-    - [ ] Si studiano le nuove features aggiunte (alcune tramite scraping, alcune no)
+    - [ ] Si studiano le nuove features aggiunte (alcune tramite scraping, alcune no) 
+        - cyclists: 
+            - bmi ok
+            - experience_level ok
+        - races:
+            - stage type ok
+            - time ok
+            - date
+            - average speed ok
+            - steepness ok
+            - season ok-ish
+            - is_staged x
+            - race_country ok
+            - age_performance_index x
+            - quality_adjusted_points x
+            - stamina_index ok
+
     - [ ] Tutto questo studio si conclude con una pulizia generale del dataset. Così che possiamo esportare il `.csv` e usarlo per tasks successivi
 
 
