@@ -1,0 +1,871 @@
+{
+    "tour-de-france_1978_missing_stages": [
+        "stage-12a",
+        "stage-4"
+    ],
+    "tour-de-france_1979_missing_stages": [
+        "stage-4",
+        "stage-8"
+    ],
+    "tour-de-france_1980_missing_stages": [
+        "stage-1b",
+        "stage-7a"
+    ],
+    "tour-de-france_1981_missing_stages": [
+        "stage-1b",
+        "stage-4"
+    ],
+    "tour-de-france_1982_missing_stages": [
+        "stage-5",
+        "stage-9a"
+    ],
+    "tour-de-france_1983_missing_stages": [
+        "stage-2"
+    ],
+    "tour-de-france_1984_missing_stages": [
+        "stage-3"
+    ],
+    "tour-de-france_1985_missing_stages": [
+        "stage-3"
+    ],
+    "tour-de-france_1986_missing_stages": [
+        "stage-2"
+    ],
+    "tour-de-france_1987_missing_stages": [
+        "stage-2"
+    ],
+    "tour-de-france_1988_missing_stages": [
+        "stage-2"
+    ],
+    "tour-de-france_1989_missing_stages": [
+        "stage-2"
+    ],
+    "tour-de-france_1990_missing_stages": [
+        "stage-2"
+    ],
+    "tour-de-france_1991_missing_stages": [
+        "stage-2"
+    ],
+    "tour-de-france_1992_missing_stages": [
+        "stage-4"
+    ],
+    "tour-de-france_1993_missing_stages": [
+        "stage-4"
+    ],
+    "tour-de-france_1994_missing_stages": [
+        "stage-3"
+    ],
+    "tour-de-france_1995_missing_stages": [
+        "stage-16",
+        "stage-3"
+    ],
+    "tour-de-france_1996_missing_stages": [],
+    "tour-de-france_1997_missing_stages": [],
+    "tour-de-france_1999_missing_stages": [],
+    "tour-de-france_2000_missing_stages": [
+        "stage-4"
+    ],
+    "tour-de-france_2001_missing_stages": [
+        "stage-5"
+    ],
+    "tour-de-france_2002_missing_stages": [
+        "stage-4"
+    ],
+    "tour-de-france_2003_missing_stages": [
+        "stage-4"
+    ],
+    "tour-de-france_2004_missing_stages": [
+        "stage-4"
+    ],
+    "tour-de-france_2005_missing_stages": [
+        "stage-4"
+    ],
+    "tour-de-france_2007_missing_stages": [],
+    "tour-de-france_2008_missing_stages": [],
+    "tour-de-france_2009_missing_stages": [
+        "stage-4"
+    ],
+    "tour-de-france_2010_missing_stages": [],
+    "tour-de-france_2011_missing_stages": [
+        "stage-2"
+    ],
+    "tour-de-france_2012_missing_stages": [],
+    "tour-de-france_2013_missing_stages": [
+        "stage-4"
+    ],
+    "tour-de-france_2014_missing_stages": [],
+    "tour-de-france_2015_missing_stages": [
+        "stage-9"
+    ],
+    "tour-de-france_2016_missing_stages": [],
+    "tour-de-france_2017_missing_stages": [],
+    "tour-de-france_2018_missing_stages": [
+        "stage-3"
+    ],
+    "tour-de-france_2019_missing_stages": [
+        "stage-2"
+    ],
+    "tour-de-france_2021_missing_stages": [],
+    "tour-de-france_2022_missing_stages": [],
+    "tour-de-france_2023_missing_stages": [],
+    "vuelta-a-espana_1980_missing_stages": [],
+    "vuelta-a-espana_1981_missing_stages": [],
+    "vuelta-a-espana_1982_missing_stages": [],
+    "vuelta-a-espana_1983_missing_stages": [],
+    "vuelta-a-espana_1984_missing_stages": [],
+    "vuelta-a-espana_1985_missing_stages": [],
+    "vuelta-a-espana_1986_missing_stages": [],
+    "vuelta-a-espana_1987_missing_stages": [],
+    "vuelta-a-espana_1988_missing_stages": [
+        "stage-3"
+    ],
+    "vuelta-a-espana_1989_missing_stages": [
+        "stage-3a"
+    ],
+    "vuelta-a-espana_1990_missing_stages": [
+        "stage-2b"
+    ],
+    "vuelta-a-espana_1991_missing_stages": [
+        "stage-11",
+        "stage-2b"
+    ],
+    "vuelta-a-espana_1992_missing_stages": [
+        "stage-2b"
+    ],
+    "vuelta-a-espana_1993_missing_stages": [],
+    "vuelta-a-espana_1994_missing_stages": [],
+    "vuelta-a-espana_1995_missing_stages": [],
+    "vuelta-a-espana_1996_missing_stages": [],
+    "vuelta-a-espana_1997_missing_stages": [],
+    "vuelta-a-espana_1998_missing_stages": [],
+    "vuelta-a-espana_1999_missing_stages": [],
+    "vuelta-a-espana_2000_missing_stages": [],
+    "vuelta-a-espana_2001_missing_stages": [],
+    "vuelta-a-espana_2002_missing_stages": [
+        "stage-1"
+    ],
+    "vuelta-a-espana_2003_missing_stages": [
+        "stage-1"
+    ],
+    "vuelta-a-espana_2004_missing_stages": [
+        "stage-1"
+    ],
+    "vuelta-a-espana_2005_missing_stages": [],
+    "vuelta-a-espana_2006_missing_stages": [
+        "stage-1"
+    ],
+    "vuelta-a-espana_2007_missing_stages": [],
+    "vuelta-a-espana_2008_missing_stages": [
+        "stage-1"
+    ],
+    "vuelta-a-espana_2009_missing_stages": [
+        "prologue"
+    ],
+    "vuelta-a-espana_2010_missing_stages": [
+        "stage-1"
+    ],
+    "vuelta-a-espana_2011_missing_stages": [
+        "stage-1"
+    ],
+    "vuelta-a-espana_2012_missing_stages": [
+        "stage-1"
+    ],
+    "vuelta-a-espana_2013_missing_stages": [
+        "stage-1"
+    ],
+    "vuelta-a-espana_2014_missing_stages": [
+        "stage-1"
+    ],
+    "vuelta-a-espana_2015_missing_stages": [
+        "stage-1"
+    ],
+    "vuelta-a-espana_2016_missing_stages": [
+        "stage-1"
+    ],
+    "vuelta-a-espana_2017_missing_stages": [
+        "stage-1"
+    ],
+    "vuelta-a-espana_2018_missing_stages": [],
+    "vuelta-a-espana_2019_missing_stages": [
+        "stage-1"
+    ],
+    "vuelta-a-espana_2020_missing_stages": [],
+    "vuelta-a-espana_2021_missing_stages": [],
+    "vuelta-a-espana_2022_missing_stages": [
+        "stage-1"
+    ],
+    "volta-a-catalunya_1970_missing_stages": [
+        "stage-1b"
+    ],
+    "volta-a-catalunya_1977_missing_stages": [
+        "stage-7a"
+    ],
+    "volta-a-catalunya_1981_missing_stages": [],
+    "volta-a-catalunya_1983_missing_stages": [
+        "prologue",
+        "stage-1",
+        "stage-2",
+        "stage-3a",
+        "stage-3b",
+        "stage-4",
+        "stage-5",
+        "stage-6",
+        "stage-7a"
+    ],
+    "volta-a-catalunya_1984_missing_stages": [],
+    "volta-a-catalunya_1986_missing_stages": [
+        "prologue",
+        "stage-1",
+        "stage-2a",
+        "stage-2b",
+        "stage-3",
+        "stage-5a",
+        "stage-5b",
+        "stage-6",
+        "stage-7",
+        "stage-8"
+    ],
+    "volta-a-catalunya_1988_missing_stages": [
+        "stage-2",
+        "stage-3a",
+        "stage-3b",
+        "stage-4",
+        "stage-5",
+        "stage-6a",
+        "stage-6b"
+    ],
+    "volta-a-catalunya_1989_missing_stages": [
+        "stage-1",
+        "stage-2a",
+        "stage-2b",
+        "stage-3",
+        "stage-4",
+        "stage-5",
+        "stage-6b",
+        "stage-7"
+    ],
+    "volta-a-catalunya_1992_missing_stages": [
+        "stage-1"
+    ],
+    "volta-a-catalunya_1993_missing_stages": [],
+    "volta-a-catalunya_1994_missing_stages": [
+        "stage-5",
+        "stage-6",
+        "stage-7"
+    ],
+    "volta-a-catalunya_1995_missing_stages": [],
+    "volta-a-catalunya_1996_missing_stages": [],
+    "volta-a-catalunya_1997_missing_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-3"
+    ],
+    "volta-a-catalunya_1998_missing_stages": [
+        "stage-1"
+    ],
+    "volta-a-catalunya_1999_missing_stages": [
+        "stage-5"
+    ],
+    "volta-a-catalunya_2000_missing_stages": [
+        "stage-1"
+    ],
+    "volta-a-catalunya_2001_missing_stages": [
+        "stage-1"
+    ],
+    "volta-a-catalunya_2002_missing_stages": [
+        "stage-1"
+    ],
+    "volta-a-catalunya_2003_missing_stages": [
+        "stage-1"
+    ],
+    "volta-a-catalunya_2004_missing_stages": [
+        "stage-1"
+    ],
+    "volta-a-catalunya_2005_missing_stages": [
+        "stage-1"
+    ],
+    "volta-a-catalunya_2006_missing_stages": [],
+    "volta-a-catalunya_2007_missing_stages": [
+        "stage-1"
+    ],
+    "volta-a-catalunya_2008_missing_stages": [],
+    "volta-a-catalunya_2009_missing_stages": [],
+    "volta-a-catalunya_2010_missing_stages": [],
+    "volta-a-catalunya_2011_missing_stages": [],
+    "volta-a-catalunya_2012_missing_stages": [
+        "stage-3"
+    ],
+    "volta-a-catalunya_2013_missing_stages": [],
+    "volta-a-catalunya_2014_missing_stages": [],
+    "volta-a-catalunya_2015_missing_stages": [],
+    "volta-a-catalunya_2016_missing_stages": [],
+    "volta-a-catalunya_2017_missing_stages": [
+        "stage-2"
+    ],
+    "volta-a-catalunya_2018_missing_stages": [],
+    "volta-a-catalunya_2019_missing_stages": [],
+    "volta-a-catalunya_2021_missing_stages": [],
+    "volta-a-catalunya_2022_missing_stages": [],
+    "volta-a-catalunya_2023_missing_stages": [],
+    "paris-nice_1970_missing_stages": [
+        "prologue"
+    ],
+    "paris-nice_1972_missing_stages": [
+        "stage-4b"
+    ],
+    "paris-nice_1975_missing_stages": [],
+    "paris-nice_1976_missing_stages": [],
+    "paris-nice_1980_missing_stages": [
+        "stage-1a"
+    ],
+    "paris-nice_1981_missing_stages": [
+        "stage-2b"
+    ],
+    "paris-nice_1982_missing_stages": [],
+    "paris-nice_1983_missing_stages": [
+        "stage-3b"
+    ],
+    "paris-nice_1984_missing_stages": [
+        "stage-2b"
+    ],
+    "paris-nice_1985_missing_stages": [
+        "stage-4b"
+    ],
+    "paris-nice_1986_missing_stages": [
+        "stage-4b"
+    ],
+    "paris-nice_1987_missing_stages": [
+        "stage-1"
+    ],
+    "paris-nice_1988_missing_stages": [
+        "prologue"
+    ],
+    "paris-nice_1989_missing_stages": [
+        "stage-3"
+    ],
+    "paris-nice_1990_missing_stages": [
+        "stage-3"
+    ],
+    "paris-nice_1991_missing_stages": [
+        "stage-1"
+    ],
+    "paris-nice_1992_missing_stages": [
+        "stage-3"
+    ],
+    "paris-nice_1993_missing_stages": [
+        "stage-2"
+    ],
+    "paris-nice_1994_missing_stages": [],
+    "paris-nice_1995_missing_stages": [
+        "stage-4"
+    ],
+    "paris-nice_1996_missing_stages": [],
+    "paris-nice_1997_missing_stages": [],
+    "paris-nice_1998_missing_stages": [],
+    "paris-nice_1999_missing_stages": [],
+    "paris-nice_2000_missing_stages": [],
+    "paris-nice_2001_missing_stages": [],
+    "paris-nice_2002_missing_stages": [],
+    "paris-nice_2003_missing_stages": [
+        "stage-3"
+    ],
+    "paris-nice_2004_missing_stages": [
+        "stage-4"
+    ],
+    "paris-nice_2005_missing_stages": [],
+    "paris-nice_2006_missing_stages": [],
+    "paris-nice_2007_missing_stages": [],
+    "paris-nice_2008_missing_stages": [],
+    "paris-nice_2009_missing_stages": [],
+    "paris-nice_2010_missing_stages": [],
+    "paris-nice_2011_missing_stages": [],
+    "paris-nice_2012_missing_stages": [
+        "stage-1"
+    ],
+    "paris-nice_2013_missing_stages": [],
+    "paris-nice_2014_missing_stages": [],
+    "paris-nice_2015_missing_stages": [],
+    "paris-nice_2016_missing_stages": [
+        "stage-3"
+    ],
+    "paris-nice_2017_missing_stages": [],
+    "paris-nice_2018_missing_stages": [],
+    "paris-nice_2019_missing_stages": [],
+    "paris-nice_2020_missing_stages": [
+        "stage-8"
+    ],
+    "paris-nice_2021_missing_stages": [],
+    "paris-nice_2022_missing_stages": [],
+    "paris-nice_2023_missing_stages": [
+        "stage-3",
+        "stage-6"
+    ],
+    "tirreno-adriatico_1970_missing_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "stage-4",
+        "stage-5a"
+    ],
+    "tirreno-adriatico_1973_missing_stages": [
+        "stage-2"
+    ],
+    "tirreno-adriatico_1978_missing_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "stage-4",
+        "stage-5a",
+        "stage-5b"
+    ],
+    "tirreno-adriatico_1979_missing_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "stage-4",
+        "stage-5a",
+        "stage-5b"
+    ],
+    "tirreno-adriatico_1981_missing_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "stage-4",
+        "stage-5"
+    ],
+    "tirreno-adriatico_1983_missing_stages": [],
+    "tirreno-adriatico_1984_missing_stages": [],
+    "tirreno-adriatico_1987_missing_stages": [
+        "prologue",
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "stage-5",
+        "stage-6"
+    ],
+    "tirreno-adriatico_1988_missing_stages": [
+        "stage-1"
+    ],
+    "tirreno-adriatico_1990_missing_stages": [],
+    "tirreno-adriatico_1991_missing_stages": [],
+    "tirreno-adriatico_1992_missing_stages": [],
+    "tirreno-adriatico_1993_missing_stages": [],
+    "tirreno-adriatico_1994_missing_stages": [],
+    "tirreno-adriatico_1995_missing_stages": [],
+    "tirreno-adriatico_1996_missing_stages": [],
+    "tirreno-adriatico_1997_missing_stages": [],
+    "tirreno-adriatico_1998_missing_stages": [],
+    "tirreno-adriatico_1999_missing_stages": [],
+    "tirreno-adriatico_2000_missing_stages": [],
+    "tirreno-adriatico_2001_missing_stages": [],
+    "tirreno-adriatico_2002_missing_stages": [
+        "stage-4"
+    ],
+    "tirreno-adriatico_2003_missing_stages": [
+        "stage-4"
+    ],
+    "tirreno-adriatico_2004_missing_stages": [],
+    "tirreno-adriatico_2005_missing_stages": [],
+    "tirreno-adriatico_2006_missing_stages": [],
+    "tirreno-adriatico_2007_missing_stages": [],
+    "tirreno-adriatico_2008_missing_stages": [],
+    "tirreno-adriatico_2009_missing_stages": [],
+    "tirreno-adriatico_2010_missing_stages": [],
+    "tirreno-adriatico_2011_missing_stages": [
+        "stage-1"
+    ],
+    "tirreno-adriatico_2012_missing_stages": [
+        "stage-1"
+    ],
+    "tirreno-adriatico_2013_missing_stages": [
+        "stage-1"
+    ],
+    "tirreno-adriatico_2014_missing_stages": [
+        "stage-1"
+    ],
+    "tirreno-adriatico_2015_missing_stages": [],
+    "tirreno-adriatico_2016_missing_stages": [
+        "stage-1",
+        "stage-5"
+    ],
+    "tirreno-adriatico_2017_missing_stages": [
+        "stage-1"
+    ],
+    "tirreno-adriatico_2018_missing_stages": [
+        "stage-1"
+    ],
+    "tirreno-adriatico_2019_missing_stages": [
+        "stage-1"
+    ],
+    "tirreno-adriatico_2020_missing_stages": [],
+    "tirreno-adriatico_2021_missing_stages": [],
+    "tirreno-adriatico_2022_missing_stages": [],
+    "tirreno-adriatico_2023_missing_stages": [],
+    "dauphine_1970_missing_stages": [
+        "prologue",
+        "stage-1",
+        "stage-2a",
+        "stage-2b",
+        "stage-3",
+        "stage-4",
+        "stage-6a",
+        "stage-6b"
+    ],
+    "dauphine_1975_missing_stages": [
+        "prologue"
+    ],
+    "dauphine_1977_missing_stages": [],
+    "dauphine_1979_missing_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "stage-4",
+        "stage-5a",
+        "stage-5b",
+        "stage-6",
+        "stage-7a",
+        "stage-7b"
+    ],
+    "dauphine_1983_missing_stages": [],
+    "dauphine_1984_missing_stages": [],
+    "dauphine_1987_missing_stages": [
+        "stage-2",
+        "stage-3a",
+        "stage-4",
+        "stage-5",
+        "stage-6",
+        "stage-7"
+    ],
+    "dauphine_1989_missing_stages": [],
+    "dauphine_1990_missing_stages": [],
+    "dauphine_1991_missing_stages": [],
+    "dauphine_1992_missing_stages": [],
+    "dauphine_1993_missing_stages": [
+        "stage-4"
+    ],
+    "dauphine_1994_missing_stages": [],
+    "dauphine_1995_missing_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "stage-4",
+        "stage-5",
+        "stage-6",
+        "stage-7"
+    ],
+    "dauphine_1998_missing_stages": [
+        "prologue",
+        "stage-2",
+        "stage-3",
+        "stage-4",
+        "stage-5",
+        "stage-6",
+        "stage-7"
+    ],
+    "dauphine_2000_missing_stages": [],
+    "dauphine_2001_missing_stages": [],
+    "dauphine_2002_missing_stages": [],
+    "dauphine_2003_missing_stages": [],
+    "dauphine_2004_missing_stages": [],
+    "dauphine_2005_missing_stages": [],
+    "dauphine_2006_missing_stages": [],
+    "dauphine_2007_missing_stages": [],
+    "dauphine_2008_missing_stages": [],
+    "dauphine_2009_missing_stages": [],
+    "dauphine_2010_missing_stages": [],
+    "dauphine_2011_missing_stages": [],
+    "dauphine_2012_missing_stages": [],
+    "dauphine_2013_missing_stages": [],
+    "dauphine_2014_missing_stages": [],
+    "dauphine_2015_missing_stages": [
+        "stage-3"
+    ],
+    "dauphine_2016_missing_stages": [],
+    "dauphine_2017_missing_stages": [],
+    "dauphine_2018_missing_stages": [
+        "stage-3"
+    ],
+    "dauphine_2019_missing_stages": [],
+    "dauphine_2020_missing_stages": [],
+    "dauphine_2021_missing_stages": [],
+    "dauphine_2022_missing_stages": [],
+    "dauphine_2023_missing_stages": [],
+    "tour-de-suisse_1970_missing_stages": [],
+    "tour-de-suisse_1971_missing_stages": [],
+    "tour-de-suisse_1972_missing_stages": [
+        "stage-1",
+        "stage-3",
+        "stage-4",
+        "stage-5",
+        "stage-6a",
+        "stage-8b"
+    ],
+    "tour-de-suisse_1974_missing_stages": [],
+    "tour-de-suisse_1975_missing_stages": [],
+    "tour-de-suisse_1976_missing_stages": [],
+    "tour-de-suisse_1977_missing_stages": [],
+    "tour-de-suisse_1978_missing_stages": [],
+    "tour-de-suisse_1979_missing_stages": [],
+    "tour-de-suisse_1980_missing_stages": [],
+    "tour-de-suisse_1981_missing_stages": [
+        "stage-7b"
+    ],
+    "tour-de-suisse_1982_missing_stages": [],
+    "tour-de-suisse_1983_missing_stages": [],
+    "tour-de-suisse_1984_missing_stages": [],
+    "tour-de-suisse_1985_missing_stages": [
+        "stage-10a"
+    ],
+    "tour-de-suisse_1986_missing_stages": [],
+    "tour-de-suisse_1987_missing_stages": [],
+    "tour-de-suisse_1988_missing_stages": [],
+    "tour-de-suisse_1989_missing_stages": [],
+    "tour-de-suisse_1990_missing_stages": [],
+    "tour-de-suisse_1991_missing_stages": [],
+    "tour-de-suisse_1992_missing_stages": [],
+    "tour-de-suisse_1993_missing_stages": [],
+    "tour-de-suisse_1994_missing_stages": [],
+    "tour-de-suisse_1995_missing_stages": [],
+    "tour-de-suisse_1996_missing_stages": [],
+    "tour-de-suisse_1997_missing_stages": [],
+    "tour-de-suisse_1998_missing_stages": [],
+    "tour-de-suisse_1999_missing_stages": [],
+    "tour-de-suisse_2000_missing_stages": [
+        "stage-1"
+    ],
+    "tour-de-suisse_2001_missing_stages": [],
+    "tour-de-suisse_2002_missing_stages": [],
+    "tour-de-suisse_2003_missing_stages": [],
+    "tour-de-suisse_2004_missing_stages": [],
+    "tour-de-suisse_2005_missing_stages": [],
+    "tour-de-suisse_2006_missing_stages": [],
+    "tour-de-suisse_2007_missing_stages": [],
+    "tour-de-suisse_2008_missing_stages": [],
+    "tour-de-suisse_2010_missing_stages": [
+        "stage-4"
+    ],
+    "tour-de-suisse_2011_missing_stages": [
+        "stage-2"
+    ],
+    "tour-de-suisse_2012_missing_stages": [],
+    "tour-de-suisse_2013_missing_stages": [],
+    "tour-de-suisse_2014_missing_stages": [],
+    "tour-de-suisse_2015_missing_stages": [],
+    "tour-de-suisse_2016_missing_stages": [],
+    "tour-de-suisse_2017_missing_stages": [],
+    "tour-de-suisse_2018_missing_stages": [
+        "stage-1"
+    ],
+    "tour-de-suisse_2019_missing_stages": [],
+    "tour-de-suisse_2021_missing_stages": [],
+    "tour-de-suisse_2022_missing_stages": [],
+    "tour-de-suisse_2023_missing_stages": [
+        "stage-6"
+    ],
+    "giro-d-italia_1990_missing_stages": [],
+    "giro-d-italia_1991_missing_stages": [],
+    "giro-d-italia_1992_missing_stages": [],
+    "giro-d-italia_1993_missing_stages": [],
+    "giro-d-italia_1994_missing_stages": [],
+    "giro-d-italia_1995_missing_stages": [],
+    "giro-d-italia_1996_missing_stages": [],
+    "giro-d-italia_1997_missing_stages": [],
+    "giro-d-italia_1998_missing_stages": [],
+    "giro-d-italia_1999_missing_stages": [],
+    "giro-d-italia_2000_missing_stages": [],
+    "giro-d-italia_2001_missing_stages": [
+        "stage-18"
+    ],
+    "giro-d-italia_2002_missing_stages": [],
+    "giro-d-italia_2003_missing_stages": [],
+    "giro-d-italia_2004_missing_stages": [],
+    "giro-d-italia_2005_missing_stages": [],
+    "giro-d-italia_2006_missing_stages": [
+        "stage-4"
+    ],
+    "giro-d-italia_2007_missing_stages": [
+        "stage-1"
+    ],
+    "giro-d-italia_2008_missing_stages": [
+        "stage-1"
+    ],
+    "giro-d-italia_2009_missing_stages": [
+        "stage-1"
+    ],
+    "giro-d-italia_2010_missing_stages": [
+        "stage-4"
+    ],
+    "giro-d-italia_2011_missing_stages": [
+        "stage-1",
+        "stage-4"
+    ],
+    "giro-d-italia_2012_missing_stages": [
+        "stage-4"
+    ],
+    "giro-d-italia_2013_missing_stages": [
+        "stage-19",
+        "stage-2"
+    ],
+    "giro-d-italia_2014_missing_stages": [
+        "stage-1"
+    ],
+    "giro-d-italia_2015_missing_stages": [
+        "stage-1"
+    ],
+    "giro-d-italia_2016_missing_stages": [],
+    "giro-d-italia_2017_missing_stages": [],
+    "giro-d-italia_2018_missing_stages": [],
+    "giro-d-italia_2019_missing_stages": [],
+    "giro-d-italia_2020_missing_stages": [],
+    "giro-d-italia_2021_missing_stages": [],
+    "giro-d-italia_2022_missing_stages": [],
+    "giro-d-italia_2023_missing_stages": [],
+    "gran-camino_2022_missing_stages": [],
+    "gran-camino_2023_missing_stages": [
+        "stage-1"
+    ],
+    "tour-de-romandie_1973_missing_stages": [
+        "prologue"
+    ],
+    "tour-de-romandie_1975_missing_stages": [
+        "prologue",
+        "stage-3",
+        "stage-4",
+        "stage-5a"
+    ],
+    "tour-de-romandie_1977_missing_stages": [
+        "stage-3",
+        "stage-4a",
+        "stage-4b",
+        "stage-5"
+    ],
+    "tour-de-romandie_1981_missing_stages": [
+        "stage-5b"
+    ],
+    "tour-de-romandie_1983_missing_stages": [],
+    "tour-de-romandie_1984_missing_stages": [],
+    "tour-de-romandie_1987_missing_stages": [],
+    "tour-de-romandie_1988_missing_stages": [
+        "stage-4",
+        "stage-5"
+    ],
+    "tour-de-romandie_1989_missing_stages": [
+        "stage-3a",
+        "stage-3b"
+    ],
+    "tour-de-romandie_1990_missing_stages": [
+        "stage-2",
+        "stage-3"
+    ],
+    "tour-de-romandie_1991_missing_stages": [
+        "prologue",
+        "stage-4",
+        "stage-5"
+    ],
+    "tour-de-romandie_1992_missing_stages": [
+        "prologue",
+        "stage-1",
+        "stage-2",
+        "stage-3"
+    ],
+    "tour-de-romandie_1993_missing_stages": [
+        "stage-5"
+    ],
+    "tour-de-romandie_1994_missing_stages": [
+        "stage-2",
+        "stage-6"
+    ],
+    "tour-de-romandie_1995_missing_stages": [
+        "stage-4",
+        "stage-5"
+    ],
+    "tour-de-romandie_1996_missing_stages": [],
+    "tour-de-romandie_1997_missing_stages": [],
+    "tour-de-romandie_1998_missing_stages": [],
+    "tour-de-romandie_1999_missing_stages": [],
+    "tour-de-romandie_2000_missing_stages": [],
+    "tour-de-romandie_2001_missing_stages": [],
+    "tour-de-romandie_2002_missing_stages": [],
+    "tour-de-romandie_2004_missing_stages": [],
+    "tour-de-romandie_2005_missing_stages": [],
+    "tour-de-romandie_2006_missing_stages": [],
+    "tour-de-romandie_2007_missing_stages": [],
+    "tour-de-romandie_2008_missing_stages": [],
+    "tour-de-romandie_2009_missing_stages": [
+        "stage-3"
+    ],
+    "tour-de-romandie_2010_missing_stages": [],
+    "tour-de-romandie_2011_missing_stages": [],
+    "tour-de-romandie_2012_missing_stages": [],
+    "tour-de-romandie_2013_missing_stages": [],
+    "tour-de-romandie_2014_missing_stages": [],
+    "tour-de-romandie_2015_missing_stages": [
+        "stage-1"
+    ],
+    "tour-de-romandie_2016_missing_stages": [],
+    "tour-de-romandie_2017_missing_stages": [],
+    "tour-de-romandie_2018_missing_stages": [],
+    "tour-de-romandie_2019_missing_stages": [],
+    "tour-de-romandie_2021_missing_stages": [],
+    "tour-de-romandie_2022_missing_stages": [],
+    "tour-de-romandie_2023_missing_stages": [
+        "prologue"
+    ],
+    "itzulia-basque-country_1984_missing_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-4",
+        "stage-5a",
+        "stage-5b"
+    ],
+    "itzulia-basque-country_1990_missing_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-4",
+        "stage-5a"
+    ],
+    "itzulia-basque-country_1991_missing_stages": [
+        "stage-1",
+        "stage-2",
+        "stage-3",
+        "stage-4",
+        "stage-5a"
+    ],
+    "itzulia-basque-country_1998_missing_stages": [
+        "stage-3",
+        "stage-4",
+        "stage-5a",
+        "stage-5b"
+    ],
+    "itzulia-basque-country_2000_missing_stages": [],
+    "itzulia-basque-country_2001_missing_stages": [],
+    "itzulia-basque-country_2002_missing_stages": [],
+    "itzulia-basque-country_2003_missing_stages": [],
+    "itzulia-basque-country_2004_missing_stages": [],
+    "itzulia-basque-country_2005_missing_stages": [],
+    "itzulia-basque-country_2006_missing_stages": [],
+    "itzulia-basque-country_2007_missing_stages": [],
+    "itzulia-basque-country_2008_missing_stages": [],
+    "itzulia-basque-country_2009_missing_stages": [],
+    "itzulia-basque-country_2011_missing_stages": [],
+    "itzulia-basque-country_2012_missing_stages": [],
+    "itzulia-basque-country_2013_missing_stages": [],
+    "itzulia-basque-country_2014_missing_stages": [],
+    "itzulia-basque-country_2015_missing_stages": [],
+    "itzulia-basque-country_2016_missing_stages": [],
+    "itzulia-basque-country_2017_missing_stages": [],
+    "itzulia-basque-country_2018_missing_stages": [],
+    "itzulia-basque-country_2019_missing_stages": [],
+    "itzulia-basque-country_2021_missing_stages": [],
+    "itzulia-basque-country_2022_missing_stages": [],
+    "itzulia-basque-country_2023_missing_stages": [],
+    "uae-tour_2019_missing_stages": [
+        "stage-1"
+    ],
+    "uae-tour_2020_missing_stages": [],
+    "uae-tour_2021_missing_stages": [],
+    "uae-tour_2022_missing_stages": [],
+    "uae-tour_2023_missing_stages": [
+        "stage-2"
+    ]
+}
