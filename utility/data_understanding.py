@@ -234,7 +234,9 @@ def scrape_stages(indices:pandas.Index,
         
     return new_races
 
-
+## ####################################################################################
+## ######################## Dataset cleaning functions ################################
+## #################################################################################### 
 def delta_based_dataset_cleaning(dataset:pandas.DataFrame) -> pandas.DataFrame:
     """Cleans the dataset as done in the delta notebook.
     Precisely, only races with nonnegative deltas that are in order are kept.
@@ -322,3 +324,34 @@ def delta_based_dataset_cleaning(dataset:pandas.DataFrame) -> pandas.DataFrame:
     races_df_copy = races_df_copy[races_df_copy['delta'] < 17000]
 
     return races_df_copy
+
+def length_based_dataset_cleaning(dataset:pandas.DataFrame, 
+                                  speed_min:float = 3,
+                                  speed_max:float = 60,
+                                  keep_tdf:bool = True) -> pandas.DataFrame:
+    """Cleans the dataset by removing the races with suspicious values for `average_speed`.
+    It removes all the rows with `average_speed` outside the range [`speed_min`, `speed_max`].
+    If `keep_tdf` is `True`, the 12th stage of the 2003 Tour de France 
+    (whose values of `average_speed` are outside that range) are kept.
+
+    Args:
+        dataset (pandas.DataFrame): the original dataset
+        speed_min (float): the minimum value for `average_speed` that is kept. Defaults to 3
+        speed_max (float): the maximum value for `average_speed` that is kept. Defaults to 60
+        keep_tdf (bool): whether to keep the 12th stage of the 2003 Tour de France. Defaults to True
+
+    Returns:
+        pandas.DataFrame: copy of dataset with the rows removed
+    """
+
+    # Not sure if the variable is passed by value or by reference...
+    races_df_copy = dataset.copy()
+
+    # We keep Stage 12 of 2003's Tour de France
+    condition = races_df_copy['_url'] == 'tour-de-france/2003/stage-12' if keep_tdf else True
+    races_df_copy = races_df_copy[((races_df_copy['average_speed'] > speed_min) 
+                                  & (races_df_copy['average_speed'] <= speed_max)) 
+                                  | (condition) ]
+    
+    return races_df_copy
+
