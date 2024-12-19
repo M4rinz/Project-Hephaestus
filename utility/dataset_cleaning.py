@@ -90,7 +90,7 @@ def delta_based_dataset_cleaning(dataset:pandas.DataFrame) -> pandas.DataFrame:
     return races_df_copy
 
 
-def length_based_dataset_cleaning(dataset:pandas.DataFrame, 
+def speed_based_dataset_cleaning(dataset:pandas.DataFrame, 
                                   speed_min:float = 3,
                                   speed_max:float = 60,
                                   keep_tdf:bool = True) -> pandas.DataFrame:
@@ -113,7 +113,7 @@ def length_based_dataset_cleaning(dataset:pandas.DataFrame,
     races_df_copy = dataset.copy()
 
     # We keep Stage 12 of 2003's Tour de France
-    condition = races_df_copy['_url'] == 'tour-de-france/2003/stage-12' if keep_tdf else True
+    condition = races_df_copy['_url'] == 'tour-de-france/2003/stage-12' if keep_tdf else False
     races_df_copy = races_df_copy[((races_df_copy['average_speed'] > speed_min) 
                                   & (races_df_copy['average_speed'] <= speed_max)) 
                                   | (condition) ]
