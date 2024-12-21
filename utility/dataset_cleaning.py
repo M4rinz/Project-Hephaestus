@@ -1,5 +1,6 @@
 import pandas
 import numpy as np
+import procyclingstats as pcs
 
 def delta_based_dataset_cleaning(dataset:pandas.DataFrame) -> pandas.DataFrame:
     """Cleans the dataset as done in the delta notebook.
@@ -93,16 +94,19 @@ def delta_based_dataset_cleaning(dataset:pandas.DataFrame) -> pandas.DataFrame:
 def speed_based_dataset_cleaning(dataset:pandas.DataFrame, 
                                   speed_min:float = 3,
                                   speed_max:float = 60,
+                                  recover_tour_de_romandie_1997_prologue: bool = True,
                                   keep_tdf:bool = True) -> pandas.DataFrame:
     """Cleans the dataset by removing the races with suspicious values for `average_speed`.
     It removes all the rows with `average_speed` outside the range [`speed_min`, `speed_max`].
     If `keep_tdf` is `True`, the 12th stage of the 2003 Tour de France 
     (whose values of `average_speed` are outside that range) are kept.
 
+
     Args:
         dataset (pandas.DataFrame): the original dataset
         speed_min (float): the minimum value for `average_speed` that is kept. Defaults to 3
         speed_max (float): the maximum value for `average_speed` that is kept. Defaults to 60
+        recover_tour_de_romandie_1997_prologue (bool): whether to recover the times of the prologue stage of the 1997 Tour de Romandie. Defaults to True
         keep_tdf (bool): whether to keep the 12th stage of the 2003 Tour de France. Defaults to True
 
     Returns:
@@ -112,6 +116,31 @@ def speed_based_dataset_cleaning(dataset:pandas.DataFrame,
     # Not sure if the variable is passed by value or by reference...
     races_df_copy = dataset.copy()
 
+    # Recover the times of the prologue stage of the 1997 Tour de Romandie
+    if recover_tour_de_romandie_1997_prologue:
+        lista = pcs.Stage('race/tour-de-romandie/1997/prologue').results()
+        for diz in lista:
+            # fix the time column
+            races_df_copy.loc[(races_df_copy['_url'] == 'tour-de-romandie/1997/prologue') & (races_df_copy['cyclist'] == diz['rider_url'].split('/')[1]), 'time'] = diz['time']
+        # fix the time in seconds
+        if 'time_seconds' in races_df_copy.columns:
+            races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'time_seconds'] = races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'time'].apply(lambda x: sum(int(t) * 60**i for i, t in enumerate(reversed(x.split(':')))))
+        # fix the average_speed column
+        if 'average_speed' in races_df_copy.columns:
+            races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'average_speed'] = races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'length'] / races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'time_seconds']
+        # fix the normalized_time column
+        if 'normalized_time' in races_df_copy.columns:
+            races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'normalized_time'] = races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'time_seconds'] / races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'time_seconds'].max()
+        # fix the stamina index column
+        if 'stamina_index' in races_df_copy.columns:
+            races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'stamina_index'] = np.where(
+                races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'normalized_steepness'].notna(),
+                ((races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'average_speed'] * races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'normalized_length'] / 1+ races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'normalized_time']) *
+                (1 + races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'normalized_steepness']) *
+                (1 + (races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'normalized_quality']) / (1+ races_df_copy.loc[races_df_copy['_url'] == 'tour-de-romandie/1997/prologue', 'position']))),
+                np.nan  # Set to NaN where `normalized_steepness` is null
+            )
+            
     # We keep Stage 12 of 2003's Tour de France
     condition = races_df_copy['_url'] == 'tour-de-france/2003/stage-12' if keep_tdf else False
     races_df_copy = races_df_copy[((races_df_copy['average_speed'] > speed_min) 
