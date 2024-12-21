@@ -64,7 +64,7 @@ def hier_search(hyperparameters, data, r_state= 42):
 
     args:
         - hyperparameters dict : The hyperparameters for the AgglomerativeClustering algorithm
-        - data pd.DataFrame : The data to cluster
+        - data np.ndarray : The data to cluster
 
     returns:
         - np.ndarray : The silhouette scores for each cluster number (from 2 to max_clusters)
@@ -77,7 +77,7 @@ def hier_search(hyperparameters, data, r_state= 42):
         random_state=r_state
     ))
     models = [
-        AgglomerativeClustering(**selected_hyperparameters).fit(data.values)
+        AgglomerativeClustering(**selected_hyperparameters).fit(data)
         for selected_hyperparameters in sampled_hyperparameters
     ]
     clusterings += [
