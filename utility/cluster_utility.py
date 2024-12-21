@@ -1,7 +1,10 @@
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans, AgglomerativeClustering
 from sklearn.metrics import silhouette_score
 from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import ParameterSampler
 import numpy as np
+import copy
+import pandas as pd
 
 from typing import Tuple
 
@@ -54,3 +57,51 @@ def k_search(max_clusters: int, n_init: int, data: np.ndarray, r_state:int = 42)
         silhouette = silhouette_score(data, labels)
         silhouettes.append(silhouette)
     return silhouettes
+
+def hier_search(hyperparameters, data, r_state= 42):
+    """
+    Search for the best hyperparameters using the silhouette score
+
+    args:
+        - hyperparameters dict : The hyperparameters for the AgglomerativeClustering algorithm
+        - data pd.DataFrame : The data to cluster
+
+    returns:
+        - np.ndarray : The silhouette scores for each cluster number (from 2 to max_clusters)
+    """
+    results_per_algorithm = list()
+    clusterings = list()
+    sampled_hyperparameters = list(ParameterSampler(
+        copy.deepcopy(hyperparameters),
+        n_iter=80,
+        random_state=r_state
+    ))
+    models = [
+        AgglomerativeClustering(**selected_hyperparameters).fit(data.values)
+        for selected_hyperparameters in sampled_hyperparameters
+    ]
+    clusterings += [
+        model.labels_
+        for model in models
+    ]
+
+    # for fit_model, selected_hyperparameters in zip(models, sampled_hyperparameters):
+    #    selected_hyperparameters["algorithm"] = "AgglomerativeClustering"
+    #    if hasattr(fit_model, "n_clusters"):
+    #        selected_hyperparameters["n_clusters"] = fit_model.n_clusters
+    #    else:
+    #        selected_hyperparameters["n_clusters"] = selected_hyperparameters.get("n_clusters", 0)
+    
+    results_per_algorithm += sampled_hyperparameters
+    results_df = pd.DataFrame.from_records(results_per_algorithm)
+    results_df.loc[:, "random_state"] = r_state
+
+    results_df = results_df.astype({"n_clusters": int, "random_state": int})
+
+    silhouette_per_model = [
+        silhouette_score(data, clustering) if len(set(clustering)) > 1 else -1
+        for clustering in clusterings
+    ]
+    results_df.loc[:, "silhouette"] = silhouette_per_model
+    results_df = results_df.sort_values(by="silhouette", ascending=False)
+    return results_df
