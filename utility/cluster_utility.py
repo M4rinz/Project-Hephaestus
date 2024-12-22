@@ -1,5 +1,5 @@
 from sklearn.cluster import KMeans, AgglomerativeClustering
-from sklearn.metrics import silhouette_score
+from sklearn.metrics import silhouette_score, calinski_harabasz_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import ParameterSampler
 import numpy as np
@@ -58,7 +58,8 @@ def k_search(max_clusters: int, n_init: int, data: np.ndarray, r_state:int = 42)
         silhouettes.append(silhouette)
     return silhouettes
 
-def hier_search(hyperparameters, data, r_state= 42):
+
+def hier_search(hyperparameters, data, r_state= 42, calinski=False):
     """
     Search for the best hyperparameters using the silhouette score
 
@@ -71,40 +72,49 @@ def hier_search(hyperparameters, data, r_state= 42):
     """
     results_per_algorithm = list()
     clusterings = list()
+    # sample the hyperpamrameters
     sampled_hyperparameters = list(ParameterSampler(
         copy.deepcopy(hyperparameters),
         n_iter=80,
         random_state=r_state
     ))
+    # fit the models for all sampled hyperparamters
     models = [
         AgglomerativeClustering(**selected_hyperparameters).fit(data)
         for selected_hyperparameters in sampled_hyperparameters
     ]
+    # extract the clusterings
     clusterings += [
         model.labels_
         for model in models
     ]
-
-    # for fit_model, selected_hyperparameters in zip(models, sampled_hyperparameters):
-    #    selected_hyperparameters["algorithm"] = "AgglomerativeClustering"
-    #    if hasattr(fit_model, "n_clusters"):
-    #        selected_hyperparameters["n_clusters"] = fit_model.n_clusters
-    #    else:
-    #        selected_hyperparameters["n_clusters"] = selected_hyperparameters.get("n_clusters", 0)
     
+    # initialize the results dataframe
     results_per_algorithm += sampled_hyperparameters
     results_df = pd.DataFrame.from_records(results_per_algorithm)
     results_df.loc[:, "random_state"] = r_state
 
     results_df = results_df.astype({"n_clusters": int, "random_state": int})
 
+    # get the silhouette score for each model
     silhouette_per_model = [
         silhouette_score(data, clustering) if len(set(clustering)) > 1 else -1
         for clustering in clusterings
     ]
+
     results_df.loc[:, "silhouette"] = silhouette_per_model
     results_df = results_df.sort_values(by="silhouette", ascending=False)
+
+    # get the calinski score for each model
+    if calinski:
+        calinski_per_model = [
+            calinski_harabasz_score(data, clustering) if len(set(clustering)) > 1 else -1
+            for clustering in clusterings
+        ]
+        results_df.loc[:, "calinski"] = calinski_per_model
+
     return results_df
+
 
 def get_average_cyclist_per_cluster(labels, cyclists_df):
     """
