@@ -59,7 +59,7 @@ def k_search(max_clusters: int, n_init: int, data: np.ndarray, r_state:int = 42)
     return silhouettes
 
 
-def hier_search(hyperparameters, data, r_state= 42, calinski=False):
+def hier_search(hyperparameters, data, r_state= 42, samples = 80, calinski=False):
     """
     Search for the best hyperparameters using the silhouette score
 
@@ -75,7 +75,7 @@ def hier_search(hyperparameters, data, r_state= 42, calinski=False):
     # sample the hyperpamrameters
     sampled_hyperparameters = list(ParameterSampler(
         copy.deepcopy(hyperparameters),
-        n_iter=80,
+        n_iter=samples,
         random_state=r_state
     ))
     # fit the models for all sampled hyperparamters
@@ -129,6 +129,40 @@ def get_average_cyclist_per_cluster(labels, cyclists_df):
     """
     clusters_sizes = np.unique(labels, return_counts=True)[1]
     average_cyclist_per_cluster = cyclists_df.groupby("cluster")\
+        .describe()\
+        .xs(                  # select from a multi-index dataframe
+            "mean",           # which columns to select?
+            level=1,          # at what level of the index?
+            drop_level=True,  
+            axis="columns"
+        )
+    average_cyclist_per_cluster.loc[:, "cluster_size"] = clusters_sizes
+    std_cyclist_per_cluster = cyclists_df.groupby("cluster")\
+        .describe()\
+        .xs(                  # select from a multi-index dataframe
+            "std",           # which columns to select?
+            level=1,          # at what level of the index?
+            drop_level=True,  
+            axis="columns"
+        )
+    std_cyclist_per_cluster.loc[:, "cluster_size"] = clusters_sizes
+
+
+    return average_cyclist_per_cluster
+
+def get_average_race_per_cluster(labels, races_df):
+    """
+    Get the average values
+
+    args:
+        - labels np.ndarray : The cluster labels
+        - races_df pd.DataFrame : the dataset
+    
+    returns:
+        - pd.DataFrame : The average
+    """
+    clusters_sizes = np.unique(labels, return_counts=True)[1]
+    average_cyclist_per_cluster = races_df.groupby("cluster")\
         .describe()\
         .xs(                  # select from a multi-index dataframe
             "mean",           # which columns to select?
