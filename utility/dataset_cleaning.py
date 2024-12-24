@@ -95,11 +95,15 @@ def speed_based_dataset_cleaning(dataset:pandas.DataFrame,
                                   speed_min:float = 3,
                                   speed_max:float = 60,
                                   recover_tour_de_romandie_1997_prologue: bool = True,
-                                  keep_tdf:bool = True) -> pandas.DataFrame:
+                                  keep_tdf:bool = True,
+                                  stages_to_delete:list[str] = ['tour-de-romandie/1995/stage-1', 'vuelta-a-espana/1997/stage-10']) -> pandas.DataFrame:
     """Cleans the dataset by removing the races with suspicious values for `average_speed`.
     It removes all the rows with `average_speed` outside the range [`speed_min`, `speed_max`].
     If `keep_tdf` is `True`, the 12th stage of the 2003 Tour de France 
     (whose values of `average_speed` are outside that range) are kept.
+    If `recover_tour_de_romandie_1997_prologue` is `True`, the times of the prologue stage of the 1997 Tour de Romandie
+    are recovered from the PCS website.
+    Finally, it removes the stages in `stages_to_delete`.
 
 
     Args:
@@ -108,6 +112,7 @@ def speed_based_dataset_cleaning(dataset:pandas.DataFrame,
         speed_max (float): the maximum value for `average_speed` that is kept. Defaults to 60
         recover_tour_de_romandie_1997_prologue (bool): whether to recover the times of the prologue stage of the 1997 Tour de Romandie. Defaults to True
         keep_tdf (bool): whether to keep the 12th stage of the 2003 Tour de France. Defaults to True
+        stages_to_delete (list[str]): list of stages to remove from the dataset. Defaults to ['tour-de-romandie/1995/stage-1', 'vuelta-a-espana/1997/stage-10']
 
     Returns:
         pandas.DataFrame: copy of dataset with the rows removed
@@ -146,6 +151,9 @@ def speed_based_dataset_cleaning(dataset:pandas.DataFrame,
     races_df_copy = races_df_copy[((races_df_copy['average_speed'] > speed_min) 
                                   & (races_df_copy['average_speed'] <= speed_max)) 
                                   | (condition) ]
+    
+    # Remove the stages in `stages_to_delete`
+    races_df_copy = races_df_copy[~races_df_copy['_url'].isin(stages_to_delete)]
     
     return races_df_copy
 
