@@ -8,5 +8,5 @@
     [] select random -> pick furdest -> iterate (sample) (this is kmeans++ but worst)
     [x] kmeans++
 [x] undertand the results (for what my brain can)
-[] work on the races dataset
-[] undertand the results
+[x] work on the races dataset
+[x] undertand the results
