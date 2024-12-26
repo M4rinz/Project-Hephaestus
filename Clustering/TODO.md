@@ -12,6 +12,6 @@
 [x] undertand the results
 [x] meglio commenti
 [x] heat map
-[] print SSE
+[x] print SSE
 [] fix similarity measures
-[] gare di is_tarmac con i punti verdi
+[x] gare di is_tarmac con i punti verdi
