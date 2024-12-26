@@ -10,3 +10,8 @@
 [x] undertand the results (for what my brain can)
 [x] work on the races dataset
 [x] undertand the results
+[x] meglio commenti
+[x] heat map
+[] print SSE
+[] fix similarity measures
+[] gare di is_tarmac con i punti verdi
