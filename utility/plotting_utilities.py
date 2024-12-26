@@ -113,6 +113,29 @@ def plot_participations(df: pd.DataFrame,
         xticks = [xticks[i] for i in np.linspace(0, len(xticks)-1, num = 20, dtype = int)]
     ax.set_xticks(xticks)
     ax.set_xticklabels(xticks, rotation=90)
+
+
+def plot_kdistances(
+    dist_matrix:np.ndarray,
+    k:int,
+    eps_value:float,
+    color,
+    ax,
+    y_lim:float = 10
+) -> None:
+    kth_distances = [d[np.argsort(d)[k]] for d in dist_matrix]
+
+    ax.plot(np.sort(kth_distances), label=f'Min_samples = {k}', 
+            alpha=0.6, color=color)
+    ax.axhline(y=eps_value, linestyle='--', 
+               color=color, alpha=0.5,
+               label=fr'$\epsilon=${eps_value}')
+    ax.set_title(f'K-distances plot, K = {k}')
+    ax.set_xlabel('Cyclist index (sorted)')
+    ax.set_ylabel(f'Distance from {k}-th neighbour')
+    ax.set_ylim(0, y_lim)
+    ax.legend()
+    ax.grid(True)       
         
 
 
