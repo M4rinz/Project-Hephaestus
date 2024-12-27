@@ -1,4 +1,4 @@
-from sklearn.cluster import KMeans, AgglomerativeClustering
+from sklearn.cluster import KMeans, AgglomerativeClustering, DBSCAN
 from sklearn.metrics import silhouette_score, calinski_harabasz_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import ParameterSampler
@@ -149,3 +149,29 @@ def get_average_cyclist_per_cluster(labels, cyclists_df):
 
 
     return average_cyclist_per_cluster
+
+def DBSCAN_grid_search(data,
+                        min_samples_range:list[float], 
+                        eps_range:list[list[float]],
+                        distance:str='euclidean') -> tuple[dict]:
+    cluster_labels_dict = {}
+    dbscans_dict = {}
+    silhouettes_dict = {}
+    for min_samples, eps_values in zip(min_samples_range, eps_range):
+        for eps in eps_values:
+            dbscan = DBSCAN(eps=eps, min_samples=min_samples, metric=distance)
+            dbscan.fit(data)
+            dbscans_dict[f"min_samples={min_samples}_eps={eps}"] = dbscan
+            # Get the labels and save them
+            labels = dbscan.labels_
+            cluster_labels_dict[f"min_samples={min_samples}_eps={eps}"] = dbscan.labels_
+            # Silhouette score
+            silhouette = silhouette_score(data, labels)
+            silhouettes_dict[f"min_samples={min_samples}_eps={eps}"] = silhouette
+            # N° of clusters, noise points
+            n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
+            n_noise = list(labels).count(-1)
+            noise_percentage = 100 * n_noise / len(labels)
+            print(f'eps = {eps:<3}, min_samples = {min_samples:>3}, n_clusters = {n_clusters:>2}, n_noise = {n_noise:>3}, noise % = {noise_percentage:>2.2f}, Silhouette score: {silhouette:.3f}')
+
+    return cluster_labels_dict, dbscans_dict, silhouettes_dict

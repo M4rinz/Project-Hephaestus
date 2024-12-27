@@ -118,7 +118,7 @@ def plot_participations(df: pd.DataFrame,
 def plot_kdistances(
     dist_matrix:np.ndarray,
     k:int,
-    eps_value:float,
+    eps_values:list[float],
     color,
     ax,
     y_lim:float = 10
@@ -127,9 +127,10 @@ def plot_kdistances(
 
     ax.plot(np.sort(kth_distances), label=f'Min_samples = {k}', 
             alpha=0.6, color=color)
-    ax.axhline(y=eps_value, linestyle='--', 
-               color=color, alpha=0.5,
-               label=fr'$\epsilon=${eps_value}')
+    for eps_val in eps_values:
+        ax.axhline(y=eps_val, linestyle='--', 
+                color=color, alpha=0.5,
+                label=fr'$\epsilon=${eps_val}')
     ax.set_title(f'K-distances plot, K = {k}')
     ax.set_xlabel('Cyclist index (sorted)')
     ax.set_ylabel(f'Distance from {k}-th neighbour')
