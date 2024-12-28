@@ -121,6 +121,7 @@ def plot_kdistances(
     eps_values:list[float],
     color,
     ax,
+    show_legend:bool = True,
     y_lim:float = 10
 ) -> None:
     kth_distances = [d[np.argsort(d)[k]] for d in dist_matrix]
@@ -135,8 +136,9 @@ def plot_kdistances(
     ax.set_xlabel('Cyclist index (sorted)')
     ax.set_ylabel(f'Distance from {k}-th neighbour')
     ax.set_ylim(0, y_lim)
-    ax.legend()
-    ax.grid(True)       
+    ax.grid(True)  
+    if show_legend:     
+        ax.legend(loc='upper left')
         
 
 
