@@ -88,33 +88,94 @@ def compute_experience(row: pd.Series) -> float:
     cyclist_df['experience_level'] = pd.cut(cyclist_df['race_count'], bins=bins, labels=experience_levels, right=False)
     return experience
 
-def compute_total_points(merged_df: pd.DataFrame) -> pd.DataFrame:
+def recompute_metrics(merged_df: pd.DataFrame,
+                         total_points_D: int | None,
+                         victories_by_points_D: int | None,
+                         avg_points_per_race_D: float | None,
+                         average_position_D: float | None,
+                         avg_speed_cyclist_D: float | None,
+                         mean_stamina_index: float | None,
+                         missing_value_policy: str = 'mean'
+                         ) -> pd.DataFrame:
     '''
-    Compute the total points of each cyclist at a given moment
+    Compute the metrics of each cyclist at a given race.
+    Default values are used to initialize the metrics this is needed for when
+    a cyclist appears for the first time in the dataset.
+
+    NOTE: no deafult default values are provided because they should likely change based on the model used
 
     args:
-        - merged_df (pd.DataFrame): the dataframe on which recompute the total points
+        - merged_df (pd.DataFrame): the dataframe on which recompute the metrics
+        - total_points_D (int): the default value for the total points
+        - victories_by_points_D (int): the default value for the victories by points
+        - avg_points_per_race_D (float): the default value for the average points per
+        - average_position_D (float): the default value for the average position
+        - avg_speed_cyclist_D (float): the default value for the average speed
+        - mean_stamina_index (float): the default value for the mean stamina index
+        - missing_value_policy {drop|mean} (str): the policy to handle missing values. 
 
     returns:
         - pd.DataFrame: the updated dataframe
     '''
-    # The original function used
-    # punti_totali = races_df.groupby('cyclist')['points'].sum()
-    # cyclist_df['total_points'] = cyclist_df['_url'].apply(lambda x: punti_totali[x] if x in punti_totali.index else 0)
-    
-    # OTHER STUFF THAT CAN BE COMPUTED HERE
-    # 'victories_by_points', 
-    # 'avg_points_per_race', 
-    # 'average_position', 
-    # 'avg_speed_cyclist', 
-    # 'mean_stamina_index'
-    #
+    # Complexity analysis:
     # O(NlogN) to order by date
-    # NOTE: the 2 operations below shoul be done in one pass over the data to minimize I/O complexity
-    # O(N) scan to create an hash table with all names of cyclists 
-    # (it will be a generic hash Ferragina would be disappointed)
-        # What should be in the hash table:
-        # points reached up to now
-        # points won in the last race
-        # values to compute other metrics
+    # O(N) scan to create an hash table with all names of cyclists (it will be a generic hash Ferragina would be disappointed)
     # O(N) scan and compute the value
+
+    # Sort the dataset by date
+    merged_df = merged_df.sort_values(by='date')
+    # Initialize hash table to store cumulative metrics for each cyclist
+    cyclist_metrics = {}
+    # Iterate over the rows to compute the metrics
+    for index, row in merged_df.iterrows():
+        cyclist = row['cyclist']
+        
+        if cyclist not in cyclist_metrics:
+            # Initialize metrics for the cyclist
+            cyclist_metrics[cyclist] = {
+                'total_points': 0,
+                'total_races': 0,
+                'total_positions': 0,
+                'total_speed': 0,
+                'total_stamina': 0
+            }
+            # the first time we see a cyclist we need to assign the default values
+            merged_df.at[index, 'total_points'] = total_points_D
+            merged_df.at[index, 'victories_by_points'] = victories_by_points_D
+            merged_df.at[index, 'avg_points_per_race'] = avg_points_per_race_D
+            merged_df.at[index, 'average_position'] = average_position_D
+            merged_df.at[index, 'avg_speed_cyclist'] = avg_speed_cyclist_D
+            merged_df.at[index, 'mean_stamina_index'] = mean_stamina_index
+        else:
+            # we already have metrics for the cyclist. Assign computed values to the dataframe
+            merged_df.at[index, 'total_points'] = cyclist_metrics[cyclist]['total_points']
+            
+            merged_df.at[index, 'avg_points_per_race'] = cyclist_metrics[cyclist]['total_points'] / cyclist_metrics[cyclist]['total_races']
+            merged_df.at[index, 'average_position'] = cyclist_metrics[cyclist]['total_positions'] / cyclist_metrics[cyclist]['total_races']
+            merged_df.at[index, 'avg_speed_cyclist'] = cyclist_metrics[cyclist]['total_speed'] / cyclist_metrics[cyclist]['total_races']
+            merged_df.at[index, 'mean_stamina_index'] = cyclist_metrics[cyclist]['total_stamina'] / cyclist_metrics[cyclist]['total_races']
+        
+        # Update metrics
+        # This is after the updating of the cyclist to avoid using the current race in the computation
+        if row['points'] is None or row['stamina_index'] is None:
+            if missing_value_policy == 'drop': # drop the row
+                merged_df.drop(index, inplace=True)
+                continue
+            elif missing_value_policy == 'mean': # use the mean of points computed so far
+                if row['points'] is None:
+                    row['points'] = cyclist_metrics[cyclist]['total_points'] / cyclist_metrics[cyclist]['total_races']
+                if row['stamina_index'] is None:
+                    row['stamina_index'] = cyclist_metrics[cyclist]['total_stamina'] / cyclist_metrics[cyclist]['total_races']
+        
+        cyclist_metrics[cyclist]['total_points'] += row['points']
+        cyclist_metrics[cyclist]['total_stamina'] += row['stamina_index']
+        cyclist_metrics[cyclist]['total_races'] += 1
+        cyclist_metrics[cyclist]['total_positions'] += row['position']
+        cyclist_metrics[cyclist]['total_speed'] += row['average_speed']
+
+    #TODO: find a way to compute victories by points
+    merged_df.at[index, 'victories_by_points'] = cyclist_metrics[cyclist]['victories_by_points']
+    #TODO: find a way to compute victories by points
+    cyclist_metrics[cyclist]['victories_by_points'] += 1 if row['points'] == 100 else 0
+
+    return merged_df
