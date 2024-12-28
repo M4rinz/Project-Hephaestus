@@ -88,6 +88,10 @@ def compute_experience(row: pd.Series) -> float:
     cyclist_df['experience_level'] = pd.cut(cyclist_df['race_count'], bins=bins, labels=experience_levels, right=False)
     return experience
 
+def get_base_url(url: str) -> str:
+    parts = url.split('/')
+    return f"{parts[0]}/{parts[1]}"
+
 def recompute_metrics(merged_df: pd.DataFrame,
                          total_points_D: int | None,
                          victories_by_points_D: int | None,
@@ -115,7 +119,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
         - missing_value_policy {drop|mean} (str): the policy to handle missing values. 
 
     returns:
-        - pd.DataFrame: the updated dataframe
+        - pd.DataFrame: the updated dataframe (input datafreme is probably not modified (python is weird))
     '''
     # Complexity analysis:
     # O(NlogN) to order by date
@@ -126,8 +130,15 @@ def recompute_metrics(merged_df: pd.DataFrame,
     merged_df = merged_df.sort_values(by='date')
     # Initialize hash table to store cumulative metrics for each cyclist
     cyclist_metrics = {}
+    # Initialize hash table to store the scores of each race
+    full_race_scores = {
+        'race_name': '',# name of the race
+        'scores': {} # scores of each cyclist
+    }
+    tot_iterations = len(merged_df)
     # Iterate over the rows to compute the metrics
     for index, row in merged_df.iterrows():
+        print(f'{index/tot_iterations*100}%', end='\r')
         cyclist = row['cyclist']
         
         if cyclist not in cyclist_metrics:
@@ -135,6 +146,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
             cyclist_metrics[cyclist] = {
                 'total_points': 0,
                 'total_races': 0,
+                'victories_by_points': 0,
                 'total_positions': 0,
                 'total_speed': 0,
                 'total_stamina': 0
@@ -157,25 +169,57 @@ def recompute_metrics(merged_df: pd.DataFrame,
         
         # Update metrics
         # This is after the updating of the cyclist to avoid using the current race in the computation
-        if row['points'] is None or row['stamina_index'] is None:
+        if pd.isna(row['points']) or pd.isna(row['stamina_index']):
             if missing_value_policy == 'drop': # drop the row
+                raise NotImplementedError("This is not implemented yet XD")
                 merged_df.drop(index, inplace=True)
                 continue
             elif missing_value_policy == 'mean': # use the mean of points computed so far
-                if row['points'] is None:
-                    row['points'] = cyclist_metrics[cyclist]['total_points'] / cyclist_metrics[cyclist]['total_races']
-                if row['stamina_index'] is None:
-                    row['stamina_index'] = cyclist_metrics[cyclist]['total_stamina'] / cyclist_metrics[cyclist]['total_races']
-        
+                if pd.isna(row['points']):
+                    if cyclist_metrics[cyclist]['total_races'] == 0: # rare case
+                        row['points'] = 0
+                    else:
+                        row['points'] = cyclist_metrics[cyclist]['total_points'] / cyclist_metrics[cyclist]['total_races']
+                if pd.isna(row['stamina_index']):
+                    if cyclist_metrics[cyclist]['total_races'] == 0: # super rare case
+                        row['stamina_index'] = 0
+                    else:
+                        row['stamina_index'] = cyclist_metrics[cyclist]['total_stamina'] / cyclist_metrics[cyclist]['total_races']
+
         cyclist_metrics[cyclist]['total_points'] += row['points']
+        cyclist_metrics[cyclist]['victories_by_points'] = cyclist_metrics[cyclist]['victories_by_points']
         cyclist_metrics[cyclist]['total_stamina'] += row['stamina_index']
         cyclist_metrics[cyclist]['total_races'] += 1
         cyclist_metrics[cyclist]['total_positions'] += row['position']
         cyclist_metrics[cyclist]['total_speed'] += row['average_speed']
 
-    #TODO: find a way to compute victories by points
-    merged_df.at[index, 'victories_by_points'] = cyclist_metrics[cyclist]['victories_by_points']
-    #TODO: find a way to compute victories by points
-    cyclist_metrics[cyclist]['victories_by_points'] += 1 if row['points'] == 100 else 0
+        if full_race_scores['race_name'] == '':# first cyclist of a new race
+            full_race_scores['race_name'] = get_base_url(row['_url_rac'])
+            full_race_scores['scores'] = {cyclist: row['points']}
+        else: # working on the same race
+            
+            last_race_instance = index == len(merged_df) - 1
+            if not last_race_instance:
+                last_race_instance = get_base_url(merged_df.at[index + 1, '_url_rac']) != full_race_scores['race_name']
+            
+            # update the scores
+            if cyclist not in full_race_scores['scores'].keys():
+                full_race_scores['scores'][cyclist] = row['points']
+            else:
+                full_race_scores['scores'][cyclist] += row['points']
+
+            if (last_race_instance): # last cyclist
+                best_score = 0
+                best_cyclist = ''
+                for cyc in full_race_scores['scores'].keys():
+                    if full_race_scores['scores'][cyc] > best_score:
+                        best_cyclist = cyc
+                        best_score = full_race_scores['scores'][cyc]
+                if best_cyclist != '':
+                    cyclist_metrics[best_cyclist]['victories_by_points'] += 1
+                
+                # reset the scores
+                full_race_scores['race_name'] = ''
+                full_race_scores['scores'] = {}
 
     return merged_df
