@@ -72,7 +72,7 @@ def define_target(merged_fd:pd.DataFrame)-> pd.DataFrame:
 
 # TODO: This actually can take the dataframe
 EXPERIENCE_LEVELS = ['beginner', 'developing', 'competitive', 'semi-pro', 'pro']
-def compute_experience(row: pd.Series) -> float:
+def compute_experience(row: pd.Series) -> str:
     '''
     Compute the experience level of a cyclist based on the given row.
 

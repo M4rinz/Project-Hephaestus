@@ -1,0 +1,6 @@
+[] modify experience_level
+[] ckeck victories_by_points
+[] check define_target
+[] implement drop policy?
+[] optimize the code? ahahah non c'e' tempo signora mia
+[] check correct columns labeling
