@@ -116,19 +116,19 @@ def hier_search(hyperparameters, data, r_state= 42, samples = 80, calinski=False
     return results_df
 
 
-def get_average_cyclist_per_cluster(labels, cyclists_df):
+def get_average_per_cluster(labels, df):
     """
-    Get the average values of the cyclists per cluster
+    Get the average values of the attributes per cluster (can return std too)
 
     args:
         - labels np.ndarray : The cluster labels
-        - cyclists_df pd.DataFrame : The cyclists data
+        - df pd.DataFrame : data
 
     returns:
         - pd.DataFrame : The average values of the cyclists per cluster
     """
     clusters_sizes = np.unique(labels, return_counts=True)[1]
-    average_cyclist_per_cluster = cyclists_df.groupby("cluster")\
+    average_per_cluster = df.groupby("cluster")\
         .describe()\
         .xs(                  # select from a multi-index dataframe
             "mean",           # which columns to select?
@@ -136,8 +136,8 @@ def get_average_cyclist_per_cluster(labels, cyclists_df):
             drop_level=True,  
             axis="columns"
         )
-    average_cyclist_per_cluster.loc[:, "cluster_size"] = clusters_sizes
-    std_cyclist_per_cluster = cyclists_df.groupby("cluster")\
+    average_per_cluster.loc[:, "cluster_size"] = clusters_sizes
+    std_per_cluster = df.groupby("cluster")\
         .describe()\
         .xs(                  # select from a multi-index dataframe
             "std",           # which columns to select?
@@ -145,41 +145,7 @@ def get_average_cyclist_per_cluster(labels, cyclists_df):
             drop_level=True,  
             axis="columns"
         )
-    std_cyclist_per_cluster.loc[:, "cluster_size"] = clusters_sizes
+    std_per_cluster.loc[:, "cluster_size"] = clusters_sizes
 
 
-    return average_cyclist_per_cluster
-
-def get_average_race_per_cluster(labels, races_df):
-    """
-    Get the average values
-
-    args:
-        - labels np.ndarray : The cluster labels
-        - races_df pd.DataFrame : the dataset
-    
-    returns:
-        - pd.DataFrame : The average
-    """
-    clusters_sizes = np.unique(labels, return_counts=True)[1]
-    average_cyclist_per_cluster = races_df.groupby("cluster")\
-        .describe()\
-        .xs(                  # select from a multi-index dataframe
-            "mean",           # which columns to select?
-            level=1,          # at what level of the index?
-            drop_level=True,  
-            axis="columns"
-        )
-    average_cyclist_per_cluster.loc[:, "cluster_size"] = clusters_sizes
-    std_cyclist_per_cluster = cyclists_df.groupby("cluster")\
-        .describe()\
-        .xs(                  # select from a multi-index dataframe
-            "std",           # which columns to select?
-            level=1,          # at what level of the index?
-            drop_level=True,  
-            axis="columns"
-        )
-    std_cyclist_per_cluster.loc[:, "cluster_size"] = clusters_sizes
-
-
-    return average_cyclist_per_cluster
+    return average_per_cluster, std_per_cluster
