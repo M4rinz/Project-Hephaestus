@@ -1,8 +1,8 @@
 [x] modify experience_level
 [x] check experience_level
-[] fix victories_by_points
+[x] fix (remove) victories_by_points
 [x] check define_target
 [] implement drop policy?
-[] optimize the code? ahahah non c'e' tempo signora mia
-[] check correct columns labeling
+[x] optimize the code? ahahah non c'e' tempo signora mia
+[x] check correct columns labeling
 [x] add race_count
