@@ -6,6 +6,10 @@ import numpy as np
 import copy
 import pandas as pd
 
+# You need to install the kneed package to use this function
+# pip install kneed, or conda install -c conda-forge kneed
+from kneed import KneeLocator
+
 from typing import Tuple
 
 def scale_data(data) -> Tuple[StandardScaler, np.ndarray]:
@@ -175,7 +179,10 @@ def DBSCAN_grid_search(
             labels = dbscan.labels_
             cluster_labels_dict[f"min_samples={min_samples}_eps={eps}"] = dbscan.labels_
             # Silhouette score
-            silhouette = silhouette_score(data, labels)
+            try:
+                silhouette = silhouette_score(data, labels)
+            except ValueError:
+                silhouette = -1     # if there is only one cluster, we put a nice -1
             silhouettes_dict[f"min_samples={min_samples}_eps={eps}"] = silhouette
             # N° of clusters, noise points
             n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
@@ -217,3 +224,24 @@ def prepare_data_for_DBSCAN_heatmaps(
         heatmap_in0_data.append(row4)
 
     return heatmap_sil_data, heatmap_noise_data, heatmap_ncl_data, heatmap_in0_data
+
+def compute_eps_values(
+        k:int, 
+        dist_matrix:np.ndarray, 
+        n_eps:int = 7
+    ) -> list[float]:
+	"""Computes the eps values for the DBSCAN algorithm using the elbow method
+	automatically with the KneeLocator class.
+	It computes n_eps values for the eps parameter, with the one found by the KneeLocator
+	to be the maximum one.
+
+	Args:
+		k (int): number of neighbors to consider
+		dist_matrix (np.ndarray): distance matrix
+		n_eps (int): n° of values for eps to produce. Defaults to 7
+	"""
+	kth_distances = [d[np.argsort(d)[k]] for d in dist_matrix]
+	klocator = KneeLocator(np.arange(len(kth_distances)), np.sort(kth_distances), curve='convex', direction='increasing')
+	step = np.round((np.max(kth_distances) - np.min(kth_distances)) / 40, 2)
+	
+	return [np.round(klocator.knee_y + i * step, 2) for i in range(n_eps)][::-1]
