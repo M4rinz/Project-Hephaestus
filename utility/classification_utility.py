@@ -211,3 +211,33 @@ def make_dataset_for_classification(races_df, cyclists_df, avg_points_per_race_D
                   missing_value_policy='mean')
     full_df = define_target(full_df)
     return full_df
+
+def get_train_val_split(full_df, val_size=0.2, random_state=42):
+    '''
+    Split the dataset into a training and validation set
+
+    args:
+        - full_df (pd.DataFrame): the dataframe to split
+        - val_size (float): the size of the validation set
+
+    returns:
+        - pd.DataFrame, pd.DataFrame: the training and validation set
+    '''
+    train_df = full_df.sample(frac=1 - val_size, random_state=random_state)
+    val_df = full_df.drop(train_df.index)
+    return train_df, val_df
+
+def get_data_split(df, xgb=True, val_size=0.2, random_state=42):
+    '''
+    The split proposed in the XGB notebook is reused here for compatibility purposes.
+    Should we decide to modify it, just remove the variable and the code proposed.
+    '''
+    df_ts = df[df['date'] >= '2022-01-01']
+    if xgb:
+        df_tr = df[(df['date'] < '2019-01-01') & (df['date'] >= '1996-01-01')]
+        df_v = df[(df['date'] < '2022-01-01') & (df['date'] >= '2019-01-01')]
+    else:
+        df_tr, df_v = get_train_val_split(df, val_size=val_size, random_state=random_state)
+                                        
+
+    return df_tr, df_v, df_ts
