@@ -1,8 +1,12 @@
+from datetime import datetime
 import pandas as pd
 
 # Useless/Duplicated
 TO_REMOVE_COLS = [
-    '_url_cyc', 'name_cyc', 'victories_by_points'
+    '_url_cyc', 'name_cyc', 'victories_by_points', 'uci_points',
+    'normalized_length', 'normalized_quality',
+    'normalized_steepness', 'normalized_time',
+    'norm_points'
 ]
 
 TO_NOT_USE_COLS = [
@@ -21,7 +25,8 @@ TO_RECOMPUTE_COLS = [
     'experience_level', 'total_points', 
     'avg_points_per_race', 
     'average_position', 'avg_speed_cyclist', 'mean_stamina_index',
-    'race_count'
+    'race_count',
+    'elapsed_from_last',# new feature (elapsed time in days from the previous race)
 ]
 
 # facts known before the race, that are "static". There are some 
@@ -30,7 +35,7 @@ TO_RECOMPUTE_COLS = [
 TO_KEEP_UNCHANGED_COLS = [
     # race related
     '_url_rac', 'name_rac', 'stage', 'stage_type',  
-    'uci_points', 'length', 'climb_total', 'profile', 
+    'length', 'climb_total', 'profile', 
     'startlist_quality', 'date', 'cyclist', 
     'cyclist_age_rac', 'is_tarmac', 'steepness', 'season', 
     'is_staged', 'race_country'
@@ -57,7 +62,7 @@ def get_merged_dataset(cyclists:str, races:str) -> pd.DataFrame:
     cyc_df = pd.read_csv(cyclists)
     rac_df = pd.read_csv(races)
     merged = rac_df.merge(right=cyc_df, how='left', on='cyclist', suffixes=('_rac', '_cyc'))
-    merged.drop(columns=TO_REMOVE_COLS)
+    merged.drop(columns=TO_REMOVE_COLS, inplace=True)
     merged['points'] = merged['points'].fillna(0)
     return merged
 
@@ -87,8 +92,9 @@ def recompute_metrics(merged_df: pd.DataFrame,
                          avg_points_per_race_D: float | None,
                          average_position_D: float | None,
                          avg_speed_cyclist_D: float | None,
-                         mean_stamina_index: float | None,
-                         missing_value_policy: str = 'mean'
+                         mean_stamina_index_D: float | None,
+                         elapsed_from_last_race_D: int | None,
+                         missing_value_policy: str = 'mean',
                          ) -> pd.DataFrame:
     '''
     Compute the metrics of each cyclist at a given race.
@@ -103,7 +109,8 @@ def recompute_metrics(merged_df: pd.DataFrame,
         - avg_points_per_race_D (float): the default value for the average points per
         - average_position_D (float): the default value for the average position
         - avg_speed_cyclist_D (float): the default value for the average speed
-        - mean_stamina_index (float): the default value for the mean stamina index
+        - mean_stamina_index_D (float): the default value for the mean stamina index
+        - elapsed_from_last_race_D (int): the default value for the elapsed time from the last race (in days)
         - missing_value_policy {drop|mean} (str): the policy to handle missing values. 
 
     returns:
@@ -140,15 +147,17 @@ def recompute_metrics(merged_df: pd.DataFrame,
                 'total_races': 0,
                 'total_positions': 0,
                 'total_speed': 0,
-                'total_stamina': 0
+                'total_stamina': 0,
+                'last_race_date': None
             }
             # the first time we see a cyclist we need to assign the default values
             merged_df.at[index, 'total_points'] = total_points_D
             merged_df.at[index, 'avg_points_per_race'] = avg_points_per_race_D
             merged_df.at[index, 'average_position'] = average_position_D
             merged_df.at[index, 'avg_speed_cyclist'] = avg_speed_cyclist_D
-            merged_df.at[index, 'mean_stamina_index'] = mean_stamina_index
+            merged_df.at[index, 'mean_stamina_index'] = mean_stamina_index_D
             merged_df.at[index, 'race_count'] = 0
+            merged_df.at[index, 'elapsed_from_last'] = elapsed_from_last_race_D
             merged_df.at[index, 'experience_level'] = EXPERIENCE_LEVELS[0]
         else:
             # we already have metrics for the cyclist. Assign computed values to the dataframe
@@ -158,6 +167,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
             merged_df.at[index, 'avg_speed_cyclist'] = cyclist_metrics[cyclist]['total_speed'] / cyclist_metrics[cyclist]['total_races']
             merged_df.at[index, 'mean_stamina_index'] = cyclist_metrics[cyclist]['total_stamina'] / cyclist_metrics[cyclist]['total_races']
             merged_df.at[index, 'race_count'] = cyclist_metrics[cyclist]['total_races']
+            merged_df.at[index, 'elapsed_from_last'] = (datetime.strptime(row['date'], "%Y-%m-%d") - datetime.strptime(cyclist_metrics[cyclist]['last_race_date'], "%Y-%m-%d")).days
             # Compute experience level
             for i in range(len(EXPERIENCE_BINS)):
                 if cyclist_metrics[cyclist]['total_races'] >= EXPERIENCE_BINS[i] and cyclist_metrics[cyclist]['total_races'] < EXPERIENCE_BINS[i + 1]:
@@ -182,6 +192,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
         cyclist_metrics[cyclist]['total_races'] += 1
         cyclist_metrics[cyclist]['total_positions'] += row['position']
         cyclist_metrics[cyclist]['total_speed'] += row['average_speed']
+        cyclist_metrics[cyclist]['last_race_date'] = row['date']
 
     print('100.00%  ')
     return merged_df
