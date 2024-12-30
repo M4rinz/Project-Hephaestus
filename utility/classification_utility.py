@@ -14,7 +14,7 @@ TO_NOT_USE_COLS = [
     'age_performance_index',# based on age and points
 ]
 
-# This columns needs to be recomputed for the classification becasuse 
+# This columns needs to be recomputed for the classification because 
 # they change over time and using them as they are would be in some 
 # way look at the future
 TO_RECOMPUTE_COLS = [
@@ -61,7 +61,7 @@ def get_merged_dataset(cyclists:str, races:str) -> pd.DataFrame:
     merged['points'] = merged['points'].fillna(0)
     return merged
 
-def define_target(merged_fd:pd.DataFrame)-> pd.DataFrame:
+def define_target(merged_df:pd.DataFrame)-> pd.DataFrame:
     '''
     Compute and add the target column to the dataset 
     to simplify use during classification
@@ -72,8 +72,8 @@ def define_target(merged_fd:pd.DataFrame)-> pd.DataFrame:
     returns:
         - pd.DataFrame: the modified dataframe
     '''
-    merged_fd['target'] = merged_fd['position'].apply(lambda x: x<=20)
-    return merged_fd
+    merged_df['target'] = merged_df['position'].apply(lambda x: x<=20)
+    return merged_df
 
 EXPERIENCE_LEVELS = ['beginner', 'developing', 'competitive', 'semi-pro', 'pro']
 EXPERIENCE_BINS = [0, 15, 50, 100, 200, float('inf')]
@@ -92,7 +92,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
                          ) -> pd.DataFrame:
     '''
     Compute the metrics of each cyclist at a given race.
-    Default values are used to initialize the metrics this is needed for when
+    Default values are used to initialize the metrics. This is needed for when
     a cyclist appears for the first time in the dataset.
 
     NOTE: no deafult default values are provided because they should likely change based on the model used
@@ -107,7 +107,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
         - missing_value_policy {drop|mean} (str): the policy to handle missing values. 
 
     returns:
-        - pd.DataFrame: the updated dataframe (input datafreme is probably not modified (python is weird))
+        - pd.DataFrame: the updated dataframe (input dataframe is probably not modified (python is weird))
     '''
     # Complexity analysis:
     # O(NlogN) to order by date
