@@ -10,3 +10,14 @@
 [x] undertand the results (for what my brain can)
 [x] work on the races dataset
 [x] undertand the results
+[x] meglio commenti
+[x] heat map
+[x] print SSE
+[] fix similarity measures (the journey into statistics begin):
+    [] cathegorical values (or binary) -> Cramer’s V
+    [] numeric/continuos -> Eta-Squared or ANOVA
+    [] ordinal 
+        -> considering increasing and decreasing cluster: spearman
+        -> else, non parametric ANOVA: Kruskal-Wallis H-test
+[] Try umap
+[x] gare di is_tarmac con i punti verdi
