@@ -1,10 +1,14 @@
-from sklearn.cluster import KMeans, AgglomerativeClustering
+from sklearn.cluster import KMeans, AgglomerativeClustering, DBSCAN
 from sklearn.metrics import silhouette_score, calinski_harabasz_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import ParameterSampler
 import numpy as np
 import copy
 import pandas as pd
+
+# You need to install the kneed package to use this function
+# pip install kneed, or conda install -c conda-forge kneed
+from kneed import KneeLocator
 
 from typing import Tuple
 
@@ -36,7 +40,7 @@ def inverse_scale_data(scaler: StandardScaler, data: np.ndarray) -> np.ndarray:
     """
     return scaler.inverse_transform(data)
 
-def k_search(max_clusters: int, n_init: int, data: np.ndarray, r_state:int = 42) -> list[float]:
+def k_search(max_clusters: int, n_init: int, data: np.ndarray, r_state:int = 42, init_method:str = 'random') -> list[float]:
     """
     Search for the best number of clusters using the silhouette score
 
@@ -51,7 +55,7 @@ def k_search(max_clusters: int, n_init: int, data: np.ndarray, r_state:int = 42)
     """
     silhouettes: list[float] = []
     for cluster in range(2, max_clusters):
-        kmeans = KMeans(n_clusters=cluster, random_state=r_state, n_init=n_init)
+        kmeans = KMeans(n_clusters=cluster, random_state=r_state, n_init=n_init, init=init_method)
         kmeans.fit(data)
         labels = kmeans.labels_
         silhouette = silhouette_score(data, labels)
@@ -147,5 +151,96 @@ def get_average_per_cluster(labels, df):
         )
     std_per_cluster.loc[:, "cluster_size"] = clusters_sizes
 
-
     return average_per_cluster, std_per_cluster
+
+def DBSCAN_grid_search(
+        data,
+        min_samples_range:list[float], 
+        eps_range:list[list[float]],
+        distance:str='euclidean',
+        print_results:bool = True
+) -> tuple[dict]:
+    if distance == 'mahalanobis':
+        cov_matrix = data.cov()
+    cluster_labels_dict = {}
+    dbscans_dict = {}
+    silhouettes_dict = {}
+    for min_samples, eps_values in zip(min_samples_range, eps_range):
+        for eps in eps_values:
+            if distance == 'mahalanobis':
+                dbscan = DBSCAN(eps=eps, min_samples=min_samples, 
+                                metric=distance, metric_params={'V': cov_matrix})
+            else:
+                dbscan = DBSCAN(eps=eps, min_samples=min_samples, metric=distance)
+            dbscan.fit(data)
+            dbscans_dict[f"min_samples={min_samples}_eps={eps}"] = dbscan
+            # Get the labels and save them
+            labels = dbscan.labels_
+            cluster_labels_dict[f"min_samples={min_samples}_eps={eps}"] = dbscan.labels_
+            # Silhouette score
+            try:
+                silhouette = silhouette_score(data, labels)
+            except ValueError:
+                silhouette = -1     # if there is only one cluster, we put a nice -1
+            silhouettes_dict[f"min_samples={min_samples}_eps={eps}"] = silhouette
+            # N° of clusters, noise points
+            n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
+            n_noise = list(labels).count(-1)
+            noise_percentage = 100 * n_noise / len(labels)
+            if print_results:
+                print(f'eps = {eps:<4}, min_samples = {min_samples:>3}, n_clusters = {n_clusters:>2}, n_noise = {n_noise:>4}, noise % = {noise_percentage:>2.2f}, Silhouette score: {silhouette:.3f}')
+
+    return cluster_labels_dict, dbscans_dict, silhouettes_dict
+
+def prepare_data_for_DBSCAN_heatmaps(
+        silhouettes_dict:dict[str, float],
+        cluster_labels_dict:dict[str, np.ndarray],
+        min_samples_range:list[float],
+        eps_range:list[list[float]]
+) -> tuple[list]:
+    heatmap_sil_data, heatmap_noise_data = [], []
+    heatmap_ncl_data, heatmap_in0_data = [], []
+    for n_samples in min_samples_range:
+        row1, row2, row3, row4 = [], [], [], []
+        for eps in np.unique(np.ravel(eps_range)):
+            try:
+                row1.append(silhouettes_dict[f'min_samples={n_samples}_eps={eps}'])
+                n_noise = sum(cluster_labels_dict[f'min_samples={n_samples}_eps={eps}'] == -1)
+                row2.append(n_noise)
+                row3.append(len(np.unique(cluster_labels_dict[f'min_samples={n_samples}_eps={eps}'])) - 1)
+                # compute ratio between n° of points in cluster 0 and total n° of points
+                numerator = sum(cluster_labels_dict[f'min_samples={n_samples}_eps={eps}'] == 0)
+                denominator = len(cluster_labels_dict[f'min_samples={n_samples}_eps={eps}'])
+                row4.append(numerator / denominator)
+            except KeyError:
+                row1.append(np.nan)
+                row2.append(np.nan)
+                row3.append(np.nan)
+                row4.append(np.nan)
+        heatmap_sil_data.append(row1)
+        heatmap_noise_data.append(row2)
+        heatmap_ncl_data.append(row3)
+        heatmap_in0_data.append(row4)
+
+    return heatmap_sil_data, heatmap_noise_data, heatmap_ncl_data, heatmap_in0_data
+
+def compute_eps_values(
+        k:int, 
+        dist_matrix:np.ndarray, 
+        n_eps:int = 7
+    ) -> list[float]:
+	"""Computes the eps values for the DBSCAN algorithm using the elbow method
+	automatically with the KneeLocator class.
+	It computes n_eps values for the eps parameter, with the one found by the KneeLocator
+	to be the maximum one.
+
+	Args:
+		k (int): number of neighbors to consider
+		dist_matrix (np.ndarray): distance matrix
+		n_eps (int): n° of values for eps to produce. Defaults to 7
+	"""
+	kth_distances = [d[np.argsort(d)[k]] for d in dist_matrix]
+	klocator = KneeLocator(np.arange(len(kth_distances)), np.sort(kth_distances), curve='convex', direction='increasing')
+	step = np.round((np.max(kth_distances) - np.min(kth_distances)) / 40, 2)
+	
+	return [np.round(klocator.knee_y + i * step, 2) for i in range(n_eps)][::-1]
