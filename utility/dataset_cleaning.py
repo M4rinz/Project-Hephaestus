@@ -120,6 +120,15 @@ def speed_based_dataset_cleaning(dataset:pandas.DataFrame,
 
     # Not sure if the variable is passed by value or by reference...
     races_df_copy = dataset.copy()
+    if 'time_seconds' not in races_df_copy.columns:
+        # split time from date
+        races_df_copy['time'] = races_df_copy['date'].apply(lambda string: string.split(' ')[1])
+        # only keep the date
+        races_df_copy['date'] = races_df_copy['date'].apply(lambda string: string.split(' ')[0])
+        # convert time to seconds
+        races_df_copy['time_seconds'] = races_df_copy['time'].apply(lambda x: sum(int(t) * 60**i for i, t in enumerate(reversed(x.split(':')))))
+    if 'average_speed' not in races_df_copy.columns:
+        races_df_copy['average_speed'] = races_df_copy['length'] / races_df_copy['time_seconds']
 
     # Recover the times of the prologue stage of the 1997 Tour de Romandie
     if recover_tour_de_romandie_1997_prologue:
