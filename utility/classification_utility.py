@@ -198,7 +198,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
     return merged_df
 
 def make_dataset_for_classification(races_df, cyclists_df, avg_points_per_race_D=-1, average_position_D=-1, avg_speed_cyclist_D=-1, mean_stamina_index_D=-1, total_points_D=-1, 
-                                    elapsed_from_last_race_D=-1, missing_value_policy='mean', make_home_game=True):
+                                    elapsed_from_last_race_D=-1, missing_value_policy='mean', make_home_game=True, make_stage_type=False):
     full_df = get_merged_dataset(cyclists_df, races_df)
     full_df = recompute_metrics(full_df,
                   avg_points_per_race_D=avg_points_per_race_D,
@@ -210,6 +210,7 @@ def make_dataset_for_classification(races_df, cyclists_df, avg_points_per_race_D
                   missing_value_policy=missing_value_policy)
     full_df = define_target(full_df)
     if make_home_game: full_df['home_game'] = full_df.apply(lambda x: 1 if x['race_country'] == x['nationality'] else 0, axis=1)
+    if make_stage_type: full_df['stage_type'] = full_df.apply(lambda x: 1 if x['stage_type'] == 'ITT' else 0, axis=1)
     return full_df
 
 def get_train_val_split(full_df, val_size=0.2, random_state=42):
