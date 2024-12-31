@@ -202,13 +202,13 @@ def make_dataset_for_classification(races_df, cyclists_df, avg_points_per_race_D
     full_df = get_merged_dataset(cyclists_df, races_df)
     full_df = define_target(full_df)
     full_df = recompute_metrics(full_df,
-                  avg_points_per_race_D=-1,
-                  average_position_D=-1,
-                  avg_speed_cyclist_D=-1,
-                  mean_stamina_index_D=-1,
-                  total_points_D=-1,
-                  elapsed_from_last_race_D=-1,
-                  missing_value_policy='mean')
+                  avg_points_per_race_D=avg_points_per_race_D,
+                  average_position_D=average_position_D,
+                  avg_speed_cyclist_D=avg_speed_cyclist_D,
+                  mean_stamina_index_D=mean_stamina_index_D,
+                  total_points_D=total_points_D,
+                  elapsed_from_last_race_D=elapsed_from_last_race_D,
+                  missing_value_policy=missing_value_policy)
     full_df = define_target(full_df)
     if make_home_game: full_df['home_game'] = full_df.apply(lambda x: 1 if x['race_country'] == x['nationality'] else 0, axis=1)
     return full_df
@@ -228,18 +228,14 @@ def get_train_val_split(full_df, val_size=0.2, random_state=42):
     val_df = full_df.drop(train_df.index)
     return train_df, val_df
 
-def get_data_split(df, xgb=True, val_size=0.2, random_state=42):
+def get_data_split(df):
     '''
     The split proposed in the XGB notebook is reused here for compatibility purposes.
     Should we decide to modify it, just remove the variable and the code proposed.
     '''
+    df_tr = df[(df['date'] >= '1996-01-01') & (df['date'] < '2019-01-01')]
+    df_v = df[(df['date'] >= '2019-01-01') & (df['date'] < '2022-01-01')]                                    
     df_ts = df[df['date'] >= '2022-01-01']
-    if xgb:
-        df_tr = df[(df['date'] < '2019-01-01') & (df['date'] >= '1996-01-01')]
-        df_v = df[(df['date'] < '2022-01-01') & (df['date'] >= '2019-01-01')]
-    else:
-        df_tr, df_v = get_train_val_split(df, val_size=val_size, random_state=random_state)
-                                        
 
     return df_tr, df_v, df_ts
 
