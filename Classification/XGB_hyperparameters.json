@@ -1,0 +1,36 @@
+[
+    {
+        "n_estimators": 600,
+        "learning_rate": 0.15,
+        "lambda_reg": 2,
+        "early_stop": 30,
+        "max_depth": 9,
+        "score": {
+            "False": {
+                "precision": 0.9106547354379725,
+                "recall": 0.8798700426925865,
+                "f1-score": 0.8949977467327626,
+                "support": 37243.0
+            },
+            "True": {
+                "precision": 0.4031483457844184,
+                "recall": 0.4845278178611512,
+                "f1-score": 0.4401077696060584,
+                "support": 6237.0
+            },
+            "accuracy": 0.8231600735970561,
+            "macro avg": {
+                "precision": 0.6569015406111954,
+                "recall": 0.6821989302768688,
+                "f1-score": 0.6675527581694105,
+                "support": 43480.0
+            },
+            "weighted avg": {
+                "precision": 0.8378553483112655,
+                "recall": 0.8231600735970561,
+                "f1-score": 0.8297459346964413,
+                "support": 43480.0
+            }
+        }
+    }
+]
