@@ -154,12 +154,26 @@ def get_average_per_cluster(labels, df):
     return average_per_cluster, std_per_cluster
 
 def DBSCAN_grid_search(
-        data,
+        data:pd.DataFrame,
         min_samples_range:list[float], 
         eps_range:list[list[float]],
         distance:str='euclidean',
         print_results:bool = True
 ) -> tuple[dict]:
+    """Performs the grid search used in the `density_based` clustering notebook.
+    For each `min_samples` value, the function expects a list of possible `eps` values to try.
+    Each clustering is evaluated using the Silhouette score.
+
+    Args:
+        data (pandas.DataFrame): the (normalized) dataset
+        min_samples_range (list[float]): the values for the `min_samples` hyperparameter 
+        eps_range (list[list[float]]): the values for the `eps` hyperparameter
+        distance (str, optional): the metric used to compute the distances. Defaults to 'euclidean'.
+        print_results (bool, optional): Whether to print the infos about a certain configuration of hyperparameters. Defaults to True.
+
+    Returns:
+        tuple[dict]: _description_
+    """
     if distance == 'mahalanobis':
         cov_matrix = data.cov()
     cluster_labels_dict = {}
@@ -198,6 +212,26 @@ def prepare_data_for_DBSCAN_heatmaps(
         min_samples_range:list[float],
         eps_range:list[list[float]]
 ) -> tuple[list]:
+    """Prepares the matrices of values that are then printed as heatmaps in
+    the `density_based` notebook.
+    each of the dictionaries has `min_samples=x_eps=y` as keys, where 
+    `x` and `y` are retrieved from the `min_samples_range` and `eps_range` list
+    respectively. The values of the hyperparameters correspond to the rows and columns
+    of these heatmaps. These are:
+    - `heatmap_sil_data`: the silhouette score of the clustering obtained with the combination of hyperparameters
+    - `heatmap_noise_data`: the n° of noise points in the clustering obtained with the combination of hyperparameters
+    - `heatmap_ncl_data`: the n° of clusters (excluding noise points!) in the clustering obtained with the combination of hyperparameters
+    - `heatmap_in0_data`: the proportion of points in cluster 0 in the clustering obtained with the combination of hyperparameters
+
+    Args:
+        silhouettes_dict (dict[str, float]): _description_
+        cluster_labels_dict (dict[str, np.ndarray]): _description_
+        min_samples_range (list[float]): _description_
+        eps_range (list[list[float]]): _description_
+
+    Returns:
+        tuple[list]: _description_
+    """
     heatmap_sil_data, heatmap_noise_data = [], []
     heatmap_ncl_data, heatmap_in0_data = [], []
     for n_samples in min_samples_range:
@@ -232,7 +266,7 @@ def compute_eps_values(
 	"""Computes the eps values for the DBSCAN algorithm using the elbow method
 	automatically with the KneeLocator class.
 	It computes n_eps values for the eps parameter, with the one found by the KneeLocator
-	to be the maximum one.
+	to be the maximum one. It then produces `n_eps` other evenly-spaced values for `eps`.
 
 	Args:
 		k (int): number of neighbors to consider
