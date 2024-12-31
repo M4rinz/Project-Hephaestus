@@ -242,3 +242,11 @@ def get_data_split(df, xgb=True, val_size=0.2, random_state=42):
                                         
 
     return df_tr, df_v, df_ts
+
+def split_features_target(df):
+    '''
+    ugly to be here, right? better than reusing and declaring it 20 times
+    '''
+    y = df['target']
+    X = df.drop(columns=['target'])
+    return X, y
