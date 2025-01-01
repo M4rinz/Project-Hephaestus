@@ -87,7 +87,7 @@ def plot_participations(df: pd.DataFrame,
         else:
             return None
     
-    # We need this to do the groupby. The df in data_understanding_transformed.py doesn't have this
+    # We need this to do the groupby. The df in data_understanding_transformation.py doesn't have this
     if "name_stage" not in df_copy.columns:
         df_copy["name_stage"] = df_copy["_url"].apply(extract_name_stage)
 
