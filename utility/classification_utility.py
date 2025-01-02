@@ -7,7 +7,7 @@ TO_REMOVE_COLS = [
     'normalized_length', 'normalized_quality',
     'normalized_steepness', 'normalized_time',
     'norm_points',
-    'quality_adjusted_points'
+    'quality_adjusted_points' # we agreed to delete this
 ]
 
 TO_NOT_USE_COLS = [
@@ -231,15 +231,28 @@ def make_dataset_for_classification(races_df,
         full_df['home_game'] = full_df.apply(lambda x: int(x['race_country'] == x['nationality']), axis=1)
     return full_df
 
-def make_dataset_for_RNN_classification(races_url:str,
-                                        cyclists_url:str) -> pd.DataFrame:
-    full_df = get_merged_dataset(cyclists=cyclists_url, 
-                                    races=races_url, 
+def make_dataset_for_RNN_classification(races_path:str,
+                                        cyclists_path:str) -> pd.DataFrame:
+    """Creates the dataset for the RNN classification.
+    Merges the cyclist and races dataframes, creates the target column,
+    converts the time-related columns to time datatypes, removes 
+    the columns in TO_RECOMPUTE_COLS that are not needed for the RNNs,
+    then finally groups the entries by cyclist and sorts them by date.
+
+    Args:
+        races_path (str): path to the races CSV data
+        cyclists_path (str): path to the cyclists CSV data
+
+    Returns:
+        pd.DataFrame: the dataset for the RNN classification
+    """
+    full_df = get_merged_dataset(cyclists=cyclists_path, 
+                                    races=races_path, 
                                     is_RNN=True)
     # define the target
     full_df = define_target(full_df)
     # convert datatypes
-    full_df['date'] = full_df['date'].astype('datetime64[s]')
+    full_df['date'] = full_df['date'].astype('datetime64[ns]')
     full_df['delta'] = full_df['delta'].astype('timedelta64[s]')
     full_df['time'] = full_df['time'].astype('timedelta64[s]')
     # For the RNNs the assumption is that we don't need the recomputed
@@ -251,16 +264,21 @@ def make_dataset_for_RNN_classification(races_url:str,
     # Now is time to sort the values
     ## Sort by date all the entries of a given cyclist, and put them together
     sorted_by_date = full_df.groupby('cyclist').apply(lambda x: x.sort_values(by='date'), include_groups=False)
-    def shift_column(group, col):
-        group[f"{col}_shifted"] = group[col].shift(1)
-        return group
+    
+    return sorted_by_date
+
+def shift_columns_for_RNN(
+        sorted_by_date:pd.DataFrame, 
+) -> pd.DataFrame:
     # Conversely, we can use the values in the TO_NOT_USE_COLS,
     # provided that we don't use the current values for the current prediction,
     # but only the past values. Thus we just shift the column
+    def shift_column(group, col):
+        group[f"{col}_shifted"] = group[col].shift(1)
+        return group
     for col in set(TO_NOT_USE_COLS) - {'time_seconds'}:
         sorted_by_date = sorted_by_date.groupby('cyclist').apply(lambda x: shift_column(x, col)).reset_index(drop=True, level=0)
-
-    return sorted_by_date
+    
 
 def get_train_val_split(full_df, val_size=0.2, random_state=42):
     '''
