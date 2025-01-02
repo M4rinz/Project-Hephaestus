@@ -1,4 +1,5 @@
 from datetime import datetime
+import numpy as np
 import pandas as pd
 
 # Useless/Duplicated
@@ -273,12 +274,12 @@ def shift_columns_for_RNN(
     # Conversely, we can use the values in the TO_NOT_USE_COLS,
     # provided that we don't use the current values for the current prediction,
     # but only the past values. Thus we just shift the column
-    def shift_column(group, col):
-        group[f"{col}_shifted"] = group[col].shift(1)
-        return group
+    # Copy the df to avoid the SettingWithCopyWarning
+    new_df = sorted_by_date.copy()
+    # Shift the columns in TO_NOT_USE_COLS for each cyclist
     for col in set(TO_NOT_USE_COLS) - {'time_seconds'}:
-        sorted_by_date = sorted_by_date.groupby('cyclist').apply(lambda x: shift_column(x, col)).reset_index(drop=True, level=0)
-    
+        new_df.loc[:,f"{col}_shifted"] = new_df.groupby('cyclist')[col].shift(1)
+    return new_df
 
 def get_train_val_split(full_df, val_size=0.2, random_state=42):
     '''
