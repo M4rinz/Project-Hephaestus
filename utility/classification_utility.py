@@ -3,10 +3,11 @@ import pandas as pd
 
 # Useless/Duplicated
 TO_REMOVE_COLS = [
-    '_url_cyc', 'name_cyc', 'victories_by_points', 'uci_points',
+    '_url_cyc', 'name_cyc', 'victories_by_points', #'uci_points',
     'normalized_length', 'normalized_quality',
     'normalized_steepness', 'normalized_time',
-    'norm_points'
+    'norm_points',
+    'quality_adjusted_points'
 ]
 
 TO_NOT_USE_COLS = [
@@ -39,12 +40,15 @@ TO_KEEP_UNCHANGED_COLS = [
     'startlist_quality', 'date', 'cyclist', 
     'cyclist_age_rac', 'is_tarmac', 'steepness', 'season', 
     'is_staged', 'race_country'
+    'partecipants_number'# new feature (number of partecipants in the race) Is it really to keep unchanged?
     # cyclist related
     'birth_year', 'weight', 'height', 'nationality', 'bmi',
     'cyclist_age_cyc',
 ]
 
-def get_merged_dataset(cyclists:str, races:str) -> pd.DataFrame:
+def get_merged_dataset(cyclists:str, 
+                        races:str,
+                        is_RNN:bool=False) -> pd.DataFrame:
     '''
     Get a version of a merged dataset on which all functions 
     defined in this file can be called this is supposed to help 
@@ -54,19 +58,22 @@ def get_merged_dataset(cyclists:str, races:str) -> pd.DataFrame:
     args:
         - cyclists (str): the path to the cyclist's dataset
         - races (str): the path to the ravces' dataset
-
+        - is_RNN (bool): if true the dataset will contain the `uci_points` column. Defaults to False
     returns:
         - pd.DataFrame: a dataframe containing information on 
         both cyclists and races
     '''
     cyc_df = pd.read_csv(cyclists)
     rac_df = pd.read_csv(races)
-    if 'cyclist' in cyc_df.columns:
-        merged = rac_df.merge(right=cyc_df, how='left', on='cyclist', suffixes=('_rac', '_cyc'))
-    else:
-        merged = rac_df.merge(right=cyc_df, how='left', left_on='cyclist', right_on='_url', suffixes=('_rac', '_cyc'))
+    merged = rac_df.merge(right=cyc_df, how='left', left_on='cyclist', right_on='_url', suffixes=('_rac', '_cyc'))
     merged.drop(columns=TO_REMOVE_COLS, inplace=True)
     merged['points'] = merged['points'].fillna(0)
+    if is_RNN:
+        merged['uci_points'] = merged['uci_points'].fillna(0)
+    else:
+        merged.drop(columns=['uci_points'], inplace=True)
+
+    merged['partecipants_number'] = merged['_url_rac'].map(merged.groupby('_url_rac').size())
     return merged
 
 def define_target(merged_df:pd.DataFrame)-> pd.DataFrame:
@@ -223,6 +230,37 @@ def make_dataset_for_classification(races_df,
     if make_home_game: 
         full_df['home_game'] = full_df.apply(lambda x: int(x['race_country'] == x['nationality']), axis=1)
     return full_df
+
+def make_dataset_for_RNN_classification(races_url:str,
+                                        cyclists_url:str) -> pd.DataFrame:
+    full_df = get_merged_dataset(cyclists=cyclists_url, 
+                                    races=races_url, 
+                                    is_RNN=True)
+    # define the target
+    full_df = define_target(full_df)
+    # convert datatypes
+    full_df['date'] = full_df['date'].astype('datetime64[s]')
+    full_df['delta'] = full_df['delta'].astype('timedelta64[s]')
+    full_df['time'] = full_df['time'].astype('timedelta64[s]')
+    # For the RNNs the assumption is that we don't need the recomputed
+    # values in the TO_RECOMPUTE_COLS, as the RNN will have direct
+    # access to the (past) values used to obtain such recomputed values
+    full_df.drop(columns=set(TO_RECOMPUTE_COLS) - {'elapsed_from_last'}, inplace=True)
+    # Let's remove some columns now
+    full_df.drop(columns=['time_seconds', 'cyclist_age_cyc'], inplace=True)
+    # Now is time to sort the values
+    ## Sort by date all the entries of a given cyclist, and put them together
+    sorted_by_date = full_df.groupby('cyclist').apply(lambda x: x.sort_values(by='date'), include_groups=False)
+    def shift_column(group, col):
+        group[f"{col}_shifted"] = group[col].shift(1)
+        return group
+    # Conversely, we can use the values in the TO_NOT_USE_COLS,
+    # provided that we don't use the current values for the current prediction,
+    # but only the past values. Thus we just shift the column
+    for col in set(TO_NOT_USE_COLS) - {'time_seconds'}:
+        sorted_by_date = sorted_by_date.groupby('cyclist').apply(lambda x: shift_column(x, col)).reset_index(drop=True, level=0)
+
+    return sorted_by_date
 
 def get_train_val_split(full_df, val_size=0.2, random_state=42):
     '''
