@@ -215,8 +215,17 @@ def recompute_metrics(merged_df: pd.DataFrame,
     print('100.00%  ')
     return merged_df
 
-def make_dataset_for_classification(races_df, cyclists_df, avg_points_per_race_D=-1, average_position_D=-1, avg_speed_cyclist_D=-1, mean_stamina_index_D=-1, total_points_D=-1, 
-                                    elapsed_from_last_race_D=-1, average_position_var_D=-1, missing_value_policy='mean', make_home_game=True):
+def make_dataset_for_classification(races_df, 
+                                    cyclists_df, 
+                                    avg_points_per_race_D=-1,
+                                    average_position_D=-1, 
+                                    avg_speed_cyclist_D=-1, 
+                                    mean_stamina_index_D=-1, 
+                                    total_points_D=-1, 
+                                    elapsed_from_last_race_D=-1, 
+                                    average_position_var_D=-1, 
+                                    missing_value_policy='mean', 
+                                    make_home_game=True):
     full_df = get_merged_dataset(cyclists_df, races_df)
     full_df = recompute_metrics(full_df,
                   avg_points_per_race_D=avg_points_per_race_D,
