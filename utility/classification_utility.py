@@ -27,6 +27,7 @@ TO_RECOMPUTE_COLS = [
     'average_position', 'avg_speed_cyclist', 'mean_stamina_index',
     'race_count',
     'elapsed_from_last',# new feature (elapsed time in days from the previous race)
+    'average_position_var', # new feature (variance of the position)
 ]
 
 # facts known before the race, that are "static". There are some 
@@ -94,6 +95,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
                          avg_speed_cyclist_D: float | None,
                          mean_stamina_index_D: float | None,
                          elapsed_from_last_race_D: int | None,
+                         average_position_var_D: float | None,
                          missing_value_policy: str = 'mean',
                          ) -> pd.DataFrame:
     '''
@@ -111,6 +113,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
         - avg_speed_cyclist_D (float): the default value for the average speed
         - mean_stamina_index_D (float): the default value for the mean stamina index
         - elapsed_from_last_race_D (int): the default value for the elapsed time from the last race (in days)
+        - average_position_var_D (float): the default value for the average position variance
         - missing_value_policy {drop|mean} (str): the policy to handle missing values. 
 
     returns:
@@ -146,6 +149,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
                 'total_points': 0,
                 'total_races': 0,
                 'total_positions': 0,
+                'total_position_squared': 0,
                 'total_speed': 0,
                 'total_stamina': 0,
                 'last_race_date': None
@@ -158,6 +162,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
             merged_df.at[index, 'mean_stamina_index'] = mean_stamina_index_D
             merged_df.at[index, 'race_count'] = 0
             merged_df.at[index, 'elapsed_from_last'] = elapsed_from_last_race_D
+            merged_df.at[index, 'average_position_var'] = average_position_var_D
             merged_df.at[index, 'experience_level'] = EXPERIENCE_LEVELS[0]
         else:
             # we already have metrics for the cyclist. Assign computed values to the dataframe
@@ -168,6 +173,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
             merged_df.at[index, 'mean_stamina_index'] = cyclist_metrics[cyclist]['total_stamina'] / cyclist_metrics[cyclist]['total_races']
             merged_df.at[index, 'race_count'] = cyclist_metrics[cyclist]['total_races']
             merged_df.at[index, 'elapsed_from_last'] = (datetime.strptime(row['date'], "%Y-%m-%d") - datetime.strptime(cyclist_metrics[cyclist]['last_race_date'], "%Y-%m-%d")).days
+            merged_df.at[index, 'average_position_var'] = (cyclist_metrics[cyclist]['total_position_squared'] / cyclist_metrics[cyclist]['total_races']) - (merged_df.at[index, 'average_position'] ** 2)
             # Compute experience level
             for i in range(len(EXPERIENCE_BINS)):
                 if cyclist_metrics[cyclist]['total_races'] >= EXPERIENCE_BINS[i] and cyclist_metrics[cyclist]['total_races'] < EXPERIENCE_BINS[i + 1]:
@@ -193,12 +199,13 @@ def recompute_metrics(merged_df: pd.DataFrame,
         cyclist_metrics[cyclist]['total_positions'] += row['position']
         cyclist_metrics[cyclist]['total_speed'] += row['average_speed']
         cyclist_metrics[cyclist]['last_race_date'] = row['date']
+        cyclist_metrics[cyclist]['total_position_squared'] += row['position'] ** 2
 
     print('100.00%  ')
     return merged_df
 
 def make_dataset_for_classification(races_df, cyclists_df, avg_points_per_race_D=-1, average_position_D=-1, avg_speed_cyclist_D=-1, mean_stamina_index_D=-1, total_points_D=-1, 
-                                    elapsed_from_last_race_D=-1, missing_value_policy='mean', make_home_game=True):
+                                    elapsed_from_last_race_D=-1, average_position_var_D=-1, missing_value_policy='mean', make_home_game=True):
     full_df = get_merged_dataset(cyclists_df, races_df)
     full_df = recompute_metrics(full_df,
                   avg_points_per_race_D=avg_points_per_race_D,
@@ -207,6 +214,7 @@ def make_dataset_for_classification(races_df, cyclists_df, avg_points_per_race_D
                   mean_stamina_index_D=mean_stamina_index_D,
                   total_points_D=total_points_D,
                   elapsed_from_last_race_D=elapsed_from_last_race_D,
+                  average_position_var_D=average_position_var_D,
                   missing_value_policy=missing_value_policy)
     full_df = define_target(full_df)
     if make_home_game: full_df['home_game'] = full_df.apply(lambda x: 1 if x['race_country'] == x['nationality'] else 0, axis=1)
