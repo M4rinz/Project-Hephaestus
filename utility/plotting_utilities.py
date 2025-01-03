@@ -87,7 +87,7 @@ def plot_participations(df: pd.DataFrame,
         else:
             return None
     
-    # We need this to do the groupby. The df in data_understanding_transformed.py doesn't have this
+    # We need this to do the groupby. The df in data_understanding_transformation.py doesn't have this
     if "name_stage" not in df_copy.columns:
         df_copy["name_stage"] = df_copy["_url"].apply(extract_name_stage)
 
@@ -122,7 +122,8 @@ def plot_kdistances(
     color,
     ax,
     show_legend:bool = True,
-    y_lim:float = 10
+    y_lim:float = 10,
+    metric_name:str = 'euclidean'
 ) -> None:
     kth_distances = [d[np.argsort(d)[k]] for d in dist_matrix]
 
@@ -132,7 +133,7 @@ def plot_kdistances(
         ax.axhline(y=eps_val, linestyle='--', 
                 color=color, alpha=0.5,
                 label=fr'$\epsilon=${eps_val}')
-    ax.set_title(f'K-distances plot, K = {k}')
+    ax.set_title(f'K-distances plot ({metric_name} distance), K = {k}')
     ax.set_xlabel('Cyclist index (sorted)')
     ax.set_ylabel(f'Distance from {k}-th neighbour')
     ax.set_ylim(0, y_lim)
