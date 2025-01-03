@@ -152,7 +152,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
         else:
             prints += 1
 
-        cyclist = row['cyclist']
+        cyclist = row['cyclist_rac']
         
         if cyclist not in cyclist_metrics:
             # Initialize metrics for the cyclist
