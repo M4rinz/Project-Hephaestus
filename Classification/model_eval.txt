@@ -1,0 +1,1192 @@
+Parameters: {'optimizer': 'sgd', 'num_units': 64, 'num_layers': 1, 'epochs': 5, 'batch_size': 16, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.88      0.98      0.93     37243
+        True       0.59      0.17      0.27      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.73      0.58      0.60     43480
+weighted avg       0.83      0.86      0.83     43480
+
+
+
+
+Parameters: {'optimizer': 'lion', 'num_units': 32, 'num_layers': 1, 'epochs': 5, 'batch_size': 64, 'activation': 'tanh'}
+              precision    recall  f1-score   support
+
+       False       0.88      0.98      0.92     37243
+        True       0.59      0.16      0.26      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.73      0.57      0.59     43480
+weighted avg       0.83      0.86      0.83     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 2, 'epochs': 5, 'batch_size': 32, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.88      0.98      0.93     37243
+        True       0.59      0.17      0.27      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.73      0.58      0.60     43480
+weighted avg       0.84      0.86      0.83     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 1, 'epochs': 5, 'batch_size': 16, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.88      0.98      0.92     37243
+        True       0.58      0.18      0.27      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.73      0.58      0.60     43480
+weighted avg       0.83      0.86      0.83     43480
+
+
+
+
+Parameters: {'optimizer': 'sgd', 'num_units': 64, 'num_layers': 1, 'epochs': 5, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.87      0.98      0.92     37243
+        True       0.59      0.16      0.25      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.73      0.57      0.59     43480
+weighted avg       0.83      0.86      0.83     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 1, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 1, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.94      0.71      0.81     37243
+        True       0.30      0.73      0.42      6237
+
+    accuracy                           0.71     43480
+   macro avg       0.62      0.72      0.62     43480
+weighted avg       0.85      0.71      0.75     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 1, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.94      0.73      0.82     37243
+        True       0.31      0.72      0.43      6237
+
+    accuracy                           0.73     43480
+   macro avg       0.62      0.72      0.62     43480
+weighted avg       0.85      0.73      0.76     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 2, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.94      0.75      0.83     37243
+        True       0.32      0.71      0.44      6237
+
+    accuracy                           0.74     43480
+   macro avg       0.63      0.73      0.64     43480
+weighted avg       0.85      0.74      0.78     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.94      0.74      0.83     37243
+        True       0.31      0.72      0.44      6237
+
+    accuracy                           0.73     43480
+   macro avg       0.63      0.73      0.63     43480
+weighted avg       0.85      0.73      0.77     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 1, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.94      0.72      0.82     37243
+        True       0.31      0.73      0.43      6237
+
+    accuracy                           0.72     43480
+   macro avg       0.62      0.73      0.62     43480
+weighted avg       0.85      0.72      0.76     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 1, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.94      0.73      0.82     37243
+        True       0.31      0.72      0.43      6237
+
+    accuracy                           0.73     43480
+   macro avg       0.62      0.73      0.63     43480
+weighted avg       0.85      0.73      0.77     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 2, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.94      0.71      0.81     37243
+        True       0.30      0.74      0.42      6237
+
+    accuracy                           0.71     43480
+   macro avg       0.62      0.72      0.62     43480
+weighted avg       0.85      0.71      0.75     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.94      0.71      0.81     37243
+        True       0.30      0.75      0.43      6237
+
+    accuracy                           0.72     43480
+   macro avg       0.62      0.73      0.62     43480
+weighted avg       0.85      0.72      0.76     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 1, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.87      0.98      0.93     37243
+        True       0.60      0.14      0.23      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.74      0.56      0.58     43480
+weighted avg       0.83      0.86      0.83     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 1, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.88      0.98      0.93     37243
+        True       0.59      0.18      0.27      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.73      0.58      0.60     43480
+weighted avg       0.84      0.86      0.83     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 2, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.87      0.99      0.93     37243
+        True       0.68      0.08      0.15      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.77      0.54      0.54     43480
+weighted avg       0.84      0.86      0.81     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.88      0.98      0.93     37243
+        True       0.60      0.17      0.27      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.74      0.58      0.60     43480
+weighted avg       0.84      0.86      0.83     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 1, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.87      0.98      0.93     37243
+        True       0.61      0.15      0.24      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.74      0.57      0.58     43480
+weighted avg       0.84      0.86      0.83     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 1, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.87      0.98      0.93     37243
+        True       0.61      0.14      0.23      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.74      0.56      0.58     43480
+weighted avg       0.83      0.86      0.82     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 2, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.86      1.00      0.92     37243
+        True       0.69      0.06      0.12      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.78      0.53      0.52     43480
+weighted avg       0.84      0.86      0.81     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}
+              precision    recall  f1-score   support
+
+       False       0.87      0.98      0.93     37243
+        True       0.61      0.16      0.25      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.74      0.57      0.59     43480
+weighted avg       0.84      0.86      0.83     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 1, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled
+              precision    recall  f1-score   support
+
+       False       0.88      0.97      0.92     37243
+        True       0.57      0.23      0.32      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.72      0.60      0.62     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 1, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled
+              precision    recall  f1-score   support
+
+       False       0.88      0.97      0.92     37243
+        True       0.57      0.23      0.33      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.72      0.60      0.63     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 2, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled
+              precision    recall  f1-score   support
+
+       False       0.88      0.97      0.92     37243
+        True       0.57      0.21      0.30      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.72      0.59      0.61     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled
+              precision    recall  f1-score   support
+
+       False       0.88      0.98      0.93     37243
+        True       0.59      0.20      0.29      6237
+
+    accuracy                           0.87     43480
+   macro avg       0.74      0.59      0.61     43480
+weighted avg       0.84      0.87      0.84     43480
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 1, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled
+              precision    recall  f1-score   support
+
+       False       0.87      0.99      0.93     37243
+        True       0.64      0.12      0.20      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.75      0.55      0.56     43480
+weighted avg       0.84      0.86      0.82     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 1, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled
+              precision    recall  f1-score   support
+
+       False       0.87      0.98      0.93     37243
+        True       0.60      0.16      0.25      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.74      0.57      0.59     43480
+weighted avg       0.84      0.86      0.83     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 2, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled
+              precision    recall  f1-score   support
+
+       False       0.87      0.99      0.93     37243
+        True       0.62      0.11      0.18      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.75      0.55      0.55     43480
+weighted avg       0.83      0.86      0.82     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled
+              precision    recall  f1-score   support
+
+       False       0.86      1.00      0.92     37243
+        True       0.73      0.03      0.06      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.80      0.52      0.49     43480
+weighted avg       0.84      0.86      0.80     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 1, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.89      0.95      0.92     37243
+        True       0.52      0.32      0.39      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.70      0.63      0.66     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 1, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.90      0.94      0.92     37243
+        True       0.50      0.35      0.41      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.70      0.65      0.67     43480
+weighted avg       0.84      0.86      0.85     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 2, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.89      0.95      0.92     37243
+        True       0.51      0.31      0.39      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.70      0.63      0.65     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.90      0.94      0.92     37243
+        True       0.50      0.35      0.41      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.70      0.64      0.66     43480
+weighted avg       0.84      0.86      0.85     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 1, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.89      0.95      0.92     37243
+        True       0.51      0.29      0.37      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.70      0.62      0.65     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 1, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.90      0.94      0.92     37243
+        True       0.49      0.34      0.40      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.69      0.64      0.66     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 32, 'num_layers': 2, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.89      0.96      0.92     37243
+        True       0.54      0.26      0.35      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.71      0.61      0.64     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.89      0.96      0.92     37243
+        True       0.53      0.29      0.37      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.71      0.62      0.65     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.89      0.95      0.92     37243
+        True       0.51      0.32      0.40      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.70      0.64      0.66     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 3, 'epochs': 5, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.89      0.94      0.92     37243
+        True       0.50      0.33      0.40      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.70      0.64      0.66     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.90      0.94      0.92     37243
+        True       0.51      0.34      0.41      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.70      0.64      0.67     43480
+weighted avg       0.84      0.86      0.85     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.90      0.94      0.92     37243
+        True       0.51      0.36      0.42      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.70      0.65      0.67     43480
+weighted avg       0.84      0.86      0.85     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.88      0.97      0.92     37243
+        True       0.55      0.25      0.34      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.72      0.61      0.63     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 3, 'epochs': 5, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.89      0.95      0.92     37243
+        True       0.51      0.30      0.38      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.70      0.63      0.65     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.89      0.96      0.92     37243
+        True       0.54      0.28      0.36      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.71      0.62      0.64     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 3, 'epochs': 10, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.89      0.96      0.92     37243
+        True       0.55      0.26      0.35      6237
+
+    accuracy                           0.86     43480
+   macro avg       0.72      0.61      0.64     43480
+weighted avg       0.84      0.86      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.94      0.71      0.81     37243
+        True       0.30      0.74      0.43      6237
+
+    accuracy                           0.72     43480
+   macro avg       0.62      0.73      0.62     43480
+weighted avg       0.85      0.72      0.76     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.94      0.72      0.81     37243
+        True       0.30      0.74      0.43      6237
+
+    accuracy                           0.72     43480
+   macro avg       0.62      0.73      0.62     43480
+weighted avg       0.85      0.72      0.76     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 10, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.94      0.73      0.82     37243
+        True       0.31      0.72      0.43      6237
+
+    accuracy                           0.73     43480
+   macro avg       0.62      0.72      0.62     43480
+weighted avg       0.85      0.73      0.76     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 3, 'epochs': 10, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.3
+              precision    recall  f1-score   support
+
+       False       0.94      0.67      0.79     37243
+        True       0.28      0.76      0.41      6237
+
+    accuracy                           0.69     43480
+   macro avg       0.61      0.72      0.60     43480
+weighted avg       0.85      0.69      0.73     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.91      0.90      0.91     37243
+        True       0.44      0.46      0.45      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.67      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.91      0.90      0.91     37243
+        True       0.45      0.47      0.46      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.69      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 10, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.90      0.91      0.91     37243
+        True       0.45      0.43      0.44      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.67      0.67     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 3, 'epochs': 10, 'dropout': 0.5, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.90      0.92      0.91     37243
+        True       0.46      0.41      0.43      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.68      0.66      0.67     43480
+weighted avg       0.84      0.85      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.91      0.91      0.91     37243
+        True       0.45      0.45      0.45      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.91      0.89      0.90     37243
+        True       0.43      0.49      0.46      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.67      0.69      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.91      0.90      0.91     37243
+        True       0.44      0.47      0.46      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.91      0.90      0.90     37243
+        True       0.44      0.48      0.46      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.67      0.69      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.91      0.90      0.91     37243
+        True       0.44      0.47      0.46      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.69      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.91      0.89      0.90     37243
+        True       0.44      0.50      0.47      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.70      0.68     43480
+weighted avg       0.85      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.91      0.90      0.91     37243
+        True       0.44      0.47      0.46      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.69      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.91      0.89      0.90     37243
+        True       0.43      0.50      0.46      6237
+
+    accuracy                           0.83     43480
+   macro avg       0.67      0.69      0.68     43480
+weighted avg       0.84      0.83      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.91      0.91      0.91     37243
+        True       0.45      0.46      0.45      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.91      0.89      0.90     37243
+        True       0.43      0.49      0.46      6237
+
+    accuracy                           0.83     43480
+   macro avg       0.67      0.69      0.68     43480
+weighted avg       0.84      0.83      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.91      0.91      0.91     37243
+        True       0.45      0.46      0.46      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.69      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.4
+              precision    recall  f1-score   support
+
+       False       0.91      0.89      0.90     37243
+        True       0.44      0.49      0.46      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.67      0.69      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 256, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.91      0.92      0.91     37243
+        True       0.47      0.43      0.45      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.69      0.67      0.68     43480
+weighted avg       0.84      0.85      0.85     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 256, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.91      0.91      0.91     37243
+        True       0.45      0.44      0.45      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 256, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.90      0.92      0.91     37243
+        True       0.46      0.42      0.44      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.68      0.67      0.68     43480
+weighted avg       0.84      0.85      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 256, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.91      0.91      0.91     37243
+        True       0.45      0.44      0.44      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.67      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'batch_norm': True, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.91      0.91      0.91     37243
+        True       0.45      0.46      0.46      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'batch_norm': True, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.91      0.91      0.91     37243
+        True       0.45      0.46      0.45      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.91      0.90      0.91     37243
+        True       0.45      0.46      0.45      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.90      0.91      0.91     37243
+        True       0.45      0.42      0.43      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.67      0.67     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.90      0.92      0.91     37243
+        True       0.46      0.40      0.43      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.68      0.66      0.67     43480
+weighted avg       0.84      0.85      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.90      0.92      0.91     37243
+        True       0.46      0.41      0.44      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.68      0.67      0.67     43480
+weighted avg       0.84      0.85      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.90      0.92      0.91     37243
+        True       0.46      0.42      0.44      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.68      0.67      0.67     43480
+weighted avg       0.84      0.85      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 128, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.91      0.91      0.91     37243
+        True       0.45      0.45      0.45      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 20, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.90      0.93      0.91     37243
+        True       0.47      0.40      0.43      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.69      0.66      0.67     43480
+weighted avg       0.84      0.85      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 20, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.32
+              precision    recall  f1-score   support
+
+       False       0.90      0.94      0.92     37243
+        True       0.49      0.36      0.41      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.69      0.65      0.66     43480
+weighted avg       0.84      0.85      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 3, 'epochs': 20, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.32
+              precision    recall  f1-score   support
+
+       False       0.90      0.91      0.91     37243
+        True       0.45      0.42      0.43      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.67      0.67     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.91      0.91      0.91     37243
+        True       0.45      0.45      0.45      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.3, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.90      0.92      0.91     37243
+        True       0.46      0.40      0.43      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.68      0.66      0.67     43480
+weighted avg       0.84      0.85      0.84     43480
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 10, 'dropout': 0.3, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.90      0.94      0.92     37243
+        True       0.48      0.35      0.41      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.69      0.64      0.66     43480
+weighted avg       0.84      0.85      0.84     43480
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.90      0.92      0.91     37243
+        True       0.46      0.42      0.44      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.68      0.67      0.67     43480
+weighted avg       0.84      0.85      0.84     43480
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.90      0.92      0.91     37243
+        True       0.46      0.40      0.43      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.68      0.66      0.67     43480
+weighted avg       0.84      0.85      0.84     43480
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.90      0.92      0.91     37243
+        True       0.46      0.41      0.44      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.68      0.67      0.67     43480
+weighted avg       0.84      0.85      0.84     43480
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.91      0.92      0.91     37243
+        True       0.47      0.44      0.45      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.69      0.68      0.68     43480
+weighted avg       0.84      0.85      0.85     43480
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.90      0.92      0.91     37243
+        True       0.47      0.41      0.44      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.69      0.67      0.68     43480
+weighted avg       0.84      0.85      0.84     43480
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.91      0.90      0.91     37243
+        True       0.45      0.46      0.45      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.91      0.91      0.91     37243
+        True       0.45      0.45      0.45      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.91      0.91      0.91     37243
+        True       0.45      0.45      0.45      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 2, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.90      0.92      0.91     37243
+        True       0.47      0.42      0.44      6237
+
+    accuracy                           0.85     43480
+   macro avg       0.69      0.67      0.68     43480
+weighted avg       0.84      0.85      0.85     43480
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 64, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.91      0.90      0.91     37243
+        True       0.45      0.46      0.45      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
+Parameters: {'optimizer': 'adam', 'num_units': 128, 'num_layers': 3, 'epochs': 10, 'dropout': 0.2, 'batch_size': 64, 'activation': 'relu'}, oversampled: 0.35
+              precision    recall  f1-score   support
+
+       False       0.91      0.91      0.91     37243
+        True       0.45      0.46      0.46      6237
+
+    accuracy                           0.84     43480
+   macro avg       0.68      0.68      0.68     43480
+weighted avg       0.84      0.84      0.84     43480
+
+
