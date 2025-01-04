@@ -184,7 +184,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
             merged_df.at[index, 'mean_stamina_index'] = cyclist_metrics[cyclist]['total_stamina'] / cyclist_metrics[cyclist]['total_races']
             merged_df.at[index, 'race_count'] = cyclist_metrics[cyclist]['total_races']
             merged_df.at[index, 'elapsed_from_last'] = (datetime.strptime(row['date'], "%Y-%m-%d") - datetime.strptime(cyclist_metrics[cyclist]['last_race_date'], "%Y-%m-%d")).days
-            merged_df.at[index, 'average_position_var'] = (cyclist_metrics[cyclist]['total_position_squared'] / cyclist_metrics[cyclist]['total_races']) - (merged_df.at[index, 'average_position'] ** 2)
+            merged_df.at[index, 'average_position_var'] = ((cyclist_metrics[cyclist]['total_position_squared'] + 1e-7) / (cyclist_metrics[cyclist]['total_races'] + 1e-7)) - (merged_df.at[index, 'average_position'] ** 2)
             # Compute experience level
             for i in range(len(EXPERIENCE_BINS)):
                 if cyclist_metrics[cyclist]['total_races'] >= EXPERIENCE_BINS[i] and cyclist_metrics[cyclist]['total_races'] < EXPERIENCE_BINS[i + 1]:
@@ -225,7 +225,10 @@ def make_dataset_for_classification(races_df,
                                     elapsed_from_last_race_D=-1, 
                                     average_position_var_D=-1, 
                                     missing_value_policy='mean', 
-                                    make_home_game=True):
+                                    make_home_game=True,
+                                    make_stage_type=False, 
+                                    # make_race_participants=False
+                                    ):
     full_df = get_merged_dataset(cyclists_df, races_df)
     full_df = recompute_metrics(full_df,
                   avg_points_per_race_D=avg_points_per_race_D,
@@ -237,8 +240,11 @@ def make_dataset_for_classification(races_df,
                   average_position_var_D=average_position_var_D,
                   missing_value_policy=missing_value_policy)
     full_df = define_target(full_df)
-    if make_home_game: 
-        full_df['home_game'] = full_df.apply(lambda x: int(x['race_country'] == x['nationality']), axis=1)
+    if make_home_game: full_df['home_game'] = full_df.apply(lambda x: 1 if x['race_country'] == x['nationality'] else 0, axis=1)
+    if make_stage_type: full_df['stage_type'] = full_df.apply(lambda x: 1 if x['stage_type'] == 'ITT' else 0, axis=1)
+    # if make_race_participants: don't need this anymore because someone already did the feature in another place meow
+    #     race_participants = full_df['_url_rac'].value_counts()
+    #     full_df['total_participants'] = full_df['_url_rac'].map(race_participants)
     return full_df
 
 def make_dataset_for_RNN_classification(races_path:str,
