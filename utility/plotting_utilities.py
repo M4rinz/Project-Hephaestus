@@ -104,15 +104,15 @@ def plot_participations(df: pd.DataFrame,
     small_df = res_frame[res_frame['name'] == race_name]
     sns.lineplot(data=small_df, x='year', y='count', err_style='bars', errorbar='pi', marker='o', ax=ax)
     sns.scatterplot(data=small_df, x='year', y='count', ax=ax, color='red', alpha=0.2)
-    ax.set_title(race_name, fontweight='bold')
+    ax.set_title(race_name, fontweight='bold', fontsize=16)
     ax.set_ylabel('Number of participants')
     ax.set_xlabel('Year')
 
     xticks = np.sort(small_df['year'].unique())
-    if shorten_xaxis and len(xticks) > 20:
-        xticks = [xticks[i] for i in np.linspace(0, len(xticks)-1, num = 20, dtype = int)]
+    if shorten_xaxis and len(xticks) > 12:
+        xticks = [xticks[i] for i in np.linspace(0, len(xticks)-1, num = 12, dtype = int)]
     ax.set_xticks(xticks)
-    ax.set_xticklabels(xticks, rotation=90)
+    ax.set_xticklabels(xticks, rotation=90, fontsize=14)
 
 
 def plot_kdistances(
