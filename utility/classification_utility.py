@@ -151,6 +151,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
             print(f'{((index + 1)/tot_iterations)*100:.2f}%  ', end='\r')
         else:
             prints += 1
+
         cyclist = row['cyclist_rac']
         
         if cyclist not in cyclist_metrics:
