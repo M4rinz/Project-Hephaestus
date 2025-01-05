@@ -73,10 +73,12 @@ def check_if_same(race1:str,
 
     return np.array_equal(race_ID_1,race_ID_2), race_ID_1, race_ID_2
 
-def correlations(dataset: pandas.DataFrame) -> pandas.DataFrame:
+def correlations(dataset: pandas.DataFrame,
+                 corr_types:tuple[list] = ("kendall", "pearson", "spearman")
+    ) -> pandas.DataFrame:
     correlations_dictionary = {
         correlation_type: dataset.corr(numeric_only=True, method=correlation_type)
-        for correlation_type in ("kendall", "pearson", "spearman")
+        for correlation_type in corr_types
     }
     for i, k in enumerate(correlations_dictionary.keys()):
         correlations_dictionary[k].loc[:, "correlation_type"] = k
