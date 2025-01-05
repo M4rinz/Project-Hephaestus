@@ -125,6 +125,19 @@ def plot_kdistances(
     y_lim:float = 10,
     metric_name:str = 'euclidean'
 ) -> None:
+    """Plots the k-distances plot for the given distance matrix, with the given k and eps values.
+        Used in the DBSCAN clustering notebook.
+
+    Args:
+        dist_matrix (np.ndarray): the kth-distances matrix
+        k (int): the k value (n° of neighbours)
+        eps_values (list[float]): the epsilon values
+        color (_type_): the color of the curve to plot
+        ax (_type_): the axis object where to plot the data
+        show_legend (bool, optional): whether to show the legend. Defaults to True.
+        y_lim (float, optional): y_lim parameter. Defaults to 10.
+        metric_name (str, optional): name of the distance used to generate the plot. Defaults to 'euclidean'.
+    """
     kth_distances = [d[np.argsort(d)[k]] for d in dist_matrix]
 
     ax.plot(np.sort(kth_distances), label=f'Min_samples = {k}', 

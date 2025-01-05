@@ -227,10 +227,10 @@ def prepare_data_for_DBSCAN_heatmaps(
     - `heatmap_in0_data`: the proportion of points in cluster 0 in the clustering obtained with the combination of hyperparameters
 
     Args:
-        silhouettes_dict (dict[str, float]): _description_
-        cluster_labels_dict (dict[str, np.ndarray]): _description_
-        min_samples_range (list[float]): _description_
-        eps_range (list[list[float]]): _description_
+        silhouettes_dict (dict[str, float]): silhouette scores values for each combination of hyperparameters
+        cluster_labels_dict (dict[str, np.ndarray]): cluster labels obtained by the clustering, for each combination of hyperparameters
+        min_samples_range (list[float]): values of the `min_samples` hyperparameter. They'll go on the y axis
+        eps_range (list[list[float]]): values of the `eps` hyperparameter (a list for each value of `min_samples`). They'll go on the x axis
 
     Returns:
         tuple[list]: _description_
