@@ -40,7 +40,7 @@ def inverse_scale_data(scaler: StandardScaler, data: np.ndarray) -> np.ndarray:
     """
     return scaler.inverse_transform(data)
 
-def k_search(max_clusters: int, n_init: int, data: np.ndarray, r_state:int = 42, init_method:str = 'random') -> list[float]:
+def k_search(max_clusters: int, n_init: int, data: np.ndarray, r_state:int = 42, init_method:str = 'random') -> Tuple[list[float], list[float]]:
     """
     Search for the best number of clusters using the silhouette score
 
@@ -54,13 +54,16 @@ def k_search(max_clusters: int, n_init: int, data: np.ndarray, r_state:int = 42,
         - np.ndarray : The silhouette scores for each cluster number (from 2 to max_clusters)
     """
     silhouettes: list[float] = []
+    inertias: list[float] = []
     for cluster in range(2, max_clusters):
         kmeans = KMeans(n_clusters=cluster, random_state=r_state, n_init=n_init, init=init_method)
         kmeans.fit(data)
         labels = kmeans.labels_
         silhouette = silhouette_score(data, labels)
+        inertia = kmeans.inertia_
         silhouettes.append(silhouette)
-    return silhouettes
+        inertias.append(inertia)
+    return silhouettes, inertias
 
 
 def hier_search(hyperparameters, data, r_state= 42, samples = 80, calinski=False):
@@ -224,10 +227,10 @@ def prepare_data_for_DBSCAN_heatmaps(
     - `heatmap_in0_data`: the proportion of points in cluster 0 in the clustering obtained with the combination of hyperparameters
 
     Args:
-        silhouettes_dict (dict[str, float]): _description_
-        cluster_labels_dict (dict[str, np.ndarray]): _description_
-        min_samples_range (list[float]): _description_
-        eps_range (list[list[float]]): _description_
+        silhouettes_dict (dict[str, float]): silhouette scores values for each combination of hyperparameters
+        cluster_labels_dict (dict[str, np.ndarray]): cluster labels obtained by the clustering, for each combination of hyperparameters
+        min_samples_range (list[float]): values of the `min_samples` hyperparameter. They'll go on the y axis
+        eps_range (list[list[float]]): values of the `eps` hyperparameter (a list for each value of `min_samples`). They'll go on the x axis
 
     Returns:
         tuple[list]: _description_

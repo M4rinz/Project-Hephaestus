@@ -104,15 +104,15 @@ def plot_participations(df: pd.DataFrame,
     small_df = res_frame[res_frame['name'] == race_name]
     sns.lineplot(data=small_df, x='year', y='count', err_style='bars', errorbar='pi', marker='o', ax=ax)
     sns.scatterplot(data=small_df, x='year', y='count', ax=ax, color='red', alpha=0.2)
-    ax.set_title(race_name, fontweight='bold')
+    ax.set_title(race_name, fontweight='bold', fontsize=16)
     ax.set_ylabel('Number of participants')
     ax.set_xlabel('Year')
 
     xticks = np.sort(small_df['year'].unique())
-    if shorten_xaxis and len(xticks) > 20:
-        xticks = [xticks[i] for i in np.linspace(0, len(xticks)-1, num = 20, dtype = int)]
+    if shorten_xaxis and len(xticks) > 12:
+        xticks = [xticks[i] for i in np.linspace(0, len(xticks)-1, num = 12, dtype = int)]
     ax.set_xticks(xticks)
-    ax.set_xticklabels(xticks, rotation=90)
+    ax.set_xticklabels(xticks, rotation=90, fontsize=14)
 
 
 def plot_kdistances(
@@ -125,6 +125,19 @@ def plot_kdistances(
     y_lim:float = 10,
     metric_name:str = 'euclidean'
 ) -> None:
+    """Plots the k-distances plot for the given distance matrix, with the given k and eps values.
+        Used in the DBSCAN clustering notebook.
+
+    Args:
+        dist_matrix (np.ndarray): the kth-distances matrix
+        k (int): the k value (n° of neighbours)
+        eps_values (list[float]): the epsilon values
+        color (_type_): the color of the curve to plot
+        ax (_type_): the axis object where to plot the data
+        show_legend (bool, optional): whether to show the legend. Defaults to True.
+        y_lim (float, optional): y_lim parameter. Defaults to 10.
+        metric_name (str, optional): name of the distance used to generate the plot. Defaults to 'euclidean'.
+    """
     kth_distances = [d[np.argsort(d)[k]] for d in dist_matrix]
 
     ax.plot(np.sort(kth_distances), label=f'Min_samples = {k}', 

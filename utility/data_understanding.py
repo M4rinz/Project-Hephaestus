@@ -73,10 +73,12 @@ def check_if_same(race1:str,
 
     return np.array_equal(race_ID_1,race_ID_2), race_ID_1, race_ID_2
 
-def correlations(dataset: pandas.DataFrame) -> pandas.DataFrame:
+def correlations(dataset: pandas.DataFrame,
+                 corr_types:tuple[list] = ("kendall", "pearson", "spearman")
+    ) -> pandas.DataFrame:
     correlations_dictionary = {
         correlation_type: dataset.corr(numeric_only=True, method=correlation_type)
-        for correlation_type in ("kendall", "pearson", "spearman")
+        for correlation_type in corr_types
     }
     for i, k in enumerate(correlations_dictionary.keys()):
         correlations_dictionary[k].loc[:, "correlation_type"] = k
@@ -136,6 +138,22 @@ def delta_computer(cyclist_url:str,
 def scrape_stages(indices:pandas.Index,
                   races_df:pandas.DataFrame,
                   same_races_dict:dict[str|list[str]]) -> list[dict]:
+    """Scrapes the cyclism data using the `procyclingstats` library.
+    It goes over the indices of the dataframe given in input, and for all the different URLs it finds,
+    it does an HTTP call to the website to get the data, giving precedence to what's already in the dataframe.
+    Since it's very slow to run and the HTTP calls were blocked after a while, the code had to be parallelized 
+    and this is why `indices` is there. It's a list of the indices of the dataframe to process (bacause maybe,
+    you know, the function had to be called multiple times)
+
+    Args:
+        races_df (pandas.DataFrame): the dataframe to process
+        indices (pandas.Index): the indices to process
+        same_races_dict (dict[str | list[str]]): a dictionary of the names that refer to the same race. 
+        To standardize the column's values
+
+    Returns:
+        list[dict]: _description_
+    """
     new_races = []
 
     # Helper function to handle exceptions

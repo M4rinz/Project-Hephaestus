@@ -59,7 +59,7 @@ def get_merged_dataset(cyclists:str,
     
     args:
         - cyclists (str): the path to the cyclist's dataset
-        - races (str): the path to the ravces' dataset
+        - races (str): the path to the races' dataset
         - is_RNN (bool): if true the dataset will contain the `uci_points` column. Defaults to False
     returns:
         - pd.DataFrame: a dataframe containing information on 
@@ -151,6 +151,7 @@ def recompute_metrics(merged_df: pd.DataFrame,
             print(f'{((index + 1)/tot_iterations)*100:.2f}%  ', end='\r')
         else:
             prints += 1
+
         cyclist = row['cyclist_rac']
         
         if cyclist not in cyclist_metrics:
@@ -214,20 +215,42 @@ def recompute_metrics(merged_df: pd.DataFrame,
     print('100.00%  ')
     return merged_df
 
-def make_dataset_for_classification(races_df, 
-                                    cyclists_df, 
-                                    avg_points_per_race_D=-1,
-                                    average_position_D=-1, 
-                                    avg_speed_cyclist_D=-1, 
-                                    mean_stamina_index_D=-1, 
-                                    total_points_D=-1, 
-                                    elapsed_from_last_race_D=-1, 
-                                    average_position_var_D=-1, 
+def make_dataset_for_classification(races_df:str, 
+                                    cyclists_df:str, 
+                                    avg_points_per_race_D:int=-1,
+                                    average_position_D:int=-1, 
+                                    avg_speed_cyclist_D:int=-1, 
+                                    mean_stamina_index_D:int=-1, 
+                                    total_points_D:int=-1, 
+                                    elapsed_from_last_race_D:int=-1, 
+                                    average_position_var_D:int=-1, 
                                     missing_value_policy='mean', 
-                                    make_home_game=True,
-                                    make_stage_type=False, 
+                                    make_home_game:bool=True,
+                                    make_stage_type:bool=False, 
                                     # make_race_participants=False
-                                    ):
+                                    ) -> pd.DataFrame:
+    """Function that creates the dataset for the classification task. It first merges the cyclist and races
+    dataframes using the `get_merged_dataset` function, then recomputes the metrics for the features that are 
+    computed over time using the `recompute_metrics` function. Finally, it defines the target column and adds
+    the `home_game` and `stage_type` columns if needed.
+
+    Args:
+        races_df (_type_): path to the CSV file with the races data
+        cyclists_df (_type_): path to the CSV file with the cyclists data
+        avg_points_per_race_D (int, optional): default value for the feature. Defaults to -1.
+        average_position_D (int, optional): default value for the feature. Defaults to -1.
+        avg_speed_cyclist_D (int, optional): default value for the feature. Defaults to -1.
+        mean_stamina_index_D (int, optional): default value for the feature. Defaults to -1.
+        total_points_D (int, optional): default value for the feature. Defaults to -1.
+        elapsed_from_last_race_D (int, optional): default value for the feature. Defaults to -1.
+        average_position_var_D (int, optional): default value for the feature. Defaults to -1.
+        missing_value_policy (str, optional): default value for the feature. Defaults to 'mean'.
+        make_home_game (bool, optional): whether to create the `home_game` feature. Defaults to True.
+        make_stage_type (bool, optional): whether to binarize the `stage_type` feature. Defaults to False.
+
+    Returns:
+        pd.DataFrame: the dataframe in which all the operations have been performed
+    """
     full_df = get_merged_dataset(cyclists_df, races_df)
     full_df = recompute_metrics(full_df,
                   avg_points_per_race_D=avg_points_per_race_D,
